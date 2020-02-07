@@ -1,0 +1,1840 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Solenoid Board"
+Date ""
+Rev "1.0.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x16_Female J2
+U 1 1 5DDBFE35
+P 1400 1400
+F 0 "J2" H 1428 1376 50  0000 L CNN
+F 1 "MCU_LEFT_LEGS" H 1428 1285 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 1400 1400 50  0001 C CNN
+F 3 "~" H 1400 1400 50  0001 C CNN
+	1    1400 1400
+	1    0    0    -1  
+$EndComp
+Text Label 1200 700  2    50   ~ 0
+RST
+Text Label 1200 900  2    50   ~ 0
+ARf
+Text Label 1200 1100 2    50   ~ 0
+A0
+Text Label 1200 1200 2    50   ~ 0
+A1
+Wire Wire Line
+	1200 2200 1100 2200
+Text Label 1200 1300 2    50   ~ 0
+A2
+Text Label 1200 1500 2    50   ~ 0
+A4
+Text Label 1200 1600 2    50   ~ 0
+A5
+Text Label 1200 1700 2    50   ~ 0
+SCK
+Text Label 1200 1800 2    50   ~ 0
+MOSI
+Text Label 1200 1900 2    50   ~ 0
+MISO
+Text Label 1200 2000 2    50   ~ 0
+RX0
+Text Label 1200 2100 2    50   ~ 0
+TX1
+$Comp
+L Connector:Conn_01x12_Female J3
+U 1 1 5DDC670F
+P 2750 1600
+F 0 "J3" H 2778 1576 50  0000 L CNN
+F 1 "MCU_RIGHT_LEGS" H 2778 1485 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 2750 1600 50  0001 C CNN
+F 3 "~" H 2750 1600 50  0001 C CNN
+	1    2750 1600
+	1    0    0    -1  
+$EndComp
+Text Label 2550 1100 2    50   ~ 0
+BAT
+Text Label 2550 1200 2    50   ~ 0
+En
+Text Label 2550 1500 2    50   ~ 0
+D12
+Text Label 2550 1600 2    50   ~ 0
+D11
+Text Label 2550 1700 2    50   ~ 0
+D10
+Text Label 2550 1800 2    50   ~ 0
+D9
+Text Label 2550 1900 2    50   ~ 0
+D6
+Text Label 2550 2000 2    50   ~ 0
+D5
+Text Label 2550 2100 2    50   ~ 0
+SCL
+Text Label 2550 2200 2    50   ~ 0
+SDA
+$Comp
+L power:GND #PWR02
+U 1 1 5E062590
+P 1100 2200
+F 0 "#PWR02" H 1100 1950 50  0001 C CNN
+F 1 "GND" H 1105 2027 50  0000 C CNN
+F 2 "" H 1100 2200 50  0001 C CNN
+F 3 "" H 1100 2200 50  0001 C CNN
+	1    1100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5E062C1F
+P 1000 1000
+F 0 "#PWR01" H 1000 750 50  0001 C CNN
+F 1 "GND" V 1005 872 50  0000 R CNN
+F 2 "" H 1000 1000 50  0001 C CNN
+F 3 "" H 1000 1000 50  0001 C CNN
+	1    1000 1000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1200 900 
+NoConn ~ 1200 700 
+NoConn ~ 2550 1100
+NoConn ~ 2550 1200
+$Comp
+L Interface_RS485:SN65HVD72DR RS-485
+U 1 1 5E1A303D
+P 3800 2350
+F 0 "RS-485" H 3800 2250 60  0000 C CNN
+F 1 "SN65HVD72DR" H 3800 1100 60  0000 C CNN
+F 2 "sn65hvd72:SN65HVD72DR" H 3800 2240 60  0001 C CNN
+F 3 "" H 3450 2100 60  0001 C CNN
+	1    3800 2350
+	1    0    0    -1  
+$EndComp
+Text Label 4150 2900 0    50   ~ 0
+RX0
+Text Label 3450 2900 2    50   ~ 0
+TX1
+$Comp
+L power:GND #PWR04
+U 1 1 5E1CED32
+P 4150 3200
+F 0 "#PWR04" H 4150 2950 50  0001 C CNN
+F 1 "GND" H 4155 3027 50  0000 C CNN
+F 2 "" H 4150 3200 50  0001 C CNN
+F 3 "" H 4150 3200 50  0001 C CNN
+	1    4150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2700 3450 2600
+Text Label 3450 2600 2    50   ~ 0
+A4
+Wire Wire Line
+	3450 3200 3000 3200
+Wire Wire Line
+	3450 3100 3000 3100
+$Comp
+L Device:R R11
+U 1 1 5E1E5003
+P 2850 3200
+F 0 "R11" V 2950 3200 50  0000 C CNN
+F 1 "10" V 2750 3200 50  0001 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 2780 3200 50  0001 C CNN
+F 3 "~" H 2850 3200 50  0001 C CNN
+	1    2850 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 3100 3000 2950
+$Comp
+L Device:R R10
+U 1 1 5E1E46ED
+P 2850 2950
+F 0 "R10" V 2750 2950 50  0000 C CNN
+F 1 "10" V 2734 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 2780 2950 50  0001 C CNN
+F 3 "~" H 2850 2950 50  0001 C CNN
+	1    2850 2950
+	0    1    1    0   
+$EndComp
+Text Label 3000 2950 0    50   ~ 0
+RJ45_4
+Text Label 3050 3200 3    50   ~ 0
+RJ45_5
+Text Label 1200 1400 2    50   ~ 0
+A3
+$Comp
+L Connector:Conn_01x01_Male GND1
+U 1 1 5E371F26
+P 4250 4350
+F 0 "GND1" H 4250 4450 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 4358 4440 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4250 4350 50  0001 C CNN
+F 3 "~" H 4250 4350 50  0001 C CNN
+	1    4250 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5E376948
+P 4450 4350
+F 0 "#PWR05" H 4450 4100 50  0001 C CNN
+F 1 "GND" H 4455 4177 50  0000 C CNN
+F 2 "" H 4450 4350 50  0001 C CNN
+F 3 "" H 4450 4350 50  0001 C CNN
+	1    4450 4350
+	1    0    0    -1  
+$EndComp
+Text Label 1500 4100 0    50   ~ 0
+RJ45_4
+Text Label 1500 4000 0    50   ~ 0
+RJ45_5
+NoConn ~ 1500 3700
+NoConn ~ 1500 3800
+NoConn ~ 1500 3900
+NoConn ~ 1500 4200
+NoConn ~ 1500 4300
+NoConn ~ 1500 4400
+$Comp
+L power:GND #PWR03
+U 1 1 5E1FB01A
+P 2100 3100
+F 0 "#PWR03" H 2100 2850 50  0001 C CNN
+F 1 "GND" H 2105 2927 50  0000 C CNN
+F 2 "" H 2100 3100 50  0001 C CNN
+F 3 "" H 2100 3100 50  0001 C CNN
+	1    2100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Protection_ICs:CDSOT23-SM712 Prt_IC1
+U 1 1 5E1E3A44
+P 2700 3200
+F 0 "Prt_IC1" H 3000 2800 60  0000 C CNN
+F 1 "CDSOT23-SM712" H 3000 3450 60  0000 C CNN
+F 2 "CDSOT23-SM712:CDSOT23-SM712" H 3000 3390 60  0001 C CNN
+F 3 "" H 2700 3200 60  0001 C CNN
+	1    2700 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:RJ45 RJ0
+U 1 1 5E1D3B3B
+P 1100 4100
+F 0 "RJ0" H 1100 4650 50  0000 C CNN
+F 1 "RJ45" H 1157 4676 50  0001 C CNN
+F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 1100 4125 50  0001 C CNN
+F 3 "~" V 1100 4125 50  0001 C CNN
+	1    1100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:RJ45 RJ1
+U 1 1 5E33DB83
+P 1100 3100
+F 0 "RJ1" H 1100 3650 50  0000 C CNN
+F 1 "RJ45" H 1157 3676 50  0001 C CNN
+F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 1100 3125 50  0001 C CNN
+F 3 "~" V 1100 3125 50  0001 C CNN
+	1    1100 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1500 2700
+NoConn ~ 1500 2800
+NoConn ~ 1500 2900
+NoConn ~ 1500 3200
+NoConn ~ 1500 3300
+NoConn ~ 1500 3400
+Text Label 1500 3000 0    50   ~ 0
+RJ45_5
+Text Label 1500 3100 0    50   ~ 0
+RJ45_4
+$Comp
+L Connector:Screw_Terminal_01x02 +5V_IN1
+U 1 1 5E34A542
+P 3400 1150
+F 0 "+5V_IN1" H 3400 900 50  0000 C CNN
+F 1 "MCU_PWR_Supply" H 3318 916 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3400 1150 50  0001 C CNN
+F 3 "~" H 3400 1150 50  0001 C CNN
+	1    3400 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E34A548
+P 3600 1150
+F 0 "#PWR0101" H 3600 900 50  0001 C CNN
+F 1 "GND" H 3605 977 50  0000 C CNN
+F 2 "" H 3600 1150 50  0001 C CNN
+F 3 "" H 3600 1150 50  0001 C CNN
+	1    3600 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1050 3900 1050
+$Comp
+L power:+5V #PWR0103
+U 1 1 5E34DFAC
+P 3900 1050
+F 0 "#PWR0103" H 3900 900 50  0001 C CNN
+F 1 "+5V" H 3915 1223 50  0000 C CNN
+F 2 "" H 3900 1050 50  0001 C CNN
+F 3 "" H 3900 1050 50  0001 C CNN
+	1    3900 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1000 1200 1000
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5E38BEE1
+P 850 800
+F 0 "#PWR0104" H 850 650 50  0001 C CNN
+F 1 "+3.3V" H 865 973 50  0000 C CNN
+F 2 "" H 850 800 50  0001 C CNN
+F 3 "" H 850 800 50  0001 C CNN
+	1    850  800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5E38C844
+P 3200 3450
+F 0 "#PWR0107" H 3200 3300 50  0001 C CNN
+F 1 "+3.3V" H 3215 3623 50  0000 C CNN
+F 2 "" H 3200 3450 50  0001 C CNN
+F 3 "" H 3200 3450 50  0001 C CNN
+	1    3200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  800  1200 800 
+$Comp
+L power:+5V #PWR0110
+U 1 1 5E3AA200
+P 2150 750
+F 0 "#PWR0110" H 2150 600 50  0001 C CNN
+F 1 "+5V" H 2165 923 50  0000 C CNN
+F 2 "" H 2150 750 50  0001 C CNN
+F 3 "" H 2150 750 50  0001 C CNN
+	1    2150 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1300 2550 1300
+$Comp
+L Device:C C0.1nF0
+U 1 1 5E3DD0A2
+P 3350 3750
+F 0 "C0.1nF0" H 3250 3750 50  0000 R CNN
+F 1 "0.1 nF" H 3700 3750 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 3388 3600 50  0001 C CNN
+F 3 "~" H 3350 3750 50  0001 C CNN
+	1    3350 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3200 3450 3350 3450
+Wire Wire Line
+	3450 3450 3450 3400
+$Comp
+L power:GND #PWR0112
+U 1 1 5E3EAB56
+P 3350 4100
+F 0 "#PWR0112" H 3350 3850 50  0001 C CNN
+F 1 "GND" H 3355 3927 50  0000 C CNN
+F 2 "" H 3350 4100 50  0001 C CNN
+F 3 "" H 3350 4100 50  0001 C CNN
+	1    3350 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3600 3350 3450
+Connection ~ 3350 3450
+Wire Wire Line
+	3350 3450 3450 3450
+Wire Wire Line
+	3350 3900 3350 4100
+Wire Wire Line
+	2150 750  2150 900 
+$Comp
+L Device:CP CP0
+U 1 1 5E404062
+P 1850 900
+F 0 "CP0" V 1595 900 50  0000 C CNN
+F 1 "CP" V 1686 900 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1888 750 50  0001 C CNN
+F 3 "~" H 1850 900 50  0001 C CNN
+	1    1850 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 900  2150 900 
+Connection ~ 2150 900 
+Wire Wire Line
+	2150 900  2150 1300
+$Comp
+L power:GND #PWR0113
+U 1 1 5E40859B
+P 1700 1050
+F 0 "#PWR0113" H 1700 800 50  0001 C CNN
+F 1 "GND" H 1705 877 50  0000 C CNN
+F 2 "" H 1700 1050 50  0001 C CNN
+F 3 "" H 1700 1050 50  0001 C CNN
+	1    1700 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1050 1700 900 
+Text Label 2550 1400 2    50   ~ 0
+D13
+$Comp
+L Connector:Screw_Terminal_01x02 LED0_0
+U 1 1 5E5157CC
+P 1100 4950
+F 0 "LED0_0" H 1100 4750 50  0000 C CNN
+F 1 "Screw-terminal" H 1018 4716 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1100 4950 50  0001 C CNN
+F 3 "~" H 1100 4950 50  0001 C CNN
+	1    1100 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R330
+U 1 1 5E5157D2
+P 9550 4050
+F 0 "R330" V 9650 4050 50  0000 C CNN
+F 1 "330" V 9666 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 9480 4050 50  0001 C CNN
+F 3 "~" H 9550 4050 50  0001 C CNN
+	1    9550 4050
+	0    -1   -1   0   
+$EndComp
+Text Label 9950 4050 0    50   ~ 0
+SDA
+Wire Wire Line
+	9950 4050 9700 4050
+Text Label 9150 4050 2    50   ~ 0
+COL0
+Wire Wire Line
+	9400 4050 9150 4050
+$Comp
+L Device:R R331
+U 1 1 5E7B184C
+P 9550 4300
+F 0 "R331" V 9650 4300 50  0000 C CNN
+F 1 "330" V 9666 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 9480 4300 50  0001 C CNN
+F 3 "~" H 9550 4300 50  0001 C CNN
+	1    9550 4300
+	0    -1   -1   0   
+$EndComp
+Text Label 9950 4300 0    50   ~ 0
+SCL
+Wire Wire Line
+	9950 4300 9700 4300
+Text Label 9150 4300 2    50   ~ 0
+COL1
+Wire Wire Line
+	9400 4300 9150 4300
+$Comp
+L Device:R R332
+U 1 1 5E7B281B
+P 9550 4550
+F 0 "R332" V 9650 4550 50  0000 C CNN
+F 1 "330" V 9666 4550 50  0001 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 9480 4550 50  0001 C CNN
+F 3 "~" H 9550 4550 50  0001 C CNN
+	1    9550 4550
+	0    -1   -1   0   
+$EndComp
+Text Label 9950 4550 0    50   ~ 0
+D5
+Wire Wire Line
+	9950 4550 9700 4550
+Text Label 9150 4550 2    50   ~ 0
+COL2
+Wire Wire Line
+	9400 4550 9150 4550
+$Comp
+L Device:R R333
+U 1 1 5E7B2825
+P 9550 4800
+F 0 "R333" V 9650 4800 50  0000 C CNN
+F 1 "R" V 9666 4800 50  0001 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 9480 4800 50  0001 C CNN
+F 3 "~" H 9550 4800 50  0001 C CNN
+	1    9550 4800
+	0    -1   -1   0   
+$EndComp
+Text Label 9950 4800 0    50   ~ 0
+D6
+Wire Wire Line
+	9950 4800 9700 4800
+Text Label 9150 4800 2    50   ~ 0
+COL3
+Wire Wire Line
+	9400 4800 9150 4800
+$Comp
+L Device:R R334
+U 1 1 5E7B4C59
+P 9550 5050
+F 0 "R334" V 9650 5050 50  0000 C CNN
+F 1 "R" V 9666 5050 50  0001 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 9480 5050 50  0001 C CNN
+F 3 "~" H 9550 5050 50  0001 C CNN
+	1    9550 5050
+	0    -1   -1   0   
+$EndComp
+Text Label 9950 5050 0    50   ~ 0
+D9
+Wire Wire Line
+	9950 5050 9700 5050
+Text Label 9150 5050 2    50   ~ 0
+COL4
+Wire Wire Line
+	9400 5050 9150 5050
+$Comp
+L Device:R R335
+U 1 1 5E7B4C63
+P 9550 5300
+F 0 "R335" V 9650 5300 50  0000 C CNN
+F 1 "R" V 9666 5300 50  0001 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 9480 5300 50  0001 C CNN
+F 3 "~" H 9550 5300 50  0001 C CNN
+	1    9550 5300
+	0    -1   -1   0   
+$EndComp
+Text Label 9950 5300 0    50   ~ 0
+D10
+Wire Wire Line
+	9950 5300 9700 5300
+Text Label 9150 5300 2    50   ~ 0
+COL5
+Wire Wire Line
+	9400 5300 9150 5300
+$Comp
+L Device:R R336
+U 1 1 5E7B4C6D
+P 9550 5550
+F 0 "R336" V 9650 5550 50  0000 C CNN
+F 1 "R" V 9666 5550 50  0001 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 9480 5550 50  0001 C CNN
+F 3 "~" H 9550 5550 50  0001 C CNN
+	1    9550 5550
+	0    -1   -1   0   
+$EndComp
+Text Label 9950 5550 0    50   ~ 0
+D11
+Wire Wire Line
+	9950 5550 9700 5550
+Text Label 9150 5550 2    50   ~ 0
+COL6
+Wire Wire Line
+	9400 5550 9150 5550
+$Comp
+L Device:R R337
+U 1 1 5E7B4C77
+P 9550 5800
+F 0 "R337" V 9650 5800 50  0000 C CNN
+F 1 "R" V 9666 5800 50  0001 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 9480 5800 50  0001 C CNN
+F 3 "~" H 9550 5800 50  0001 C CNN
+	1    9550 5800
+	0    -1   -1   0   
+$EndComp
+Text Label 9950 5800 0    50   ~ 0
+D12
+Wire Wire Line
+	9950 5800 9700 5800
+Text Label 9150 5800 2    50   ~ 0
+COL7
+Wire Wire Line
+	9400 5800 9150 5800
+$Comp
+L Device:R R338
+U 1 1 5E7B5F50
+P 9550 6100
+F 0 "R338" V 9650 6100 50  0000 C CNN
+F 1 "R" V 9666 6100 50  0001 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 9480 6100 50  0001 C CNN
+F 3 "~" H 9550 6100 50  0001 C CNN
+	1    9550 6100
+	0    -1   -1   0   
+$EndComp
+Text Label 9950 6100 0    50   ~ 0
+D13
+Wire Wire Line
+	9950 6100 9700 6100
+Text Label 9150 6100 2    50   ~ 0
+COL8
+Wire Wire Line
+	9400 6100 9150 6100
+Text Label 8250 4050 0    50   ~ 0
+A0
+Text Label 7450 4050 2    50   ~ 0
+ROW0
+Text Label 8250 4300 0    50   ~ 0
+A1
+Text Label 7450 4300 2    50   ~ 0
+ROW1
+Text Label 8250 4550 0    50   ~ 0
+A2
+Text Label 7450 4550 2    50   ~ 0
+ROW2
+Text Label 8250 4800 0    50   ~ 0
+A3
+Text Label 7450 4800 2    50   ~ 0
+ROW3
+Text Label 8250 5050 0    50   ~ 0
+A4
+Text Label 7450 5050 2    50   ~ 0
+ROW4
+Text Label 8250 5300 0    50   ~ 0
+A5
+Text Label 7450 5300 2    50   ~ 0
+ROW5
+Text Label 8250 5550 0    50   ~ 0
+SCK
+Text Label 7450 5550 2    50   ~ 0
+ROW6
+Text Label 8250 5800 0    50   ~ 0
+MOSI
+Text Label 7450 5800 2    50   ~ 0
+ROW7
+Text Label 8250 6100 0    50   ~ 0
+MISO
+Text Label 7450 6100 2    50   ~ 0
+ROW8
+Wire Wire Line
+	7450 4050 8250 4050
+Wire Wire Line
+	7450 4300 8250 4300
+Wire Wire Line
+	7450 4550 8250 4550
+Wire Wire Line
+	7450 4800 8250 4800
+Wire Wire Line
+	7450 5050 8250 5050
+Wire Wire Line
+	7450 5300 8250 5300
+Wire Wire Line
+	7450 5550 8250 5550
+Wire Wire Line
+	7450 5800 8250 5800
+Wire Wire Line
+	7450 6100 8250 6100
+Text Label 1300 4850 0    50   ~ 0
+ROW0
+Text Label 1300 4950 0    50   ~ 0
+COL0
+$Comp
+L Connector:Screw_Terminal_01x02 LED1_0
+U 1 1 5E803779
+P 1100 5250
+F 0 "LED1_0" H 1100 5050 50  0000 C CNN
+F 1 "Screw-terminal" H 1018 5016 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1100 5250 50  0001 C CNN
+F 3 "~" H 1100 5250 50  0001 C CNN
+	1    1100 5250
+	-1   0    0    1   
+$EndComp
+Text Label 1300 5150 0    50   ~ 0
+ROW1
+Text Label 1300 5250 0    50   ~ 0
+COL0
+$Comp
+L Connector:Screw_Terminal_01x02 LED2_0
+U 1 1 5E805227
+P 1100 5550
+F 0 "LED2_0" H 1100 5350 50  0000 C CNN
+F 1 "Screw-terminal" H 1018 5316 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1100 5550 50  0001 C CNN
+F 3 "~" H 1100 5550 50  0001 C CNN
+	1    1100 5550
+	-1   0    0    1   
+$EndComp
+Text Label 1300 5450 0    50   ~ 0
+ROW2
+Text Label 1300 5550 0    50   ~ 0
+COL0
+$Comp
+L Connector:Screw_Terminal_01x02 LED3_0
+U 1 1 5E80522F
+P 1100 5850
+F 0 "LED3_0" H 1100 5650 50  0000 C CNN
+F 1 "Screw-terminal" H 1018 5616 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1100 5850 50  0001 C CNN
+F 3 "~" H 1100 5850 50  0001 C CNN
+	1    1100 5850
+	-1   0    0    1   
+$EndComp
+Text Label 1300 5750 0    50   ~ 0
+ROW3
+Text Label 1300 5850 0    50   ~ 0
+COL0
+$Comp
+L Connector:Screw_Terminal_01x02 LED4_0
+U 1 1 5E8082D5
+P 1100 6150
+F 0 "LED4_0" H 1100 5950 50  0000 C CNN
+F 1 "Screw-terminal" H 1018 5916 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1100 6150 50  0001 C CNN
+F 3 "~" H 1100 6150 50  0001 C CNN
+	1    1100 6150
+	-1   0    0    1   
+$EndComp
+Text Label 1300 6050 0    50   ~ 0
+ROW4
+Text Label 1300 6150 0    50   ~ 0
+COL0
+$Comp
+L Connector:Screw_Terminal_01x02 LED5_0
+U 1 1 5E8082DD
+P 1100 6450
+F 0 "LED5_0" H 1100 6250 50  0000 C CNN
+F 1 "Screw-terminal" H 1018 6216 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1100 6450 50  0001 C CNN
+F 3 "~" H 1100 6450 50  0001 C CNN
+	1    1100 6450
+	-1   0    0    1   
+$EndComp
+Text Label 1300 6350 0    50   ~ 0
+ROW5
+Text Label 1300 6450 0    50   ~ 0
+COL0
+$Comp
+L Connector:Screw_Terminal_01x02 LED6_0
+U 1 1 5E8082E5
+P 1100 6750
+F 0 "LED6_0" H 1100 6550 50  0000 C CNN
+F 1 "Screw-terminal" H 1018 6516 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1100 6750 50  0001 C CNN
+F 3 "~" H 1100 6750 50  0001 C CNN
+	1    1100 6750
+	-1   0    0    1   
+$EndComp
+Text Label 1300 6650 0    50   ~ 0
+ROW6
+Text Label 1300 6750 0    50   ~ 0
+COL0
+$Comp
+L Connector:Screw_Terminal_01x02 LED7_0
+U 1 1 5E8082ED
+P 1100 7050
+F 0 "LED7_0" H 1100 6850 50  0000 C CNN
+F 1 "Screw-terminal" H 1018 6816 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1100 7050 50  0001 C CNN
+F 3 "~" H 1100 7050 50  0001 C CNN
+	1    1100 7050
+	-1   0    0    1   
+$EndComp
+Text Label 1300 6950 0    50   ~ 0
+ROW7
+Text Label 1300 7050 0    50   ~ 0
+COL0
+$Comp
+L Connector:Screw_Terminal_01x02 LED8_0
+U 1 1 5E80C508
+P 1100 7350
+F 0 "LED8_0" H 1100 7150 50  0000 C CNN
+F 1 "Screw-terminal" H 1018 7116 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1100 7350 50  0001 C CNN
+F 3 "~" H 1100 7350 50  0001 C CNN
+	1    1100 7350
+	-1   0    0    1   
+$EndComp
+Text Label 1300 7250 0    50   ~ 0
+ROW8
+Text Label 1300 7350 0    50   ~ 0
+COL0
+$Comp
+L Connector:Screw_Terminal_01x02 LED0_1
+U 1 1 5E816204
+P 1650 4950
+F 0 "LED0_1" H 1650 4750 50  0000 C CNN
+F 1 "Screw-terminal" H 1568 4716 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1650 4950 50  0001 C CNN
+F 3 "~" H 1650 4950 50  0001 C CNN
+	1    1650 4950
+	-1   0    0    1   
+$EndComp
+Text Label 1850 4850 0    50   ~ 0
+ROW0
+Text Label 1850 4950 0    50   ~ 0
+COL1
+$Comp
+L Connector:Screw_Terminal_01x02 LED1_1
+U 1 1 5E81620C
+P 1650 5250
+F 0 "LED1_1" H 1650 5050 50  0000 C CNN
+F 1 "Screw-terminal" H 1568 5016 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1650 5250 50  0001 C CNN
+F 3 "~" H 1650 5250 50  0001 C CNN
+	1    1650 5250
+	-1   0    0    1   
+$EndComp
+Text Label 1850 5150 0    50   ~ 0
+ROW1
+Text Label 1850 5250 0    50   ~ 0
+COL1
+$Comp
+L Connector:Screw_Terminal_01x02 LED2_1
+U 1 1 5E816214
+P 1650 5550
+F 0 "LED2_1" H 1650 5350 50  0000 C CNN
+F 1 "Screw-terminal" H 1568 5316 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1650 5550 50  0001 C CNN
+F 3 "~" H 1650 5550 50  0001 C CNN
+	1    1650 5550
+	-1   0    0    1   
+$EndComp
+Text Label 1850 5450 0    50   ~ 0
+ROW2
+Text Label 1850 5550 0    50   ~ 0
+COL1
+$Comp
+L Connector:Screw_Terminal_01x02 LED3_1
+U 1 1 5E81621C
+P 1650 5850
+F 0 "LED3_1" H 1650 5650 50  0000 C CNN
+F 1 "Screw-terminal" H 1568 5616 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1650 5850 50  0001 C CNN
+F 3 "~" H 1650 5850 50  0001 C CNN
+	1    1650 5850
+	-1   0    0    1   
+$EndComp
+Text Label 1850 5750 0    50   ~ 0
+ROW3
+Text Label 1850 5850 0    50   ~ 0
+COL1
+$Comp
+L Connector:Screw_Terminal_01x02 LED4_1
+U 1 1 5E816224
+P 1650 6150
+F 0 "LED4_1" H 1650 5950 50  0000 C CNN
+F 1 "Screw-terminal" H 1568 5916 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1650 6150 50  0001 C CNN
+F 3 "~" H 1650 6150 50  0001 C CNN
+	1    1650 6150
+	-1   0    0    1   
+$EndComp
+Text Label 1850 6050 0    50   ~ 0
+ROW4
+Text Label 1850 6150 0    50   ~ 0
+COL1
+$Comp
+L Connector:Screw_Terminal_01x02 LED5_1
+U 1 1 5E81622C
+P 1650 6450
+F 0 "LED5_1" H 1650 6250 50  0000 C CNN
+F 1 "Screw-terminal" H 1568 6216 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1650 6450 50  0001 C CNN
+F 3 "~" H 1650 6450 50  0001 C CNN
+	1    1650 6450
+	-1   0    0    1   
+$EndComp
+Text Label 1850 6350 0    50   ~ 0
+ROW5
+Text Label 1850 6450 0    50   ~ 0
+COL1
+$Comp
+L Connector:Screw_Terminal_01x02 LED6_1
+U 1 1 5E816234
+P 1650 6750
+F 0 "LED6_1" H 1650 6550 50  0000 C CNN
+F 1 "Screw-terminal" H 1568 6516 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1650 6750 50  0001 C CNN
+F 3 "~" H 1650 6750 50  0001 C CNN
+	1    1650 6750
+	-1   0    0    1   
+$EndComp
+Text Label 1850 6650 0    50   ~ 0
+ROW6
+Text Label 1850 6750 0    50   ~ 0
+COL1
+$Comp
+L Connector:Screw_Terminal_01x02 LED7_1
+U 1 1 5E81623C
+P 1650 7050
+F 0 "LED7_1" H 1650 6850 50  0000 C CNN
+F 1 "Screw-terminal" H 1568 6816 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1650 7050 50  0001 C CNN
+F 3 "~" H 1650 7050 50  0001 C CNN
+	1    1650 7050
+	-1   0    0    1   
+$EndComp
+Text Label 1850 6950 0    50   ~ 0
+ROW7
+Text Label 1850 7050 0    50   ~ 0
+COL1
+$Comp
+L Connector:Screw_Terminal_01x02 LED8_1
+U 1 1 5E816244
+P 1650 7350
+F 0 "LED8_1" H 1650 7150 50  0000 C CNN
+F 1 "Screw-terminal" H 1568 7116 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1650 7350 50  0001 C CNN
+F 3 "~" H 1650 7350 50  0001 C CNN
+	1    1650 7350
+	-1   0    0    1   
+$EndComp
+Text Label 1850 7250 0    50   ~ 0
+ROW8
+Text Label 1850 7350 0    50   ~ 0
+COL1
+$Comp
+L Connector:Screw_Terminal_01x02 LED0_2
+U 1 1 5E823F66
+P 2200 4950
+F 0 "LED0_2" H 2200 4750 50  0000 C CNN
+F 1 "Screw-terminal" H 2118 4716 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2200 4950 50  0001 C CNN
+F 3 "~" H 2200 4950 50  0001 C CNN
+	1    2200 4950
+	-1   0    0    1   
+$EndComp
+Text Label 2400 4850 0    50   ~ 0
+ROW0
+Text Label 2400 4950 0    50   ~ 0
+COL2
+$Comp
+L Connector:Screw_Terminal_01x02 LED1_2
+U 1 1 5E823F6E
+P 2200 5250
+F 0 "LED1_2" H 2200 5050 50  0000 C CNN
+F 1 "Screw-terminal" H 2118 5016 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2200 5250 50  0001 C CNN
+F 3 "~" H 2200 5250 50  0001 C CNN
+	1    2200 5250
+	-1   0    0    1   
+$EndComp
+Text Label 2400 5150 0    50   ~ 0
+ROW1
+Text Label 2400 5250 0    50   ~ 0
+COL2
+$Comp
+L Connector:Screw_Terminal_01x02 LED2_2
+U 1 1 5E823F76
+P 2200 5550
+F 0 "LED2_2" H 2200 5350 50  0000 C CNN
+F 1 "Screw-terminal" H 2118 5316 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2200 5550 50  0001 C CNN
+F 3 "~" H 2200 5550 50  0001 C CNN
+	1    2200 5550
+	-1   0    0    1   
+$EndComp
+Text Label 2400 5450 0    50   ~ 0
+ROW2
+Text Label 2400 5550 0    50   ~ 0
+COL2
+$Comp
+L Connector:Screw_Terminal_01x02 LED3_2
+U 1 1 5E823F7E
+P 2200 5850
+F 0 "LED3_2" H 2200 5650 50  0000 C CNN
+F 1 "Screw-terminal" H 2118 5616 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2200 5850 50  0001 C CNN
+F 3 "~" H 2200 5850 50  0001 C CNN
+	1    2200 5850
+	-1   0    0    1   
+$EndComp
+Text Label 2400 5750 0    50   ~ 0
+ROW3
+Text Label 2400 5850 0    50   ~ 0
+COL2
+$Comp
+L Connector:Screw_Terminal_01x02 LED4_2
+U 1 1 5E823F86
+P 2200 6150
+F 0 "LED4_2" H 2200 5950 50  0000 C CNN
+F 1 "Screw-terminal" H 2118 5916 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2200 6150 50  0001 C CNN
+F 3 "~" H 2200 6150 50  0001 C CNN
+	1    2200 6150
+	-1   0    0    1   
+$EndComp
+Text Label 2400 6050 0    50   ~ 0
+ROW4
+Text Label 2400 6150 0    50   ~ 0
+COL2
+$Comp
+L Connector:Screw_Terminal_01x02 LED5_2
+U 1 1 5E823F8E
+P 2200 6450
+F 0 "LED5_2" H 2200 6250 50  0000 C CNN
+F 1 "Screw-terminal" H 2118 6216 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2200 6450 50  0001 C CNN
+F 3 "~" H 2200 6450 50  0001 C CNN
+	1    2200 6450
+	-1   0    0    1   
+$EndComp
+Text Label 2400 6350 0    50   ~ 0
+ROW5
+Text Label 2400 6450 0    50   ~ 0
+COL2
+$Comp
+L Connector:Screw_Terminal_01x02 LED6_2
+U 1 1 5E823F96
+P 2200 6750
+F 0 "LED6_2" H 2200 6550 50  0000 C CNN
+F 1 "Screw-terminal" H 2118 6516 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2200 6750 50  0001 C CNN
+F 3 "~" H 2200 6750 50  0001 C CNN
+	1    2200 6750
+	-1   0    0    1   
+$EndComp
+Text Label 2400 6650 0    50   ~ 0
+ROW6
+Text Label 2400 6750 0    50   ~ 0
+COL2
+$Comp
+L Connector:Screw_Terminal_01x02 LED7_2
+U 1 1 5E823F9E
+P 2200 7050
+F 0 "LED7_2" H 2200 6850 50  0000 C CNN
+F 1 "Screw-terminal" H 2118 6816 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2200 7050 50  0001 C CNN
+F 3 "~" H 2200 7050 50  0001 C CNN
+	1    2200 7050
+	-1   0    0    1   
+$EndComp
+Text Label 2400 6950 0    50   ~ 0
+ROW7
+Text Label 2400 7050 0    50   ~ 0
+COL2
+$Comp
+L Connector:Screw_Terminal_01x02 LED8_2
+U 1 1 5E823FA6
+P 2200 7350
+F 0 "LED8_2" H 2200 7150 50  0000 C CNN
+F 1 "Screw-terminal" H 2118 7116 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2200 7350 50  0001 C CNN
+F 3 "~" H 2200 7350 50  0001 C CNN
+	1    2200 7350
+	-1   0    0    1   
+$EndComp
+Text Label 2400 7250 0    50   ~ 0
+ROW8
+Text Label 2400 7350 0    50   ~ 0
+COL2
+$Comp
+L Connector:Screw_Terminal_01x02 LED0_3
+U 1 1 5E823FAE
+P 2750 4950
+F 0 "LED0_3" H 2750 4750 50  0000 C CNN
+F 1 "Screw-terminal" H 2668 4716 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2750 4950 50  0001 C CNN
+F 3 "~" H 2750 4950 50  0001 C CNN
+	1    2750 4950
+	-1   0    0    1   
+$EndComp
+Text Label 2950 4850 0    50   ~ 0
+ROW0
+Text Label 2950 4950 0    50   ~ 0
+COL3
+$Comp
+L Connector:Screw_Terminal_01x02 LED1_3
+U 1 1 5E823FB6
+P 2750 5250
+F 0 "LED1_3" H 2750 5050 50  0000 C CNN
+F 1 "Screw-terminal" H 2668 5016 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2750 5250 50  0001 C CNN
+F 3 "~" H 2750 5250 50  0001 C CNN
+	1    2750 5250
+	-1   0    0    1   
+$EndComp
+Text Label 2950 5150 0    50   ~ 0
+ROW1
+Text Label 2950 5250 0    50   ~ 0
+COL3
+$Comp
+L Connector:Screw_Terminal_01x02 LED2_3
+U 1 1 5E823FBE
+P 2750 5550
+F 0 "LED2_3" H 2750 5350 50  0000 C CNN
+F 1 "Screw-terminal" H 2668 5316 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2750 5550 50  0001 C CNN
+F 3 "~" H 2750 5550 50  0001 C CNN
+	1    2750 5550
+	-1   0    0    1   
+$EndComp
+Text Label 2950 5450 0    50   ~ 0
+ROW2
+Text Label 2950 5550 0    50   ~ 0
+COL3
+$Comp
+L Connector:Screw_Terminal_01x02 LED3_3
+U 1 1 5E823FC6
+P 2750 5850
+F 0 "LED3_3" H 2750 5650 50  0000 C CNN
+F 1 "Screw-terminal" H 2668 5616 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2750 5850 50  0001 C CNN
+F 3 "~" H 2750 5850 50  0001 C CNN
+	1    2750 5850
+	-1   0    0    1   
+$EndComp
+Text Label 2950 5750 0    50   ~ 0
+ROW3
+Text Label 2950 5850 0    50   ~ 0
+COL3
+$Comp
+L Connector:Screw_Terminal_01x02 LED4_3
+U 1 1 5E823FCE
+P 2750 6150
+F 0 "LED4_3" H 2750 5950 50  0000 C CNN
+F 1 "Screw-terminal" H 2668 5916 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2750 6150 50  0001 C CNN
+F 3 "~" H 2750 6150 50  0001 C CNN
+	1    2750 6150
+	-1   0    0    1   
+$EndComp
+Text Label 2950 6050 0    50   ~ 0
+ROW4
+Text Label 2950 6150 0    50   ~ 0
+COL3
+$Comp
+L Connector:Screw_Terminal_01x02 LED5_3
+U 1 1 5E823FD6
+P 2750 6450
+F 0 "LED5_3" H 2750 6250 50  0000 C CNN
+F 1 "Screw-terminal" H 2668 6216 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2750 6450 50  0001 C CNN
+F 3 "~" H 2750 6450 50  0001 C CNN
+	1    2750 6450
+	-1   0    0    1   
+$EndComp
+Text Label 2950 6350 0    50   ~ 0
+ROW5
+Text Label 2950 6450 0    50   ~ 0
+COL3
+$Comp
+L Connector:Screw_Terminal_01x02 LED6_3
+U 1 1 5E823FDE
+P 2750 6750
+F 0 "LED6_3" H 2750 6550 50  0000 C CNN
+F 1 "Screw-terminal" H 2668 6516 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2750 6750 50  0001 C CNN
+F 3 "~" H 2750 6750 50  0001 C CNN
+	1    2750 6750
+	-1   0    0    1   
+$EndComp
+Text Label 2950 6650 0    50   ~ 0
+ROW6
+Text Label 2950 6750 0    50   ~ 0
+COL3
+$Comp
+L Connector:Screw_Terminal_01x02 LED7_3
+U 1 1 5E823FE6
+P 2750 7050
+F 0 "LED7_3" H 2750 6850 50  0000 C CNN
+F 1 "Screw-terminal" H 2668 6816 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2750 7050 50  0001 C CNN
+F 3 "~" H 2750 7050 50  0001 C CNN
+	1    2750 7050
+	-1   0    0    1   
+$EndComp
+Text Label 2950 6950 0    50   ~ 0
+ROW7
+Text Label 2950 7050 0    50   ~ 0
+COL3
+$Comp
+L Connector:Screw_Terminal_01x02 LED8_3
+U 1 1 5E823FEE
+P 2750 7350
+F 0 "LED8_3" H 2750 7150 50  0000 C CNN
+F 1 "Screw-terminal" H 2668 7116 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2750 7350 50  0001 C CNN
+F 3 "~" H 2750 7350 50  0001 C CNN
+	1    2750 7350
+	-1   0    0    1   
+$EndComp
+Text Label 2950 7250 0    50   ~ 0
+ROW8
+Text Label 2950 7350 0    50   ~ 0
+COL3
+$Comp
+L Connector:Screw_Terminal_01x02 LED0_4
+U 1 1 5E84036A
+P 3300 4950
+F 0 "LED0_4" H 3300 4750 50  0000 C CNN
+F 1 "Screw-terminal" H 3218 4716 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3300 4950 50  0001 C CNN
+F 3 "~" H 3300 4950 50  0001 C CNN
+	1    3300 4950
+	-1   0    0    1   
+$EndComp
+Text Label 3500 4850 0    50   ~ 0
+ROW0
+Text Label 3500 4950 0    50   ~ 0
+COL4
+$Comp
+L Connector:Screw_Terminal_01x02 LED1_4
+U 1 1 5E840372
+P 3300 5250
+F 0 "LED1_4" H 3300 5050 50  0000 C CNN
+F 1 "Screw-terminal" H 3218 5016 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3300 5250 50  0001 C CNN
+F 3 "~" H 3300 5250 50  0001 C CNN
+	1    3300 5250
+	-1   0    0    1   
+$EndComp
+Text Label 3500 5150 0    50   ~ 0
+ROW1
+Text Label 3500 5250 0    50   ~ 0
+COL4
+$Comp
+L Connector:Screw_Terminal_01x02 LED2_4
+U 1 1 5E84037A
+P 3300 5550
+F 0 "LED2_4" H 3300 5350 50  0000 C CNN
+F 1 "Screw-terminal" H 3218 5316 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3300 5550 50  0001 C CNN
+F 3 "~" H 3300 5550 50  0001 C CNN
+	1    3300 5550
+	-1   0    0    1   
+$EndComp
+Text Label 3500 5450 0    50   ~ 0
+ROW2
+Text Label 3500 5550 0    50   ~ 0
+COL4
+$Comp
+L Connector:Screw_Terminal_01x02 LED3_4
+U 1 1 5E840382
+P 3300 5850
+F 0 "LED3_4" H 3300 5650 50  0000 C CNN
+F 1 "Screw-terminal" H 3218 5616 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3300 5850 50  0001 C CNN
+F 3 "~" H 3300 5850 50  0001 C CNN
+	1    3300 5850
+	-1   0    0    1   
+$EndComp
+Text Label 3500 5750 0    50   ~ 0
+ROW3
+Text Label 3500 5850 0    50   ~ 0
+COL4
+$Comp
+L Connector:Screw_Terminal_01x02 LED4_4
+U 1 1 5E84038A
+P 3300 6150
+F 0 "LED4_4" H 3300 5950 50  0000 C CNN
+F 1 "Screw-terminal" H 3218 5916 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3300 6150 50  0001 C CNN
+F 3 "~" H 3300 6150 50  0001 C CNN
+	1    3300 6150
+	-1   0    0    1   
+$EndComp
+Text Label 3500 6050 0    50   ~ 0
+ROW4
+Text Label 3500 6150 0    50   ~ 0
+COL4
+$Comp
+L Connector:Screw_Terminal_01x02 LED5_4
+U 1 1 5E840392
+P 3300 6450
+F 0 "LED5_4" H 3300 6250 50  0000 C CNN
+F 1 "Screw-terminal" H 3218 6216 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3300 6450 50  0001 C CNN
+F 3 "~" H 3300 6450 50  0001 C CNN
+	1    3300 6450
+	-1   0    0    1   
+$EndComp
+Text Label 3500 6350 0    50   ~ 0
+ROW5
+Text Label 3500 6450 0    50   ~ 0
+COL4
+$Comp
+L Connector:Screw_Terminal_01x02 LED6_4
+U 1 1 5E84039A
+P 3300 6750
+F 0 "LED6_4" H 3300 6550 50  0000 C CNN
+F 1 "Screw-terminal" H 3218 6516 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3300 6750 50  0001 C CNN
+F 3 "~" H 3300 6750 50  0001 C CNN
+	1    3300 6750
+	-1   0    0    1   
+$EndComp
+Text Label 3500 6650 0    50   ~ 0
+ROW6
+Text Label 3500 6750 0    50   ~ 0
+COL4
+$Comp
+L Connector:Screw_Terminal_01x02 LED7_4
+U 1 1 5E8403A2
+P 3300 7050
+F 0 "LED7_4" H 3300 6850 50  0000 C CNN
+F 1 "Screw-terminal" H 3218 6816 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3300 7050 50  0001 C CNN
+F 3 "~" H 3300 7050 50  0001 C CNN
+	1    3300 7050
+	-1   0    0    1   
+$EndComp
+Text Label 3500 6950 0    50   ~ 0
+ROW7
+Text Label 3500 7050 0    50   ~ 0
+COL4
+$Comp
+L Connector:Screw_Terminal_01x02 LED8_4
+U 1 1 5E8403AA
+P 3300 7350
+F 0 "LED8_4" H 3300 7150 50  0000 C CNN
+F 1 "Screw-terminal" H 3218 7116 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3300 7350 50  0001 C CNN
+F 3 "~" H 3300 7350 50  0001 C CNN
+	1    3300 7350
+	-1   0    0    1   
+$EndComp
+Text Label 3500 7250 0    50   ~ 0
+ROW8
+Text Label 3500 7350 0    50   ~ 0
+COL4
+$Comp
+L Connector:Screw_Terminal_01x02 LED0_5
+U 1 1 5E8403B2
+P 3850 4950
+F 0 "LED0_5" H 3850 4750 50  0000 C CNN
+F 1 "Screw-terminal" H 3768 4716 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3850 4950 50  0001 C CNN
+F 3 "~" H 3850 4950 50  0001 C CNN
+	1    3850 4950
+	-1   0    0    1   
+$EndComp
+Text Label 4050 4850 0    50   ~ 0
+ROW0
+Text Label 4050 4950 0    50   ~ 0
+COL5
+$Comp
+L Connector:Screw_Terminal_01x02 LED1_5
+U 1 1 5E8403BA
+P 3850 5250
+F 0 "LED1_5" H 3850 5050 50  0000 C CNN
+F 1 "Screw-terminal" H 3768 5016 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3850 5250 50  0001 C CNN
+F 3 "~" H 3850 5250 50  0001 C CNN
+	1    3850 5250
+	-1   0    0    1   
+$EndComp
+Text Label 4050 5150 0    50   ~ 0
+ROW1
+Text Label 4050 5250 0    50   ~ 0
+COL5
+$Comp
+L Connector:Screw_Terminal_01x02 LED2_5
+U 1 1 5E8403C2
+P 3850 5550
+F 0 "LED2_5" H 3850 5350 50  0000 C CNN
+F 1 "Screw-terminal" H 3768 5316 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3850 5550 50  0001 C CNN
+F 3 "~" H 3850 5550 50  0001 C CNN
+	1    3850 5550
+	-1   0    0    1   
+$EndComp
+Text Label 4050 5450 0    50   ~ 0
+ROW2
+Text Label 4050 5550 0    50   ~ 0
+COL5
+$Comp
+L Connector:Screw_Terminal_01x02 LED3_5
+U 1 1 5E8403CA
+P 3850 5850
+F 0 "LED3_5" H 3850 5650 50  0000 C CNN
+F 1 "Screw-terminal" H 3768 5616 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3850 5850 50  0001 C CNN
+F 3 "~" H 3850 5850 50  0001 C CNN
+	1    3850 5850
+	-1   0    0    1   
+$EndComp
+Text Label 4050 5750 0    50   ~ 0
+ROW3
+Text Label 4050 5850 0    50   ~ 0
+COL5
+$Comp
+L Connector:Screw_Terminal_01x02 LED4_5
+U 1 1 5E8403D2
+P 3850 6150
+F 0 "LED4_5" H 3850 5950 50  0000 C CNN
+F 1 "Screw-terminal" H 3768 5916 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3850 6150 50  0001 C CNN
+F 3 "~" H 3850 6150 50  0001 C CNN
+	1    3850 6150
+	-1   0    0    1   
+$EndComp
+Text Label 4050 6050 0    50   ~ 0
+ROW4
+Text Label 4050 6150 0    50   ~ 0
+COL5
+$Comp
+L Connector:Screw_Terminal_01x02 LED5_5
+U 1 1 5E8403DA
+P 3850 6450
+F 0 "LED5_5" H 3850 6250 50  0000 C CNN
+F 1 "Screw-terminal" H 3768 6216 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3850 6450 50  0001 C CNN
+F 3 "~" H 3850 6450 50  0001 C CNN
+	1    3850 6450
+	-1   0    0    1   
+$EndComp
+Text Label 4050 6350 0    50   ~ 0
+ROW5
+Text Label 4050 6450 0    50   ~ 0
+COL5
+$Comp
+L Connector:Screw_Terminal_01x02 LED6_5
+U 1 1 5E8403E2
+P 3850 6750
+F 0 "LED6_5" H 3850 6550 50  0000 C CNN
+F 1 "Screw-terminal" H 3768 6516 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3850 6750 50  0001 C CNN
+F 3 "~" H 3850 6750 50  0001 C CNN
+	1    3850 6750
+	-1   0    0    1   
+$EndComp
+Text Label 4050 6650 0    50   ~ 0
+ROW6
+Text Label 4050 6750 0    50   ~ 0
+COL5
+$Comp
+L Connector:Screw_Terminal_01x02 LED7_5
+U 1 1 5E8403EA
+P 3850 7050
+F 0 "LED7_5" H 3850 6850 50  0000 C CNN
+F 1 "Screw-terminal" H 3768 6816 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3850 7050 50  0001 C CNN
+F 3 "~" H 3850 7050 50  0001 C CNN
+	1    3850 7050
+	-1   0    0    1   
+$EndComp
+Text Label 4050 6950 0    50   ~ 0
+ROW7
+Text Label 4050 7050 0    50   ~ 0
+COL5
+$Comp
+L Connector:Screw_Terminal_01x02 LED8_5
+U 1 1 5E8403F2
+P 3850 7350
+F 0 "LED8_5" H 3850 7150 50  0000 C CNN
+F 1 "Screw-terminal" H 3768 7116 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3850 7350 50  0001 C CNN
+F 3 "~" H 3850 7350 50  0001 C CNN
+	1    3850 7350
+	-1   0    0    1   
+$EndComp
+Text Label 4050 7250 0    50   ~ 0
+ROW8
+Text Label 4050 7350 0    50   ~ 0
+COL5
+$Comp
+L Connector:Screw_Terminal_01x02 LED0_6
+U 1 1 5E8403FA
+P 4400 4950
+F 0 "LED0_6" H 4400 4750 50  0000 C CNN
+F 1 "Screw-terminal" H 4318 4716 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4400 4950 50  0001 C CNN
+F 3 "~" H 4400 4950 50  0001 C CNN
+	1    4400 4950
+	-1   0    0    1   
+$EndComp
+Text Label 4600 4850 0    50   ~ 0
+ROW0
+Text Label 4600 4950 0    50   ~ 0
+COL6
+$Comp
+L Connector:Screw_Terminal_01x02 LED1_6
+U 1 1 5E840402
+P 4400 5250
+F 0 "LED1_6" H 4400 5050 50  0000 C CNN
+F 1 "Screw-terminal" H 4318 5016 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4400 5250 50  0001 C CNN
+F 3 "~" H 4400 5250 50  0001 C CNN
+	1    4400 5250
+	-1   0    0    1   
+$EndComp
+Text Label 4600 5150 0    50   ~ 0
+ROW1
+Text Label 4600 5250 0    50   ~ 0
+COL6
+$Comp
+L Connector:Screw_Terminal_01x02 LED2_6
+U 1 1 5E84040A
+P 4400 5550
+F 0 "LED2_6" H 4400 5350 50  0000 C CNN
+F 1 "Screw-terminal" H 4318 5316 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4400 5550 50  0001 C CNN
+F 3 "~" H 4400 5550 50  0001 C CNN
+	1    4400 5550
+	-1   0    0    1   
+$EndComp
+Text Label 4600 5450 0    50   ~ 0
+ROW2
+Text Label 4600 5550 0    50   ~ 0
+COL6
+$Comp
+L Connector:Screw_Terminal_01x02 LED3_6
+U 1 1 5E840412
+P 4400 5850
+F 0 "LED3_6" H 4400 5650 50  0000 C CNN
+F 1 "Screw-terminal" H 4318 5616 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4400 5850 50  0001 C CNN
+F 3 "~" H 4400 5850 50  0001 C CNN
+	1    4400 5850
+	-1   0    0    1   
+$EndComp
+Text Label 4600 5750 0    50   ~ 0
+ROW3
+Text Label 4600 5850 0    50   ~ 0
+COL6
+$Comp
+L Connector:Screw_Terminal_01x02 LED4_6
+U 1 1 5E84041A
+P 4400 6150
+F 0 "LED4_6" H 4400 5950 50  0000 C CNN
+F 1 "Screw-terminal" H 4318 5916 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4400 6150 50  0001 C CNN
+F 3 "~" H 4400 6150 50  0001 C CNN
+	1    4400 6150
+	-1   0    0    1   
+$EndComp
+Text Label 4600 6050 0    50   ~ 0
+ROW4
+Text Label 4600 6150 0    50   ~ 0
+COL6
+$Comp
+L Connector:Screw_Terminal_01x02 LED5_6
+U 1 1 5E840422
+P 4400 6450
+F 0 "LED5_6" H 4400 6250 50  0000 C CNN
+F 1 "Screw-terminal" H 4318 6216 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4400 6450 50  0001 C CNN
+F 3 "~" H 4400 6450 50  0001 C CNN
+	1    4400 6450
+	-1   0    0    1   
+$EndComp
+Text Label 4600 6350 0    50   ~ 0
+ROW5
+Text Label 4600 6450 0    50   ~ 0
+COL6
+$Comp
+L Connector:Screw_Terminal_01x02 LED6_6
+U 1 1 5E84042A
+P 4400 6750
+F 0 "LED6_6" H 4400 6550 50  0000 C CNN
+F 1 "Screw-terminal" H 4318 6516 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4400 6750 50  0001 C CNN
+F 3 "~" H 4400 6750 50  0001 C CNN
+	1    4400 6750
+	-1   0    0    1   
+$EndComp
+Text Label 4600 6650 0    50   ~ 0
+ROW6
+Text Label 4600 6750 0    50   ~ 0
+COL6
+$Comp
+L Connector:Screw_Terminal_01x02 LED7_6
+U 1 1 5E840432
+P 4400 7050
+F 0 "LED7_6" H 4400 6850 50  0000 C CNN
+F 1 "Screw-terminal" H 4318 6816 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4400 7050 50  0001 C CNN
+F 3 "~" H 4400 7050 50  0001 C CNN
+	1    4400 7050
+	-1   0    0    1   
+$EndComp
+Text Label 4600 6950 0    50   ~ 0
+ROW7
+Text Label 4600 7050 0    50   ~ 0
+COL6
+$Comp
+L Connector:Screw_Terminal_01x02 LED8_6
+U 1 1 5E84043A
+P 4400 7350
+F 0 "LED8_6" H 4400 7150 50  0000 C CNN
+F 1 "Screw-terminal" H 4318 7116 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4400 7350 50  0001 C CNN
+F 3 "~" H 4400 7350 50  0001 C CNN
+	1    4400 7350
+	-1   0    0    1   
+$EndComp
+Text Label 4600 7250 0    50   ~ 0
+ROW8
+Text Label 4600 7350 0    50   ~ 0
+COL6
+$Comp
+L Connector:Screw_Terminal_01x02 LED0_7
+U 1 1 5E840442
+P 4950 4950
+F 0 "LED0_7" H 4950 4750 50  0000 C CNN
+F 1 "Screw-terminal" H 4868 4716 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4950 4950 50  0001 C CNN
+F 3 "~" H 4950 4950 50  0001 C CNN
+	1    4950 4950
+	-1   0    0    1   
+$EndComp
+Text Label 5150 4850 0    50   ~ 0
+ROW0
+Text Label 5150 4950 0    50   ~ 0
+COL7
+$Comp
+L Connector:Screw_Terminal_01x02 LED1_7
+U 1 1 5E84044A
+P 4950 5250
+F 0 "LED1_7" H 4950 5050 50  0000 C CNN
+F 1 "Screw-terminal" H 4868 5016 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4950 5250 50  0001 C CNN
+F 3 "~" H 4950 5250 50  0001 C CNN
+	1    4950 5250
+	-1   0    0    1   
+$EndComp
+Text Label 5150 5150 0    50   ~ 0
+ROW1
+Text Label 5150 5250 0    50   ~ 0
+COL7
+$Comp
+L Connector:Screw_Terminal_01x02 LED2_7
+U 1 1 5E840452
+P 4950 5550
+F 0 "LED2_7" H 4950 5350 50  0000 C CNN
+F 1 "Screw-terminal" H 4868 5316 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4950 5550 50  0001 C CNN
+F 3 "~" H 4950 5550 50  0001 C CNN
+	1    4950 5550
+	-1   0    0    1   
+$EndComp
+Text Label 5150 5450 0    50   ~ 0
+ROW2
+Text Label 5150 5550 0    50   ~ 0
+COL7
+$Comp
+L Connector:Screw_Terminal_01x02 LED3_7
+U 1 1 5E84045A
+P 4950 5850
+F 0 "LED3_7" H 4950 5650 50  0000 C CNN
+F 1 "Screw-terminal" H 4868 5616 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4950 5850 50  0001 C CNN
+F 3 "~" H 4950 5850 50  0001 C CNN
+	1    4950 5850
+	-1   0    0    1   
+$EndComp
+Text Label 5150 5750 0    50   ~ 0
+ROW3
+Text Label 5150 5850 0    50   ~ 0
+COL7
+$Comp
+L Connector:Screw_Terminal_01x02 LED4_7
+U 1 1 5E840462
+P 4950 6150
+F 0 "LED4_7" H 4950 5950 50  0000 C CNN
+F 1 "Screw-terminal" H 4868 5916 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4950 6150 50  0001 C CNN
+F 3 "~" H 4950 6150 50  0001 C CNN
+	1    4950 6150
+	-1   0    0    1   
+$EndComp
+Text Label 5150 6050 0    50   ~ 0
+ROW4
+Text Label 5150 6150 0    50   ~ 0
+COL7
+$Comp
+L Connector:Screw_Terminal_01x02 LED5_7
+U 1 1 5E84046A
+P 4950 6450
+F 0 "LED5_7" H 4950 6250 50  0000 C CNN
+F 1 "Screw-terminal" H 4868 6216 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4950 6450 50  0001 C CNN
+F 3 "~" H 4950 6450 50  0001 C CNN
+	1    4950 6450
+	-1   0    0    1   
+$EndComp
+Text Label 5150 6350 0    50   ~ 0
+ROW5
+Text Label 5150 6450 0    50   ~ 0
+COL7
+$Comp
+L Connector:Screw_Terminal_01x02 LED6_7
+U 1 1 5E840472
+P 4950 6750
+F 0 "LED6_7" H 4950 6550 50  0000 C CNN
+F 1 "Screw-terminal" H 4868 6516 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4950 6750 50  0001 C CNN
+F 3 "~" H 4950 6750 50  0001 C CNN
+	1    4950 6750
+	-1   0    0    1   
+$EndComp
+Text Label 5150 6650 0    50   ~ 0
+ROW6
+Text Label 5150 6750 0    50   ~ 0
+COL7
+$Comp
+L Connector:Screw_Terminal_01x02 LED7_7
+U 1 1 5E84047A
+P 4950 7050
+F 0 "LED7_7" H 4950 6850 50  0000 C CNN
+F 1 "Screw-terminal" H 4868 6816 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4950 7050 50  0001 C CNN
+F 3 "~" H 4950 7050 50  0001 C CNN
+	1    4950 7050
+	-1   0    0    1   
+$EndComp
+Text Label 5150 6950 0    50   ~ 0
+ROW7
+Text Label 5150 7050 0    50   ~ 0
+COL7
+$Comp
+L Connector:Screw_Terminal_01x02 LED8_7
+U 1 1 5E840482
+P 4950 7350
+F 0 "LED8_7" H 4950 7150 50  0000 C CNN
+F 1 "Screw-terminal" H 4868 7116 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4950 7350 50  0001 C CNN
+F 3 "~" H 4950 7350 50  0001 C CNN
+	1    4950 7350
+	-1   0    0    1   
+$EndComp
+Text Label 5150 7250 0    50   ~ 0
+ROW8
+Text Label 5150 7350 0    50   ~ 0
+COL7
+$Comp
+L Connector:Screw_Terminal_01x02 LED0_8
+U 1 1 5E857C20
+P 5500 4950
+F 0 "LED0_8" H 5500 4750 50  0000 C CNN
+F 1 "Screw-terminal" H 5418 4716 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 4950 50  0001 C CNN
+F 3 "~" H 5500 4950 50  0001 C CNN
+	1    5500 4950
+	-1   0    0    1   
+$EndComp
+Text Label 5700 4850 0    50   ~ 0
+ROW0
+Text Label 5700 4950 0    50   ~ 0
+COL8
+$Comp
+L Connector:Screw_Terminal_01x02 LED1_8
+U 1 1 5E857C28
+P 5500 5250
+F 0 "LED1_8" H 5500 5050 50  0000 C CNN
+F 1 "Screw-terminal" H 5418 5016 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 5250 50  0001 C CNN
+F 3 "~" H 5500 5250 50  0001 C CNN
+	1    5500 5250
+	-1   0    0    1   
+$EndComp
+Text Label 5700 5150 0    50   ~ 0
+ROW1
+Text Label 5700 5250 0    50   ~ 0
+COL8
+$Comp
+L Connector:Screw_Terminal_01x02 LED2_8
+U 1 1 5E857C30
+P 5500 5550
+F 0 "LED2_8" H 5500 5350 50  0000 C CNN
+F 1 "Screw-terminal" H 5418 5316 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 5550 50  0001 C CNN
+F 3 "~" H 5500 5550 50  0001 C CNN
+	1    5500 5550
+	-1   0    0    1   
+$EndComp
+Text Label 5700 5450 0    50   ~ 0
+ROW2
+Text Label 5700 5550 0    50   ~ 0
+COL8
+$Comp
+L Connector:Screw_Terminal_01x02 LED3_8
+U 1 1 5E857C38
+P 5500 5850
+F 0 "LED3_8" H 5500 5650 50  0000 C CNN
+F 1 "Screw-terminal" H 5418 5616 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 5850 50  0001 C CNN
+F 3 "~" H 5500 5850 50  0001 C CNN
+	1    5500 5850
+	-1   0    0    1   
+$EndComp
+Text Label 5700 5750 0    50   ~ 0
+ROW3
+Text Label 5700 5850 0    50   ~ 0
+COL8
+$Comp
+L Connector:Screw_Terminal_01x02 LED4_8
+U 1 1 5E857C40
+P 5500 6150
+F 0 "LED4_8" H 5500 5950 50  0000 C CNN
+F 1 "Screw-terminal" H 5418 5916 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 6150 50  0001 C CNN
+F 3 "~" H 5500 6150 50  0001 C CNN
+	1    5500 6150
+	-1   0    0    1   
+$EndComp
+Text Label 5700 6050 0    50   ~ 0
+ROW4
+Text Label 5700 6150 0    50   ~ 0
+COL8
+$Comp
+L Connector:Screw_Terminal_01x02 LED5_8
+U 1 1 5E857C48
+P 5500 6450
+F 0 "LED5_8" H 5500 6250 50  0000 C CNN
+F 1 "Screw-terminal" H 5418 6216 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 6450 50  0001 C CNN
+F 3 "~" H 5500 6450 50  0001 C CNN
+	1    5500 6450
+	-1   0    0    1   
+$EndComp
+Text Label 5700 6350 0    50   ~ 0
+ROW5
+Text Label 5700 6450 0    50   ~ 0
+COL8
+$Comp
+L Connector:Screw_Terminal_01x02 LED6_8
+U 1 1 5E857C50
+P 5500 6750
+F 0 "LED6_8" H 5500 6550 50  0000 C CNN
+F 1 "Screw-terminal" H 5418 6516 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 6750 50  0001 C CNN
+F 3 "~" H 5500 6750 50  0001 C CNN
+	1    5500 6750
+	-1   0    0    1   
+$EndComp
+Text Label 5700 6650 0    50   ~ 0
+ROW6
+Text Label 5700 6750 0    50   ~ 0
+COL8
+$Comp
+L Connector:Screw_Terminal_01x02 LED7_8
+U 1 1 5E857C58
+P 5500 7050
+F 0 "LED7_8" H 5500 6850 50  0000 C CNN
+F 1 "Screw-terminal" H 5418 6816 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 7050 50  0001 C CNN
+F 3 "~" H 5500 7050 50  0001 C CNN
+	1    5500 7050
+	-1   0    0    1   
+$EndComp
+Text Label 5700 6950 0    50   ~ 0
+ROW7
+Text Label 5700 7050 0    50   ~ 0
+COL8
+$Comp
+L Connector:Screw_Terminal_01x02 LED8_8
+U 1 1 5E857C60
+P 5500 7350
+F 0 "LED8_8" H 5500 7150 50  0000 C CNN
+F 1 "Screw-terminal" H 5418 7116 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 7350 50  0001 C CNN
+F 3 "~" H 5500 7350 50  0001 C CNN
+	1    5500 7350
+	-1   0    0    1   
+$EndComp
+Text Label 5700 7250 0    50   ~ 0
+ROW8
+Text Label 5700 7350 0    50   ~ 0
+COL8
+$EndSCHEMATC
