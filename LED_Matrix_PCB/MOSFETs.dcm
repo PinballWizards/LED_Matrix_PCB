@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PHP79NQ08LT
+D 73A Id, 75V Vds, N-Channel MOSFET, 2.5V Logic Level, TO-220
+K N-Channel MOSFET Logic-Level
+F https://assets.nexperia.com/documents/data-sheet/PHP79NQ08LT.pdf
+$ENDCMP
+#
+#End Doc Library

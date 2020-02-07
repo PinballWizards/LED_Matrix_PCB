@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name CD4072BM96)(type KiCad)(uri ${KIPRJMOD}/project_imports/CD4072BM96.pretty)(options "")(descr ""))
+  (lib (name SN74HC165DR)(type KiCad)(uri ${KIPRJMOD}/project_imports/SN74HC165DR.pretty)(options "")(descr ""))
+  (lib (name ECS200205PXTR)(type KiCad)(uri ${KIPRJMOD}/project_imports/ECS200205PXTR.pretty)(options "")(descr ""))
+  (lib (name CDSOT23-SM712)(type KiCad)(uri ${KIPRJMOD}/project_imports/CDSOT23-SM712.pretty)(options "")(descr ""))
+  (lib (name sn65hvd72)(type KiCad)(uri ${KIPRJMOD}/project_imports/sn65hvd72.pretty)(options "")(descr ""))
+)
