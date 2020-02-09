@@ -420,7 +420,7 @@ F 3 "~" H 8900 850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 850  0    50   ~ 0
-SDA
+D13
 Wire Wire Line
 	9300 850  9050 850 
 Text Label 8500 850  2    50   ~ 0
@@ -439,7 +439,7 @@ F 3 "~" H 8900 1100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 1100 0    50   ~ 0
-SCL
+D12
 Wire Wire Line
 	9300 1100 9050 1100
 Text Label 8500 1100 2    50   ~ 0
@@ -458,7 +458,7 @@ F 3 "~" H 8900 1350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 1350 0    50   ~ 0
-D5
+D11
 Wire Wire Line
 	9300 1350 9050 1350
 Text Label 8500 1350 2    50   ~ 0
@@ -477,7 +477,7 @@ F 3 "~" H 8900 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 1600 0    50   ~ 0
-D6
+D10
 Wire Wire Line
 	9300 1600 9050 1600
 Text Label 8500 1600 2    50   ~ 0
@@ -515,7 +515,7 @@ F 3 "~" H 8900 2100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 2100 0    50   ~ 0
-D10
+D6
 Wire Wire Line
 	9300 2100 9050 2100
 Text Label 8500 2100 2    50   ~ 0
@@ -534,7 +534,7 @@ F 3 "~" H 8900 2350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 2350 0    50   ~ 0
-D11
+D5
 Wire Wire Line
 	9300 2350 9050 2350
 Text Label 8500 2350 2    50   ~ 0
@@ -553,7 +553,7 @@ F 3 "~" H 8900 2600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 2600 0    50   ~ 0
-D12
+SCL
 Wire Wire Line
 	9300 2600 9050 2600
 Text Label 8500 2600 2    50   ~ 0
@@ -572,7 +572,7 @@ F 3 "~" H 8900 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 2900 0    50   ~ 0
-D13
+SDA
 Wire Wire Line
 	9300 2900 9050 2900
 Text Label 8500 2900 2    50   ~ 0
