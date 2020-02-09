@@ -136,7 +136,7 @@ $EndComp
 Wire Wire Line
 	3450 2700 3450 2600
 Text Label 3450 2600 2    50   ~ 0
-A4
+MISO
 Wire Wire Line
 	3450 3200 3000 3200
 Wire Wire Line
@@ -420,7 +420,7 @@ F 3 "~" H 8900 850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 850  0    50   ~ 0
-SDA
+D13
 Wire Wire Line
 	9300 850  9050 850 
 Text Label 8500 850  2    50   ~ 0
@@ -439,7 +439,7 @@ F 3 "~" H 8900 1100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 1100 0    50   ~ 0
-SCL
+D12
 Wire Wire Line
 	9300 1100 9050 1100
 Text Label 8500 1100 2    50   ~ 0
@@ -458,7 +458,7 @@ F 3 "~" H 8900 1350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 1350 0    50   ~ 0
-D5
+D11
 Wire Wire Line
 	9300 1350 9050 1350
 Text Label 8500 1350 2    50   ~ 0
@@ -477,7 +477,7 @@ F 3 "~" H 8900 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 1600 0    50   ~ 0
-D6
+D10
 Wire Wire Line
 	9300 1600 9050 1600
 Text Label 8500 1600 2    50   ~ 0
@@ -515,7 +515,7 @@ F 3 "~" H 8900 2100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 2100 0    50   ~ 0
-D10
+D6
 Wire Wire Line
 	9300 2100 9050 2100
 Text Label 8500 2100 2    50   ~ 0
@@ -534,7 +534,7 @@ F 3 "~" H 8900 2350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 2350 0    50   ~ 0
-D11
+D5
 Wire Wire Line
 	9300 2350 9050 2350
 Text Label 8500 2350 2    50   ~ 0
@@ -553,7 +553,7 @@ F 3 "~" H 8900 2600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 2600 0    50   ~ 0
-D12
+SCL
 Wire Wire Line
 	9300 2600 9050 2600
 Text Label 8500 2600 2    50   ~ 0
@@ -572,7 +572,7 @@ F 3 "~" H 8900 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9300 2900 0    50   ~ 0
-D13
+SDA
 Wire Wire Line
 	9300 2900 9050 2900
 Text Label 8500 2900 2    50   ~ 0
@@ -611,10 +611,6 @@ Text Label 7600 2600 0    50   ~ 0
 MOSI
 Text Label 6800 2600 2    50   ~ 0
 ROW7
-Text Label 7600 2900 0    50   ~ 0
-MISO
-Text Label 6800 2900 2    50   ~ 0
-ROW8
 Wire Wire Line
 	6800 850  7600 850 
 Wire Wire Line
@@ -631,8 +627,6 @@ Wire Wire Line
 	6800 2350 7600 2350
 Wire Wire Line
 	6800 2600 7600 2600
-Wire Wire Line
-	6800 2900 7600 2900
 Text Label 5650 3550 0    50   ~ 0
 ROW0
 Text Label 5650 3650 0    50   ~ 0
@@ -741,21 +735,6 @@ $EndComp
 Text Label 5650 5650 0    50   ~ 0
 ROW7
 Text Label 5650 5750 0    50   ~ 0
-COL0
-$Comp
-L Connector:Screw_Terminal_01x02 LED8_0
-U 1 1 5E80C508
-P 5450 6050
-F 0 "LED8_0" H 5450 5850 50  0000 C CNN
-F 1 "Screw-terminal" H 5368 5816 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5450 6050 50  0001 C CNN
-F 3 "~" H 5450 6050 50  0001 C CNN
-	1    5450 6050
-	-1   0    0    1   
-$EndComp
-Text Label 5650 5950 0    50   ~ 0
-ROW8
-Text Label 5650 6050 0    50   ~ 0
 COL0
 $Comp
 L Connector:Screw_Terminal_01x02 LED0_1
@@ -878,21 +857,6 @@ ROW7
 Text Label 6200 5750 0    50   ~ 0
 COL1
 $Comp
-L Connector:Screw_Terminal_01x02 LED8_1
-U 1 1 5E816244
-P 6000 6050
-F 0 "LED8_1" H 6000 5850 50  0000 C CNN
-F 1 "Screw-terminal" H 5918 5816 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6000 6050 50  0001 C CNN
-F 3 "~" H 6000 6050 50  0001 C CNN
-	1    6000 6050
-	-1   0    0    1   
-$EndComp
-Text Label 6200 5950 0    50   ~ 0
-ROW8
-Text Label 6200 6050 0    50   ~ 0
-COL1
-$Comp
 L Connector:Screw_Terminal_01x02 LED0_2
 U 1 1 5E823F66
 P 6550 3650
@@ -1011,21 +975,6 @@ $EndComp
 Text Label 6750 5650 0    50   ~ 0
 ROW7
 Text Label 6750 5750 0    50   ~ 0
-COL2
-$Comp
-L Connector:Screw_Terminal_01x02 LED8_2
-U 1 1 5E823FA6
-P 6550 6050
-F 0 "LED8_2" H 6550 5850 50  0000 C CNN
-F 1 "Screw-terminal" H 6468 5816 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6550 6050 50  0001 C CNN
-F 3 "~" H 6550 6050 50  0001 C CNN
-	1    6550 6050
-	-1   0    0    1   
-$EndComp
-Text Label 6750 5950 0    50   ~ 0
-ROW8
-Text Label 6750 6050 0    50   ~ 0
 COL2
 $Comp
 L Connector:Screw_Terminal_01x02 LED0_3
@@ -1148,21 +1097,6 @@ ROW7
 Text Label 7300 5750 0    50   ~ 0
 COL3
 $Comp
-L Connector:Screw_Terminal_01x02 LED8_3
-U 1 1 5E823FEE
-P 7100 6050
-F 0 "LED8_3" H 7100 5850 50  0000 C CNN
-F 1 "Screw-terminal" H 7018 5816 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7100 6050 50  0001 C CNN
-F 3 "~" H 7100 6050 50  0001 C CNN
-	1    7100 6050
-	-1   0    0    1   
-$EndComp
-Text Label 7300 5950 0    50   ~ 0
-ROW8
-Text Label 7300 6050 0    50   ~ 0
-COL3
-$Comp
 L Connector:Screw_Terminal_01x02 LED0_4
 U 1 1 5E84036A
 P 7650 3650
@@ -1281,21 +1215,6 @@ $EndComp
 Text Label 7850 5650 0    50   ~ 0
 ROW7
 Text Label 7850 5750 0    50   ~ 0
-COL4
-$Comp
-L Connector:Screw_Terminal_01x02 LED8_4
-U 1 1 5E8403AA
-P 7650 6050
-F 0 "LED8_4" H 7650 5850 50  0000 C CNN
-F 1 "Screw-terminal" H 7568 5816 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7650 6050 50  0001 C CNN
-F 3 "~" H 7650 6050 50  0001 C CNN
-	1    7650 6050
-	-1   0    0    1   
-$EndComp
-Text Label 7850 5950 0    50   ~ 0
-ROW8
-Text Label 7850 6050 0    50   ~ 0
 COL4
 $Comp
 L Connector:Screw_Terminal_01x02 LED0_5
@@ -1418,21 +1337,6 @@ ROW7
 Text Label 8400 5750 0    50   ~ 0
 COL5
 $Comp
-L Connector:Screw_Terminal_01x02 LED8_5
-U 1 1 5E8403F2
-P 8200 6050
-F 0 "LED8_5" H 8200 5850 50  0000 C CNN
-F 1 "Screw-terminal" H 8118 5816 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8200 6050 50  0001 C CNN
-F 3 "~" H 8200 6050 50  0001 C CNN
-	1    8200 6050
-	-1   0    0    1   
-$EndComp
-Text Label 8400 5950 0    50   ~ 0
-ROW8
-Text Label 8400 6050 0    50   ~ 0
-COL5
-$Comp
 L Connector:Screw_Terminal_01x02 LED0_6
 U 1 1 5E8403FA
 P 8750 3650
@@ -1551,21 +1455,6 @@ $EndComp
 Text Label 8950 5650 0    50   ~ 0
 ROW7
 Text Label 8950 5750 0    50   ~ 0
-COL6
-$Comp
-L Connector:Screw_Terminal_01x02 LED8_6
-U 1 1 5E84043A
-P 8750 6050
-F 0 "LED8_6" H 8750 5850 50  0000 C CNN
-F 1 "Screw-terminal" H 8668 5816 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8750 6050 50  0001 C CNN
-F 3 "~" H 8750 6050 50  0001 C CNN
-	1    8750 6050
-	-1   0    0    1   
-$EndComp
-Text Label 8950 5950 0    50   ~ 0
-ROW8
-Text Label 8950 6050 0    50   ~ 0
 COL6
 $Comp
 L Connector:Screw_Terminal_01x02 LED0_7
@@ -1688,21 +1577,6 @@ ROW7
 Text Label 9500 5750 0    50   ~ 0
 COL7
 $Comp
-L Connector:Screw_Terminal_01x02 LED8_7
-U 1 1 5E840482
-P 9300 6050
-F 0 "LED8_7" H 9300 5850 50  0000 C CNN
-F 1 "Screw-terminal" H 9218 5816 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9300 6050 50  0001 C CNN
-F 3 "~" H 9300 6050 50  0001 C CNN
-	1    9300 6050
-	-1   0    0    1   
-$EndComp
-Text Label 9500 5950 0    50   ~ 0
-ROW8
-Text Label 9500 6050 0    50   ~ 0
-COL7
-$Comp
 L Connector:Screw_Terminal_01x02 LED0_8
 U 1 1 5E857C20
 P 9850 3650
@@ -1821,20 +1695,5 @@ $EndComp
 Text Label 10050 5650 0    50   ~ 0
 ROW7
 Text Label 10050 5750 0    50   ~ 0
-COL8
-$Comp
-L Connector:Screw_Terminal_01x02 LED8_8
-U 1 1 5E857C60
-P 9850 6050
-F 0 "LED8_8" H 9850 5850 50  0000 C CNN
-F 1 "Screw-terminal" H 9768 5816 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9850 6050 50  0001 C CNN
-F 3 "~" H 9850 6050 50  0001 C CNN
-	1    9850 6050
-	-1   0    0    1   
-$EndComp
-Text Label 10050 5950 0    50   ~ 0
-ROW8
-Text Label 10050 6050 0    50   ~ 0
 COL8
 $EndSCHEMATC
