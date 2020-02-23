@@ -4,4 +4,5 @@
   (lib (name CD4072BM96)(type Legacy)(uri ${KIPRJMOD}/project_imports/CD4072BM96.lib)(options "")(descr ""))
   (lib (name Interface_RS485)(type Legacy)(uri ${KIPRJMOD}/Interface_RS485.lib)(options "")(descr ""))
   (lib (name Protection_ICs)(type Legacy)(uri ${KIPRJMOD}/Protection_ICs.lib)(options "")(descr ""))
+  (lib (name dk_Transistors-FETs-MOSFETs-Single)(type Legacy)(uri ${KIPRJMOD}/project_imports/digikey-symbols/dk_Transistors-FETs-MOSFETs-Single.lib)(options "")(descr ""))
 )

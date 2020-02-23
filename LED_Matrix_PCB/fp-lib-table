@@ -4,4 +4,5 @@
   (lib (name ECS200205PXTR)(type KiCad)(uri ${KIPRJMOD}/project_imports/ECS200205PXTR.pretty)(options "")(descr ""))
   (lib (name CDSOT23-SM712)(type KiCad)(uri ${KIPRJMOD}/project_imports/CDSOT23-SM712.pretty)(options "")(descr ""))
   (lib (name sn65hvd72)(type KiCad)(uri ${KIPRJMOD}/project_imports/sn65hvd72.pretty)(options "")(descr ""))
+  (lib (name digikey-footprints)(type KiCad)(uri ${KIPRJMOD}/project_imports/digikey-footprints.pretty)(options "")(descr ""))
 )

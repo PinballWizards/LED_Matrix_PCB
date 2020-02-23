@@ -147,7 +147,7 @@ U 1 1 5E1E5003
 P 2850 3200
 F 0 "R11" V 2950 3200 50  0000 C CNN
 F 1 "10" V 2750 3200 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 2780 3200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2780 3200 50  0001 C CNN
 F 3 "~" H 2850 3200 50  0001 C CNN
 	1    2850 3200
 	0    1    1    0   
@@ -160,49 +160,17 @@ U 1 1 5E1E46ED
 P 2850 2950
 F 0 "R10" V 2750 2950 50  0000 C CNN
 F 1 "10" V 2734 2950 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 2780 2950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2780 2950 50  0001 C CNN
 F 3 "~" H 2850 2950 50  0001 C CNN
 	1    2850 2950
 	0    1    1    0   
 $EndComp
 Text Label 3000 2950 0    50   ~ 0
-RJ45_4
-Text Label 3050 3200 3    50   ~ 0
-RJ45_5
+A
+Text Label 3050 3200 0    50   ~ 0
+B
 Text Label 1200 1400 2    50   ~ 0
 A3
-$Comp
-L Connector:Conn_01x01_Male GND1
-U 1 1 5E371F26
-P 4250 4350
-F 0 "GND1" H 4250 4450 50  0000 C CNN
-F 1 "Conn_01x01_Male" H 4358 4440 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4250 4350 50  0001 C CNN
-F 3 "~" H 4250 4350 50  0001 C CNN
-	1    4250 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 5E376948
-P 4450 4350
-F 0 "#PWR05" H 4450 4100 50  0001 C CNN
-F 1 "GND" H 4455 4177 50  0000 C CNN
-F 2 "" H 4450 4350 50  0001 C CNN
-F 3 "" H 4450 4350 50  0001 C CNN
-	1    4450 4350
-	1    0    0    -1  
-$EndComp
-Text Label 1500 4100 0    50   ~ 0
-RJ45_4
-Text Label 1500 4000 0    50   ~ 0
-RJ45_5
-NoConn ~ 1500 3700
-NoConn ~ 1500 3800
-NoConn ~ 1500 3900
-NoConn ~ 1500 4200
-NoConn ~ 1500 4300
-NoConn ~ 1500 4400
 $Comp
 L power:GND #PWR03
 U 1 1 5E1FB01A
@@ -225,71 +193,32 @@ F 3 "" H 2700 3200 60  0001 C CNN
 	1    2700 3200
 	-1   0    0    1   
 $EndComp
-$Comp
-L Connector:RJ45 RJ0
-U 1 1 5E1D3B3B
-P 1100 4100
-F 0 "RJ0" H 1100 4650 50  0000 C CNN
-F 1 "RJ45" H 1157 4676 50  0001 C CNN
-F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 1100 4125 50  0001 C CNN
-F 3 "~" V 1100 4125 50  0001 C CNN
-	1    1100 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:RJ45 RJ1
-U 1 1 5E33DB83
-P 1100 3100
-F 0 "RJ1" H 1100 3650 50  0000 C CNN
-F 1 "RJ45" H 1157 3676 50  0001 C CNN
-F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 1100 3125 50  0001 C CNN
-F 3 "~" V 1100 3125 50  0001 C CNN
-	1    1100 3100
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1500 2700
-NoConn ~ 1500 2800
-NoConn ~ 1500 2900
-NoConn ~ 1500 3200
-NoConn ~ 1500 3300
-NoConn ~ 1500 3400
 Text Label 1500 3000 0    50   ~ 0
-RJ45_5
+B
 Text Label 1500 3100 0    50   ~ 0
-RJ45_4
-$Comp
-L Connector:Screw_Terminal_01x02 +5V_IN1
-U 1 1 5E34A542
-P 3400 1150
-F 0 "+5V_IN1" H 3400 900 50  0000 C CNN
-F 1 "MCU_PWR_Supply" H 3318 916 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3400 1150 50  0001 C CNN
-F 3 "~" H 3400 1150 50  0001 C CNN
-	1    3400 1150
-	-1   0    0    1   
-$EndComp
+A
 $Comp
 L power:GND #PWR0101
 U 1 1 5E34A548
-P 3600 1150
-F 0 "#PWR0101" H 3600 900 50  0001 C CNN
-F 1 "GND" H 3605 977 50  0000 C CNN
-F 2 "" H 3600 1150 50  0001 C CNN
-F 3 "" H 3600 1150 50  0001 C CNN
-	1    3600 1150
+P 3350 900
+F 0 "#PWR0101" H 3350 650 50  0001 C CNN
+F 1 "GND" H 3355 727 50  0000 C CNN
+F 2 "" H 3350 900 50  0001 C CNN
+F 3 "" H 3350 900 50  0001 C CNN
+	1    3350 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 1050 3900 1050
+	3350 800  3650 800 
 $Comp
 L power:+5V #PWR0103
 U 1 1 5E34DFAC
-P 3900 1050
-F 0 "#PWR0103" H 3900 900 50  0001 C CNN
-F 1 "+5V" H 3915 1223 50  0000 C CNN
-F 2 "" H 3900 1050 50  0001 C CNN
-F 3 "" H 3900 1050 50  0001 C CNN
-	1    3900 1050
+P 3650 800
+F 0 "#PWR0103" H 3650 650 50  0001 C CNN
+F 1 "+5V" H 3665 973 50  0000 C CNN
+F 2 "" H 3650 800 50  0001 C CNN
+F 3 "" H 3650 800 50  0001 C CNN
+	1    3650 800 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -397,1303 +326,1680 @@ Wire Wire Line
 	1700 1050 1700 900 
 Text Label 2550 1400 2    50   ~ 0
 D13
-$Comp
-L Connector:Screw_Terminal_01x02 LED0_0
-U 1 1 5E5157CC
-P 5450 3650
-F 0 "LED0_0" H 5450 3450 50  0000 C CNN
-F 1 "Screw-terminal" H 5368 3416 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5450 3650 50  0001 C CNN
-F 3 "~" H 5450 3650 50  0001 C CNN
-	1    5450 3650
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R330
-U 1 1 5E5157D2
-P 8900 850
-F 0 "R330" V 9000 850 50  0000 C CNN
-F 1 "330" V 9016 850 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 8830 850 50  0001 C CNN
-F 3 "~" H 8900 850 50  0001 C CNN
-	1    8900 850 
-	0    -1   -1   0   
-$EndComp
-Text Label 9300 850  0    50   ~ 0
-D13
-Wire Wire Line
-	9300 850  9050 850 
-Text Label 8500 850  2    50   ~ 0
-COL0
-Wire Wire Line
-	8750 850  8500 850 
-$Comp
-L Device:R R331
-U 1 1 5E7B184C
-P 8900 1100
-F 0 "R331" V 9000 1100 50  0000 C CNN
-F 1 "330" V 9016 1100 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 8830 1100 50  0001 C CNN
-F 3 "~" H 8900 1100 50  0001 C CNN
-	1    8900 1100
-	0    -1   -1   0   
-$EndComp
-Text Label 9300 1100 0    50   ~ 0
-D12
-Wire Wire Line
-	9300 1100 9050 1100
-Text Label 8500 1100 2    50   ~ 0
-COL1
-Wire Wire Line
-	8750 1100 8500 1100
-$Comp
-L Device:R R332
-U 1 1 5E7B281B
-P 8900 1350
-F 0 "R332" V 9000 1350 50  0000 C CNN
-F 1 "330" V 9016 1350 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 8830 1350 50  0001 C CNN
-F 3 "~" H 8900 1350 50  0001 C CNN
-	1    8900 1350
-	0    -1   -1   0   
-$EndComp
-Text Label 9300 1350 0    50   ~ 0
-D11
-Wire Wire Line
-	9300 1350 9050 1350
-Text Label 8500 1350 2    50   ~ 0
-COL2
-Wire Wire Line
-	8750 1350 8500 1350
-$Comp
-L Device:R R333
-U 1 1 5E7B2825
-P 8900 1600
-F 0 "R333" V 9000 1600 50  0000 C CNN
-F 1 "R" V 9016 1600 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 8830 1600 50  0001 C CNN
-F 3 "~" H 8900 1600 50  0001 C CNN
-	1    8900 1600
-	0    -1   -1   0   
-$EndComp
-Text Label 9300 1600 0    50   ~ 0
-D10
-Wire Wire Line
-	9300 1600 9050 1600
-Text Label 8500 1600 2    50   ~ 0
-COL3
-Wire Wire Line
-	8750 1600 8500 1600
-$Comp
-L Device:R R334
-U 1 1 5E7B4C59
-P 8900 1850
-F 0 "R334" V 9000 1850 50  0000 C CNN
-F 1 "R" V 9016 1850 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 8830 1850 50  0001 C CNN
-F 3 "~" H 8900 1850 50  0001 C CNN
-	1    8900 1850
-	0    -1   -1   0   
-$EndComp
-Text Label 9300 1850 0    50   ~ 0
-D9
-Wire Wire Line
-	9300 1850 9050 1850
-Text Label 8500 1850 2    50   ~ 0
-COL4
-Wire Wire Line
-	8750 1850 8500 1850
-$Comp
-L Device:R R335
-U 1 1 5E7B4C63
-P 8900 2100
-F 0 "R335" V 9000 2100 50  0000 C CNN
-F 1 "R" V 9016 2100 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 8830 2100 50  0001 C CNN
-F 3 "~" H 8900 2100 50  0001 C CNN
-	1    8900 2100
-	0    -1   -1   0   
-$EndComp
-Text Label 9300 2100 0    50   ~ 0
-D6
-Wire Wire Line
-	9300 2100 9050 2100
-Text Label 8500 2100 2    50   ~ 0
-COL5
-Wire Wire Line
-	8750 2100 8500 2100
-$Comp
-L Device:R R336
-U 1 1 5E7B4C6D
-P 8900 2350
-F 0 "R336" V 9000 2350 50  0000 C CNN
-F 1 "R" V 9016 2350 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 8830 2350 50  0001 C CNN
-F 3 "~" H 8900 2350 50  0001 C CNN
-	1    8900 2350
-	0    -1   -1   0   
-$EndComp
-Text Label 9300 2350 0    50   ~ 0
-D5
-Wire Wire Line
-	9300 2350 9050 2350
-Text Label 8500 2350 2    50   ~ 0
-COL6
-Wire Wire Line
-	8750 2350 8500 2350
-$Comp
-L Device:R R337
-U 1 1 5E7B4C77
-P 8900 2600
-F 0 "R337" V 9000 2600 50  0000 C CNN
-F 1 "R" V 9016 2600 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 8830 2600 50  0001 C CNN
-F 3 "~" H 8900 2600 50  0001 C CNN
-	1    8900 2600
-	0    -1   -1   0   
-$EndComp
-Text Label 9300 2600 0    50   ~ 0
-SCL
-Wire Wire Line
-	9300 2600 9050 2600
-Text Label 8500 2600 2    50   ~ 0
-COL7
-Wire Wire Line
-	8750 2600 8500 2600
-$Comp
-L Device:R R338
-U 1 1 5E7B5F50
-P 8900 2900
-F 0 "R338" V 9000 2900 50  0000 C CNN
-F 1 "R" V 9016 2900 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 8830 2900 50  0001 C CNN
-F 3 "~" H 8900 2900 50  0001 C CNN
-	1    8900 2900
-	0    -1   -1   0   
-$EndComp
-Text Label 9300 2900 0    50   ~ 0
-SDA
-Wire Wire Line
-	9300 2900 9050 2900
-Text Label 8500 2900 2    50   ~ 0
-COL8
-Wire Wire Line
-	8750 2900 8500 2900
-Text Label 7600 850  0    50   ~ 0
+Text Label 4400 1400 2    50   ~ 0
 A0
-Text Label 6800 850  2    50   ~ 0
+Text Label 5100 1900 2    50   ~ 0
 ROW0
-Text Label 7600 1100 0    50   ~ 0
+Text Label 5100 3050 2    50   ~ 0
+ROW1
+Text Label 1000 5600 0    50   ~ 0
+ROW0
+Text Label 1000 5700 0    50   ~ 0
+COL0
+Text Label 1000 5900 0    50   ~ 0
+ROW1
+Text Label 1000 6000 0    50   ~ 0
+COL0
+Text Label 1000 6200 0    50   ~ 0
+ROW2
+Text Label 1000 6300 0    50   ~ 0
+COL0
+Text Label 1000 6500 0    50   ~ 0
+ROW3
+Text Label 1000 6600 0    50   ~ 0
+COL0
+Text Label 1000 6800 0    50   ~ 0
+ROW4
+Text Label 1000 6900 0    50   ~ 0
+COL0
+Text Label 1000 7100 0    50   ~ 0
+ROW5
+Text Label 1000 7200 0    50   ~ 0
+COL0
+Text Label 1000 7400 0    50   ~ 0
+ROW6
+Text Label 1000 7500 0    50   ~ 0
+COL0
+Text Label 1550 5600 0    50   ~ 0
+ROW0
+Text Label 1550 5700 0    50   ~ 0
+COL1
+Text Label 1550 5900 0    50   ~ 0
+ROW1
+Text Label 1550 6000 0    50   ~ 0
+COL1
+Text Label 1550 6200 0    50   ~ 0
+ROW2
+Text Label 1550 6300 0    50   ~ 0
+COL1
+Text Label 1550 6500 0    50   ~ 0
+ROW3
+Text Label 1550 6600 0    50   ~ 0
+COL1
+Text Label 1550 6800 0    50   ~ 0
+ROW4
+Text Label 1550 6900 0    50   ~ 0
+COL1
+Text Label 1550 7100 0    50   ~ 0
+ROW5
+Text Label 1550 7200 0    50   ~ 0
+COL1
+Text Label 1550 7400 0    50   ~ 0
+ROW6
+Text Label 1550 7500 0    50   ~ 0
+COL1
+Text Label 2100 5600 0    50   ~ 0
+ROW0
+Text Label 2100 5700 0    50   ~ 0
+COL2
+Text Label 2100 5900 0    50   ~ 0
+ROW1
+Text Label 2100 6000 0    50   ~ 0
+COL2
+Text Label 2100 6200 0    50   ~ 0
+ROW2
+Text Label 2100 6300 0    50   ~ 0
+COL2
+Text Label 2100 6500 0    50   ~ 0
+ROW3
+Text Label 2100 6600 0    50   ~ 0
+COL2
+Text Label 2100 6800 0    50   ~ 0
+ROW4
+Text Label 2100 6900 0    50   ~ 0
+COL2
+Text Label 2100 7100 0    50   ~ 0
+ROW5
+Text Label 2100 7200 0    50   ~ 0
+COL2
+Text Label 2100 7400 0    50   ~ 0
+ROW6
+Text Label 2100 7500 0    50   ~ 0
+COL2
+Text Label 2650 5600 0    50   ~ 0
+ROW0
+Text Label 2650 5700 0    50   ~ 0
+COL3
+Text Label 2650 5900 0    50   ~ 0
+ROW1
+Text Label 2650 6000 0    50   ~ 0
+COL3
+Text Label 2650 6200 0    50   ~ 0
+ROW2
+Text Label 2650 6300 0    50   ~ 0
+COL3
+Text Label 2650 6500 0    50   ~ 0
+ROW3
+Text Label 2650 6600 0    50   ~ 0
+COL3
+Text Label 2650 6800 0    50   ~ 0
+ROW4
+Text Label 2650 6900 0    50   ~ 0
+COL3
+Text Label 2650 7100 0    50   ~ 0
+ROW5
+Text Label 2650 7200 0    50   ~ 0
+COL3
+Text Label 2650 7400 0    50   ~ 0
+ROW6
+Text Label 2650 7500 0    50   ~ 0
+COL3
+Text Label 3200 5600 0    50   ~ 0
+ROW0
+Text Label 3200 5700 0    50   ~ 0
+COL4
+Text Label 3200 5900 0    50   ~ 0
+ROW1
+Text Label 3200 6000 0    50   ~ 0
+COL4
+Text Label 3200 6200 0    50   ~ 0
+ROW2
+Text Label 3200 6300 0    50   ~ 0
+COL4
+Text Label 3200 6500 0    50   ~ 0
+ROW3
+Text Label 3200 6600 0    50   ~ 0
+COL4
+Text Label 3200 6800 0    50   ~ 0
+ROW4
+Text Label 3200 6900 0    50   ~ 0
+COL4
+Text Label 3200 7100 0    50   ~ 0
+ROW5
+Text Label 3200 7200 0    50   ~ 0
+COL4
+Text Label 3200 7400 0    50   ~ 0
+ROW6
+Text Label 3200 7500 0    50   ~ 0
+COL4
+Text Label 3750 5600 0    50   ~ 0
+ROW0
+Text Label 3750 5700 0    50   ~ 0
+COL5
+Text Label 3750 5900 0    50   ~ 0
+ROW1
+Text Label 3750 6000 0    50   ~ 0
+COL5
+Text Label 3750 6200 0    50   ~ 0
+ROW2
+Text Label 3750 6300 0    50   ~ 0
+COL5
+Text Label 3750 6500 0    50   ~ 0
+ROW3
+Text Label 3750 6600 0    50   ~ 0
+COL5
+Text Label 3750 6800 0    50   ~ 0
+ROW4
+Text Label 3750 6900 0    50   ~ 0
+COL5
+Text Label 3750 7100 0    50   ~ 0
+ROW5
+Text Label 3750 7200 0    50   ~ 0
+COL5
+Text Label 3750 7400 0    50   ~ 0
+ROW6
+Text Label 3750 7500 0    50   ~ 0
+COL5
+Text Label 4300 5600 0    50   ~ 0
+ROW0
+Text Label 4300 5700 0    50   ~ 0
+COL6
+Text Label 4300 5900 0    50   ~ 0
+ROW1
+Text Label 4300 6000 0    50   ~ 0
+COL6
+Text Label 4300 6200 0    50   ~ 0
+ROW2
+Text Label 4300 6300 0    50   ~ 0
+COL6
+Text Label 4300 6500 0    50   ~ 0
+ROW3
+Text Label 4300 6600 0    50   ~ 0
+COL6
+Text Label 4300 6800 0    50   ~ 0
+ROW4
+Text Label 4300 6900 0    50   ~ 0
+COL6
+Text Label 4300 7100 0    50   ~ 0
+ROW5
+Text Label 4300 7200 0    50   ~ 0
+COL6
+Text Label 4300 7400 0    50   ~ 0
+ROW6
+Text Label 4300 7500 0    50   ~ 0
+COL6
+Text Label 1500 3450 0    50   ~ 0
+B
+Text Label 1500 3550 0    50   ~ 0
+A
+$Comp
+L Connector_Generic:Conn_01x02 COMMS0
+U 1 1 5E57A3A7
+P 1300 3100
+F 0 "COMMS0" H 1218 2775 50  0000 C CNN
+F 1 "Conn_01x02" H 1218 2866 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1300 3100 50  0001 C CNN
+F 3 "~" H 1300 3100 50  0001 C CNN
+	1    1300 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 COMMS1
+U 1 1 5E57ACB7
+P 1300 3550
+F 0 "COMMS1" H 1218 3225 50  0000 C CNN
+F 1 "Conn_01x02" H 1218 3316 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1300 3550 50  0001 C CNN
+F 3 "~" H 1300 3550 50  0001 C CNN
+	1    1300 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 +5VIN
+U 1 1 5E589672
+P 3150 900
+F 0 "+5VIN" H 3068 575 50  0000 C CNN
+F 1 "Conn_01x02" H 3068 666 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3150 900 50  0001 C CNN
+F 3 "~" H 3150 900 50  0001 C CNN
+	1    3150 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET0
+U 1 1 5E5CAC7E
+P 5100 1300
+F 0 "FET0" H 5208 1353 60  0000 L CNN
+F 1 "2N7000" H 5208 1247 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 5300 1500 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 1600 60  0001 L CNN
+F 4 "2N7000FS-ND" H 5300 1700 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 5300 1800 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5300 1900 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5300 2000 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 2100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 5300 2200 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 5300 2300 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 5300 2400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5300 2500 60  0001 L CNN "Status"
+	1    5100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R300
+U 1 1 5E5D3529
+P 5100 1700
+F 0 "R300" V 5200 1700 50  0000 C CNN
+F 1 "300" V 5216 1700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 5030 1700 50  0001 C CNN
+F 3 "~" H 5100 1700 50  0001 C CNN
+	1    5100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10k0
+U 1 1 5E5D604B
+P 4600 1400
+F 0 "R10k0" V 4700 1400 50  0000 C CNN
+F 1 "10k" V 4716 1400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 4530 1400 50  0001 C CNN
+F 3 "~" H 4600 1400 50  0001 C CNN
+	1    4600 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 1400 4750 1400
+Wire Wire Line
+	4450 1400 4400 1400
+Wire Wire Line
+	5100 1500 5100 1550
+Wire Wire Line
+	5100 1850 5100 1900
+Text Label 4400 2550 2    50   ~ 0
 A1
-Text Label 6800 1100 2    50   ~ 0
-ROW1
-Text Label 7600 1350 0    50   ~ 0
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET1
+U 1 1 5E604177
+P 5100 2450
+F 0 "FET1" H 5208 2503 60  0000 L CNN
+F 1 "2N7000" H 5208 2397 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 5300 2650 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 2750 60  0001 L CNN
+F 4 "2N7000FS-ND" H 5300 2850 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 5300 2950 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5300 3050 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5300 3150 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 3250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 5300 3350 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 5300 3450 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 5300 3550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5300 3650 60  0001 L CNN "Status"
+	1    5100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R301
+U 1 1 5E60417D
+P 5100 2850
+F 0 "R301" V 5200 2850 50  0000 C CNN
+F 1 "300" V 5216 2850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 5030 2850 50  0001 C CNN
+F 3 "~" H 5100 2850 50  0001 C CNN
+	1    5100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10k1
+U 1 1 5E604183
+P 4600 2550
+F 0 "R10k1" V 4700 2550 50  0000 C CNN
+F 1 "10k" V 4716 2550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 4530 2550 50  0001 C CNN
+F 3 "~" H 4600 2550 50  0001 C CNN
+	1    4600 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 2550 4750 2550
+Wire Wire Line
+	4450 2550 4400 2550
+$Comp
+L power:+5V #PWR?
+U 1 1 5E60418B
+P 5600 750
+F 0 "#PWR?" H 5600 600 50  0001 C CNN
+F 1 "+5V" H 5615 923 50  0000 C CNN
+F 2 "" H 5600 750 50  0001 C CNN
+F 3 "" H 5600 750 50  0001 C CNN
+	1    5600 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 850  5600 750 
+Wire Wire Line
+	5100 2650 5100 2700
+Wire Wire Line
+	5100 3000 5100 3050
+Text Label 6800 1400 0    50   ~ 0
 A2
-Text Label 6800 1350 2    50   ~ 0
+Text Label 6100 1900 0    50   ~ 0
 ROW2
-Text Label 7600 1600 0    50   ~ 0
+Text Label 6100 3050 0    50   ~ 0
+ROW3
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET2
+U 1 1 5E69E69A
+P 6100 1300
+F 0 "FET2" H 6207 1353 60  0000 L CNN
+F 1 "2N7000" H 6207 1247 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 6300 1500 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 1600 60  0001 L CNN
+F 4 "2N7000FS-ND" H 6300 1700 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 6300 1800 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6300 1900 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 6300 2000 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 2100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 6300 2200 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 6300 2300 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 6300 2400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6300 2500 60  0001 L CNN "Status"
+	1    6100 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R302
+U 1 1 5E69E6A0
+P 6100 1700
+F 0 "R302" V 6200 1700 50  0000 C CNN
+F 1 "300" V 6216 1700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6030 1700 50  0001 C CNN
+F 3 "~" H 6100 1700 50  0001 C CNN
+	1    6100 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R10k2
+U 1 1 5E69E6A6
+P 6600 1400
+F 0 "R10k2" V 6700 1400 50  0000 C CNN
+F 1 "10k" V 6716 1400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6530 1400 50  0001 C CNN
+F 3 "~" H 6600 1400 50  0001 C CNN
+	1    6600 1400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6400 1400 6450 1400
+Wire Wire Line
+	6750 1400 6800 1400
+Wire Wire Line
+	6100 1500 6100 1550
+Wire Wire Line
+	6100 1850 6100 1900
+Text Label 6800 2550 0    50   ~ 0
 A3
-Text Label 6800 1600 2    50   ~ 0
-ROW3
-Text Label 7600 1850 0    50   ~ 0
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET3
+U 1 1 5E69E6C3
+P 6100 2450
+F 0 "FET3" H 6207 2503 60  0000 L CNN
+F 1 "2N7000" H 6207 2397 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 6300 2650 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 2750 60  0001 L CNN
+F 4 "2N7000FS-ND" H 6300 2850 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 6300 2950 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6300 3050 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 6300 3150 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 3250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 6300 3350 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 6300 3450 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 6300 3550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6300 3650 60  0001 L CNN "Status"
+	1    6100 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R303
+U 1 1 5E69E6C9
+P 6100 2850
+F 0 "R303" V 6200 2850 50  0000 C CNN
+F 1 "300" V 6216 2850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6030 2850 50  0001 C CNN
+F 3 "~" H 6100 2850 50  0001 C CNN
+	1    6100 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R10k3
+U 1 1 5E69E6CF
+P 6600 2550
+F 0 "R10k3" V 6700 2550 50  0000 C CNN
+F 1 "10k" V 6716 2550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6530 2550 50  0001 C CNN
+F 3 "~" H 6600 2550 50  0001 C CNN
+	1    6600 2550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6400 2550 6450 2550
+Wire Wire Line
+	6750 2550 6800 2550
+Wire Wire Line
+	6100 2650 6100 2700
+Wire Wire Line
+	6100 3000 6100 3050
+Wire Wire Line
+	6100 850  6100 1100
+Wire Wire Line
+	5100 850  5600 850 
+Wire Wire Line
+	5100 850  5100 1100
+Wire Wire Line
+	6100 2050 5600 2050
+Wire Wire Line
+	5100 2050 5100 2250
+Wire Wire Line
+	6100 2050 6100 2250
+Wire Wire Line
+	5600 2050 5600 850 
+Connection ~ 5600 2050
+Wire Wire Line
+	5600 2050 5100 2050
+Connection ~ 5600 850 
+Wire Wire Line
+	5600 850  6100 850 
+Text Label 7100 1400 2    50   ~ 0
 A4
-Text Label 6800 1850 2    50   ~ 0
+Text Label 7800 1900 2    50   ~ 0
 ROW4
-Text Label 7600 2100 0    50   ~ 0
+Text Label 7800 3050 2    50   ~ 0
+ROW5
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET4
+U 1 1 5E744831
+P 7800 1300
+F 0 "FET4" H 7908 1353 60  0000 L CNN
+F 1 "2N7000" H 7908 1247 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 8000 1500 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 1600 60  0001 L CNN
+F 4 "2N7000FS-ND" H 8000 1700 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 8000 1800 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 8000 1900 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 8000 2000 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 2100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 8000 2200 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 8000 2300 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 8000 2400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8000 2500 60  0001 L CNN "Status"
+	1    7800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R304
+U 1 1 5E744837
+P 7800 1700
+F 0 "R304" V 7900 1700 50  0000 C CNN
+F 1 "300" V 7916 1700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7730 1700 50  0001 C CNN
+F 3 "~" H 7800 1700 50  0001 C CNN
+	1    7800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10k4
+U 1 1 5E74483D
+P 7300 1400
+F 0 "R10k4" V 7400 1400 50  0000 C CNN
+F 1 "10k" V 7416 1400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7230 1400 50  0001 C CNN
+F 3 "~" H 7300 1400 50  0001 C CNN
+	1    7300 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 1400 7450 1400
+Wire Wire Line
+	7150 1400 7100 1400
+Wire Wire Line
+	7800 1500 7800 1550
+Wire Wire Line
+	7800 1850 7800 1900
+Text Label 7100 2550 2    50   ~ 0
 A5
-Text Label 6800 2100 2    50   ~ 0
-ROW5
-Text Label 7600 2350 0    50   ~ 0
-SCK
-Text Label 6800 2350 2    50   ~ 0
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET5
+U 1 1 5E744851
+P 7800 2450
+F 0 "FET5" H 7908 2503 60  0000 L CNN
+F 1 "2N7000" H 7908 2397 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 8000 2650 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 2750 60  0001 L CNN
+F 4 "2N7000FS-ND" H 8000 2850 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 8000 2950 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 8000 3050 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 8000 3150 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 3250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 8000 3350 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 8000 3450 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 8000 3550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8000 3650 60  0001 L CNN "Status"
+	1    7800 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R305
+U 1 1 5E744857
+P 7800 2850
+F 0 "R305" V 7900 2850 50  0000 C CNN
+F 1 "300" V 7916 2850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7730 2850 50  0001 C CNN
+F 3 "~" H 7800 2850 50  0001 C CNN
+	1    7800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10k5
+U 1 1 5E74485D
+P 7300 2550
+F 0 "R10k5" V 7400 2550 50  0000 C CNN
+F 1 "10k" V 7416 2550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7230 2550 50  0001 C CNN
+F 3 "~" H 7300 2550 50  0001 C CNN
+	1    7300 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 2550 7450 2550
+Wire Wire Line
+	7150 2550 7100 2550
+$Comp
+L power:+5V #PWR?
+U 1 1 5E744865
+P 8300 750
+F 0 "#PWR?" H 8300 600 50  0001 C CNN
+F 1 "+5V" H 8315 923 50  0000 C CNN
+F 2 "" H 8300 750 50  0001 C CNN
+F 3 "" H 8300 750 50  0001 C CNN
+	1    8300 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 850  8300 750 
+Wire Wire Line
+	7800 2650 7800 2700
+Wire Wire Line
+	7800 3000 7800 3050
+Text Label 9500 1400 0    50   ~ 0
+A6
+Text Label 8800 1900 0    50   ~ 0
 ROW6
-Text Label 7600 2600 0    50   ~ 0
-MOSI
-Text Label 6800 2600 2    50   ~ 0
-ROW7
-Wire Wire Line
-	6800 850  7600 850 
-Wire Wire Line
-	6800 1100 7600 1100
-Wire Wire Line
-	6800 1350 7600 1350
-Wire Wire Line
-	6800 1600 7600 1600
-Wire Wire Line
-	6800 1850 7600 1850
-Wire Wire Line
-	6800 2100 7600 2100
-Wire Wire Line
-	6800 2350 7600 2350
-Wire Wire Line
-	6800 2600 7600 2600
-Text Label 5650 3550 0    50   ~ 0
-ROW0
-Text Label 5650 3650 0    50   ~ 0
-COL0
 $Comp
-L Connector:Screw_Terminal_01x02 LED1_0
-U 1 1 5E803779
-P 5450 3950
-F 0 "LED1_0" H 5450 3750 50  0000 C CNN
-F 1 "Screw-terminal" H 5368 3716 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5450 3950 50  0001 C CNN
-F 3 "~" H 5450 3950 50  0001 C CNN
-	1    5450 3950
-	-1   0    0    1   
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET6
+U 1 1 5E74487A
+P 8800 1300
+F 0 "FET6" H 8907 1353 60  0000 L CNN
+F 1 "2N7000" H 8907 1247 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 9000 1500 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 9000 1600 60  0001 L CNN
+F 4 "2N7000FS-ND" H 9000 1700 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 9000 1800 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 9000 1900 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 9000 2000 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 9000 2100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 9000 2200 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 9000 2300 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 9000 2400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9000 2500 60  0001 L CNN "Status"
+	1    8800 1300
+	-1   0    0    -1  
 $EndComp
-Text Label 5650 3850 0    50   ~ 0
-ROW1
-Text Label 5650 3950 0    50   ~ 0
-COL0
 $Comp
-L Connector:Screw_Terminal_01x02 LED2_0
-U 1 1 5E805227
-P 5450 4250
-F 0 "LED2_0" H 5450 4050 50  0000 C CNN
-F 1 "Screw-terminal" H 5368 4016 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5450 4250 50  0001 C CNN
-F 3 "~" H 5450 4250 50  0001 C CNN
-	1    5450 4250
-	-1   0    0    1   
+L Device:R R306
+U 1 1 5E744880
+P 8800 1700
+F 0 "R306" V 8900 1700 50  0000 C CNN
+F 1 "300" V 8916 1700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 8730 1700 50  0001 C CNN
+F 3 "~" H 8800 1700 50  0001 C CNN
+	1    8800 1700
+	-1   0    0    -1  
 $EndComp
-Text Label 5650 4150 0    50   ~ 0
-ROW2
-Text Label 5650 4250 0    50   ~ 0
-COL0
 $Comp
-L Connector:Screw_Terminal_01x02 LED3_0
-U 1 1 5E80522F
-P 5450 4550
-F 0 "LED3_0" H 5450 4350 50  0000 C CNN
-F 1 "Screw-terminal" H 5368 4316 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5450 4550 50  0001 C CNN
-F 3 "~" H 5450 4550 50  0001 C CNN
-	1    5450 4550
-	-1   0    0    1   
+L Device:R R10k6
+U 1 1 5E744886
+P 9300 1400
+F 0 "R10k6" V 9400 1400 50  0000 C CNN
+F 1 "10k" V 9416 1400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 9230 1400 50  0001 C CNN
+F 3 "~" H 9300 1400 50  0001 C CNN
+	1    9300 1400
+	0    1    -1   0   
 $EndComp
-Text Label 5650 4450 0    50   ~ 0
-ROW3
-Text Label 5650 4550 0    50   ~ 0
+Wire Wire Line
+	9100 1400 9150 1400
+Wire Wire Line
+	9450 1400 9500 1400
+Wire Wire Line
+	8800 1500 8800 1550
+Wire Wire Line
+	8800 1850 8800 1900
+Wire Wire Line
+	8800 850  8800 1100
+Wire Wire Line
+	7800 850  8300 850 
+Wire Wire Line
+	7800 850  7800 1100
+Wire Wire Line
+	7800 2050 7800 2250
+Wire Wire Line
+	8300 2050 8300 850 
+Wire Wire Line
+	8300 2050 7800 2050
+Connection ~ 8300 850 
+Wire Wire Line
+	8300 850  8800 850 
+Text Label 4400 4050 2    50   ~ 0
+D13
+Text Label 5100 4550 2    50   ~ 0
 COL0
-$Comp
-L Connector:Screw_Terminal_01x02 LED4_0
-U 1 1 5E8082D5
-P 5450 4850
-F 0 "LED4_0" H 5450 4650 50  0000 C CNN
-F 1 "Screw-terminal" H 5368 4616 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5450 4850 50  0001 C CNN
-F 3 "~" H 5450 4850 50  0001 C CNN
-	1    5450 4850
-	-1   0    0    1   
-$EndComp
-Text Label 5650 4750 0    50   ~ 0
-ROW4
-Text Label 5650 4850 0    50   ~ 0
-COL0
-$Comp
-L Connector:Screw_Terminal_01x02 LED5_0
-U 1 1 5E8082DD
-P 5450 5150
-F 0 "LED5_0" H 5450 4950 50  0000 C CNN
-F 1 "Screw-terminal" H 5368 4916 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5450 5150 50  0001 C CNN
-F 3 "~" H 5450 5150 50  0001 C CNN
-	1    5450 5150
-	-1   0    0    1   
-$EndComp
-Text Label 5650 5050 0    50   ~ 0
-ROW5
-Text Label 5650 5150 0    50   ~ 0
-COL0
-$Comp
-L Connector:Screw_Terminal_01x02 LED6_0
-U 1 1 5E8082E5
-P 5450 5450
-F 0 "LED6_0" H 5450 5250 50  0000 C CNN
-F 1 "Screw-terminal" H 5368 5216 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5450 5450 50  0001 C CNN
-F 3 "~" H 5450 5450 50  0001 C CNN
-	1    5450 5450
-	-1   0    0    1   
-$EndComp
-Text Label 5650 5350 0    50   ~ 0
-ROW6
-Text Label 5650 5450 0    50   ~ 0
-COL0
-$Comp
-L Connector:Screw_Terminal_01x02 LED7_0
-U 1 1 5E8082ED
-P 5450 5750
-F 0 "LED7_0" H 5450 5550 50  0000 C CNN
-F 1 "Screw-terminal" H 5368 5516 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5450 5750 50  0001 C CNN
-F 3 "~" H 5450 5750 50  0001 C CNN
-	1    5450 5750
-	-1   0    0    1   
-$EndComp
-Text Label 5650 5650 0    50   ~ 0
-ROW7
-Text Label 5650 5750 0    50   ~ 0
-COL0
-$Comp
-L Connector:Screw_Terminal_01x02 LED0_1
-U 1 1 5E816204
-P 6000 3650
-F 0 "LED0_1" H 6000 3450 50  0000 C CNN
-F 1 "Screw-terminal" H 5918 3416 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6000 3650 50  0001 C CNN
-F 3 "~" H 6000 3650 50  0001 C CNN
-	1    6000 3650
-	-1   0    0    1   
-$EndComp
-Text Label 6200 3550 0    50   ~ 0
-ROW0
-Text Label 6200 3650 0    50   ~ 0
+Text Label 5100 5700 2    50   ~ 0
 COL1
 $Comp
-L Connector:Screw_Terminal_01x02 LED1_1
-U 1 1 5E81620C
-P 6000 3950
-F 0 "LED1_1" H 6000 3750 50  0000 C CNN
-F 1 "Screw-terminal" H 5918 3716 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6000 3950 50  0001 C CNN
-F 3 "~" H 6000 3950 50  0001 C CNN
-	1    6000 3950
-	-1   0    0    1   
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET7
+U 1 1 5E813A85
+P 5100 3950
+F 0 "FET7" H 5208 4003 60  0000 L CNN
+F 1 "2N7000" H 5208 3897 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 5300 4150 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 4250 60  0001 L CNN
+F 4 "2N7000FS-ND" H 5300 4350 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 5300 4450 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5300 4550 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5300 4650 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 4750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 5300 4850 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 5300 4950 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 5300 5050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5300 5150 60  0001 L CNN "Status"
+	1    5100 3950
+	1    0    0    -1  
 $EndComp
-Text Label 6200 3850 0    50   ~ 0
-ROW1
-Text Label 6200 3950 0    50   ~ 0
-COL1
 $Comp
-L Connector:Screw_Terminal_01x02 LED2_1
-U 1 1 5E816214
-P 6000 4250
-F 0 "LED2_1" H 6000 4050 50  0000 C CNN
-F 1 "Screw-terminal" H 5918 4016 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6000 4250 50  0001 C CNN
-F 3 "~" H 6000 4250 50  0001 C CNN
-	1    6000 4250
-	-1   0    0    1   
+L Device:R R307
+U 1 1 5E813A8B
+P 5100 4350
+F 0 "R307" V 5200 4350 50  0000 C CNN
+F 1 "300" V 5216 4350 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 5030 4350 50  0001 C CNN
+F 3 "~" H 5100 4350 50  0001 C CNN
+	1    5100 4350
+	1    0    0    -1  
 $EndComp
-Text Label 6200 4150 0    50   ~ 0
-ROW2
-Text Label 6200 4250 0    50   ~ 0
-COL1
 $Comp
-L Connector:Screw_Terminal_01x02 LED3_1
-U 1 1 5E81621C
-P 6000 4550
-F 0 "LED3_1" H 6000 4350 50  0000 C CNN
-F 1 "Screw-terminal" H 5918 4316 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6000 4550 50  0001 C CNN
-F 3 "~" H 6000 4550 50  0001 C CNN
-	1    6000 4550
-	-1   0    0    1   
+L Device:R R10k7
+U 1 1 5E813A91
+P 4600 4050
+F 0 "R10k7" V 4700 4050 50  0000 C CNN
+F 1 "10k" V 4716 4050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 4530 4050 50  0001 C CNN
+F 3 "~" H 4600 4050 50  0001 C CNN
+	1    4600 4050
+	0    -1   -1   0   
 $EndComp
-Text Label 6200 4450 0    50   ~ 0
-ROW3
-Text Label 6200 4550 0    50   ~ 0
-COL1
+Wire Wire Line
+	4800 4050 4750 4050
+Wire Wire Line
+	4450 4050 4400 4050
+Wire Wire Line
+	5100 4150 5100 4200
+Wire Wire Line
+	5100 4500 5100 4550
+Text Label 4400 5200 2    50   ~ 0
+D12
 $Comp
-L Connector:Screw_Terminal_01x02 LED4_1
-U 1 1 5E816224
-P 6000 4850
-F 0 "LED4_1" H 6000 4650 50  0000 C CNN
-F 1 "Screw-terminal" H 5918 4616 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6000 4850 50  0001 C CNN
-F 3 "~" H 6000 4850 50  0001 C CNN
-	1    6000 4850
-	-1   0    0    1   
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET8
+U 1 1 5E813AA5
+P 5100 5100
+F 0 "FET8" H 5208 5153 60  0000 L CNN
+F 1 "2N7000" H 5208 5047 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 5300 5300 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 5400 60  0001 L CNN
+F 4 "2N7000FS-ND" H 5300 5500 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 5300 5600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5300 5700 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5300 5800 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 5900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 5300 6000 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 5300 6100 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 5300 6200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5300 6300 60  0001 L CNN "Status"
+	1    5100 5100
+	1    0    0    -1  
 $EndComp
-Text Label 6200 4750 0    50   ~ 0
-ROW4
-Text Label 6200 4850 0    50   ~ 0
-COL1
 $Comp
-L Connector:Screw_Terminal_01x02 LED5_1
-U 1 1 5E81622C
-P 6000 5150
-F 0 "LED5_1" H 6000 4950 50  0000 C CNN
-F 1 "Screw-terminal" H 5918 4916 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6000 5150 50  0001 C CNN
-F 3 "~" H 6000 5150 50  0001 C CNN
-	1    6000 5150
-	-1   0    0    1   
+L Device:R R308
+U 1 1 5E813AAB
+P 5100 5500
+F 0 "R308" V 5200 5500 50  0000 C CNN
+F 1 "300" V 5216 5500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 5030 5500 50  0001 C CNN
+F 3 "~" H 5100 5500 50  0001 C CNN
+	1    5100 5500
+	1    0    0    -1  
 $EndComp
-Text Label 6200 5050 0    50   ~ 0
-ROW5
-Text Label 6200 5150 0    50   ~ 0
-COL1
 $Comp
-L Connector:Screw_Terminal_01x02 LED6_1
-U 1 1 5E816234
-P 6000 5450
-F 0 "LED6_1" H 6000 5250 50  0000 C CNN
-F 1 "Screw-terminal" H 5918 5216 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6000 5450 50  0001 C CNN
-F 3 "~" H 6000 5450 50  0001 C CNN
-	1    6000 5450
-	-1   0    0    1   
+L Device:R R10k8
+U 1 1 5E813AB1
+P 4600 5200
+F 0 "R10k8" V 4700 5200 50  0000 C CNN
+F 1 "10k" V 4716 5200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 4530 5200 50  0001 C CNN
+F 3 "~" H 4600 5200 50  0001 C CNN
+	1    4600 5200
+	0    -1   -1   0   
 $EndComp
-Text Label 6200 5350 0    50   ~ 0
-ROW6
-Text Label 6200 5450 0    50   ~ 0
-COL1
+Wire Wire Line
+	4800 5200 4750 5200
+Wire Wire Line
+	4450 5200 4400 5200
 $Comp
-L Connector:Screw_Terminal_01x02 LED7_1
-U 1 1 5E81623C
-P 6000 5750
-F 0 "LED7_1" H 6000 5550 50  0000 C CNN
-F 1 "Screw-terminal" H 5918 5516 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6000 5750 50  0001 C CNN
-F 3 "~" H 6000 5750 50  0001 C CNN
-	1    6000 5750
-	-1   0    0    1   
+L power:+5V #PWR?
+U 1 1 5E813AB9
+P 5600 3400
+F 0 "#PWR?" H 5600 3250 50  0001 C CNN
+F 1 "+5V" H 5615 3573 50  0000 C CNN
+F 2 "" H 5600 3400 50  0001 C CNN
+F 3 "" H 5600 3400 50  0001 C CNN
+	1    5600 3400
+	1    0    0    -1  
 $EndComp
-Text Label 6200 5650 0    50   ~ 0
-ROW7
-Text Label 6200 5750 0    50   ~ 0
-COL1
-$Comp
-L Connector:Screw_Terminal_01x02 LED0_2
-U 1 1 5E823F66
-P 6550 3650
-F 0 "LED0_2" H 6550 3450 50  0000 C CNN
-F 1 "Screw-terminal" H 6468 3416 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6550 3650 50  0001 C CNN
-F 3 "~" H 6550 3650 50  0001 C CNN
-	1    6550 3650
-	-1   0    0    1   
-$EndComp
-Text Label 6750 3550 0    50   ~ 0
-ROW0
-Text Label 6750 3650 0    50   ~ 0
+Wire Wire Line
+	5600 3500 5600 3400
+Wire Wire Line
+	5100 5300 5100 5350
+Wire Wire Line
+	5100 5650 5100 5700
+Text Label 6800 4050 0    50   ~ 0
+D11
+Text Label 6100 4550 0    50   ~ 0
 COL2
-$Comp
-L Connector:Screw_Terminal_01x02 LED1_2
-U 1 1 5E823F6E
-P 6550 3950
-F 0 "LED1_2" H 6550 3750 50  0000 C CNN
-F 1 "Screw-terminal" H 6468 3716 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6550 3950 50  0001 C CNN
-F 3 "~" H 6550 3950 50  0001 C CNN
-	1    6550 3950
-	-1   0    0    1   
-$EndComp
-Text Label 6750 3850 0    50   ~ 0
-ROW1
-Text Label 6750 3950 0    50   ~ 0
-COL2
-$Comp
-L Connector:Screw_Terminal_01x02 LED2_2
-U 1 1 5E823F76
-P 6550 4250
-F 0 "LED2_2" H 6550 4050 50  0000 C CNN
-F 1 "Screw-terminal" H 6468 4016 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6550 4250 50  0001 C CNN
-F 3 "~" H 6550 4250 50  0001 C CNN
-	1    6550 4250
-	-1   0    0    1   
-$EndComp
-Text Label 6750 4150 0    50   ~ 0
-ROW2
-Text Label 6750 4250 0    50   ~ 0
-COL2
-$Comp
-L Connector:Screw_Terminal_01x02 LED3_2
-U 1 1 5E823F7E
-P 6550 4550
-F 0 "LED3_2" H 6550 4350 50  0000 C CNN
-F 1 "Screw-terminal" H 6468 4316 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6550 4550 50  0001 C CNN
-F 3 "~" H 6550 4550 50  0001 C CNN
-	1    6550 4550
-	-1   0    0    1   
-$EndComp
-Text Label 6750 4450 0    50   ~ 0
-ROW3
-Text Label 6750 4550 0    50   ~ 0
-COL2
-$Comp
-L Connector:Screw_Terminal_01x02 LED4_2
-U 1 1 5E823F86
-P 6550 4850
-F 0 "LED4_2" H 6550 4650 50  0000 C CNN
-F 1 "Screw-terminal" H 6468 4616 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6550 4850 50  0001 C CNN
-F 3 "~" H 6550 4850 50  0001 C CNN
-	1    6550 4850
-	-1   0    0    1   
-$EndComp
-Text Label 6750 4750 0    50   ~ 0
-ROW4
-Text Label 6750 4850 0    50   ~ 0
-COL2
-$Comp
-L Connector:Screw_Terminal_01x02 LED5_2
-U 1 1 5E823F8E
-P 6550 5150
-F 0 "LED5_2" H 6550 4950 50  0000 C CNN
-F 1 "Screw-terminal" H 6468 4916 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6550 5150 50  0001 C CNN
-F 3 "~" H 6550 5150 50  0001 C CNN
-	1    6550 5150
-	-1   0    0    1   
-$EndComp
-Text Label 6750 5050 0    50   ~ 0
-ROW5
-Text Label 6750 5150 0    50   ~ 0
-COL2
-$Comp
-L Connector:Screw_Terminal_01x02 LED6_2
-U 1 1 5E823F96
-P 6550 5450
-F 0 "LED6_2" H 6550 5250 50  0000 C CNN
-F 1 "Screw-terminal" H 6468 5216 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6550 5450 50  0001 C CNN
-F 3 "~" H 6550 5450 50  0001 C CNN
-	1    6550 5450
-	-1   0    0    1   
-$EndComp
-Text Label 6750 5350 0    50   ~ 0
-ROW6
-Text Label 6750 5450 0    50   ~ 0
-COL2
-$Comp
-L Connector:Screw_Terminal_01x02 LED7_2
-U 1 1 5E823F9E
-P 6550 5750
-F 0 "LED7_2" H 6550 5550 50  0000 C CNN
-F 1 "Screw-terminal" H 6468 5516 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6550 5750 50  0001 C CNN
-F 3 "~" H 6550 5750 50  0001 C CNN
-	1    6550 5750
-	-1   0    0    1   
-$EndComp
-Text Label 6750 5650 0    50   ~ 0
-ROW7
-Text Label 6750 5750 0    50   ~ 0
-COL2
-$Comp
-L Connector:Screw_Terminal_01x02 LED0_3
-U 1 1 5E823FAE
-P 7100 3650
-F 0 "LED0_3" H 7100 3450 50  0000 C CNN
-F 1 "Screw-terminal" H 7018 3416 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7100 3650 50  0001 C CNN
-F 3 "~" H 7100 3650 50  0001 C CNN
-	1    7100 3650
-	-1   0    0    1   
-$EndComp
-Text Label 7300 3550 0    50   ~ 0
-ROW0
-Text Label 7300 3650 0    50   ~ 0
+Text Label 6100 5700 0    50   ~ 0
 COL3
 $Comp
-L Connector:Screw_Terminal_01x02 LED1_3
-U 1 1 5E823FB6
-P 7100 3950
-F 0 "LED1_3" H 7100 3750 50  0000 C CNN
-F 1 "Screw-terminal" H 7018 3716 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7100 3950 50  0001 C CNN
-F 3 "~" H 7100 3950 50  0001 C CNN
-	1    7100 3950
-	-1   0    0    1   
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET9
+U 1 1 5E813ACE
+P 6100 3950
+F 0 "FET9" H 6207 4003 60  0000 L CNN
+F 1 "2N7000" H 6207 3897 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 6300 4150 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 4250 60  0001 L CNN
+F 4 "2N7000FS-ND" H 6300 4350 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 6300 4450 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6300 4550 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 6300 4650 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 4750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 6300 4850 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 6300 4950 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 6300 5050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6300 5150 60  0001 L CNN "Status"
+	1    6100 3950
+	-1   0    0    -1  
 $EndComp
-Text Label 7300 3850 0    50   ~ 0
-ROW1
-Text Label 7300 3950 0    50   ~ 0
-COL3
 $Comp
-L Connector:Screw_Terminal_01x02 LED2_3
-U 1 1 5E823FBE
-P 7100 4250
-F 0 "LED2_3" H 7100 4050 50  0000 C CNN
-F 1 "Screw-terminal" H 7018 4016 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7100 4250 50  0001 C CNN
-F 3 "~" H 7100 4250 50  0001 C CNN
-	1    7100 4250
-	-1   0    0    1   
+L Device:R R309
+U 1 1 5E813AD4
+P 6100 4350
+F 0 "R309" V 6200 4350 50  0000 C CNN
+F 1 "300" V 6216 4350 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6030 4350 50  0001 C CNN
+F 3 "~" H 6100 4350 50  0001 C CNN
+	1    6100 4350
+	-1   0    0    -1  
 $EndComp
-Text Label 7300 4150 0    50   ~ 0
-ROW2
-Text Label 7300 4250 0    50   ~ 0
-COL3
 $Comp
-L Connector:Screw_Terminal_01x02 LED3_3
-U 1 1 5E823FC6
-P 7100 4550
-F 0 "LED3_3" H 7100 4350 50  0000 C CNN
-F 1 "Screw-terminal" H 7018 4316 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7100 4550 50  0001 C CNN
-F 3 "~" H 7100 4550 50  0001 C CNN
-	1    7100 4550
-	-1   0    0    1   
+L Device:R R10k9
+U 1 1 5E813ADA
+P 6600 4050
+F 0 "R10k9" V 6700 4050 50  0000 C CNN
+F 1 "10k" V 6716 4050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6530 4050 50  0001 C CNN
+F 3 "~" H 6600 4050 50  0001 C CNN
+	1    6600 4050
+	0    1    -1   0   
 $EndComp
-Text Label 7300 4450 0    50   ~ 0
-ROW3
-Text Label 7300 4550 0    50   ~ 0
-COL3
+Wire Wire Line
+	6400 4050 6450 4050
+Wire Wire Line
+	6750 4050 6800 4050
+Wire Wire Line
+	6100 4150 6100 4200
+Wire Wire Line
+	6100 4500 6100 4550
+Text Label 6800 5200 0    50   ~ 0
+D10
 $Comp
-L Connector:Screw_Terminal_01x02 LED4_3
-U 1 1 5E823FCE
-P 7100 4850
-F 0 "LED4_3" H 7100 4650 50  0000 C CNN
-F 1 "Screw-terminal" H 7018 4616 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7100 4850 50  0001 C CNN
-F 3 "~" H 7100 4850 50  0001 C CNN
-	1    7100 4850
-	-1   0    0    1   
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET10
+U 1 1 5E813AEE
+P 6100 5100
+F 0 "FET10" H 6207 5153 60  0000 L CNN
+F 1 "2N7000" H 6207 5047 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 6300 5300 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 5400 60  0001 L CNN
+F 4 "2N7000FS-ND" H 6300 5500 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 6300 5600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6300 5700 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 6300 5800 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 5900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 6300 6000 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 6300 6100 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 6300 6200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6300 6300 60  0001 L CNN "Status"
+	1    6100 5100
+	-1   0    0    -1  
 $EndComp
-Text Label 7300 4750 0    50   ~ 0
-ROW4
-Text Label 7300 4850 0    50   ~ 0
-COL3
 $Comp
-L Connector:Screw_Terminal_01x02 LED5_3
-U 1 1 5E823FD6
-P 7100 5150
-F 0 "LED5_3" H 7100 4950 50  0000 C CNN
-F 1 "Screw-terminal" H 7018 4916 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7100 5150 50  0001 C CNN
-F 3 "~" H 7100 5150 50  0001 C CNN
-	1    7100 5150
-	-1   0    0    1   
+L Device:R R310
+U 1 1 5E813AF4
+P 6100 5500
+F 0 "R310" V 6200 5500 50  0000 C CNN
+F 1 "300" V 6216 5500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6030 5500 50  0001 C CNN
+F 3 "~" H 6100 5500 50  0001 C CNN
+	1    6100 5500
+	-1   0    0    -1  
 $EndComp
-Text Label 7300 5050 0    50   ~ 0
-ROW5
-Text Label 7300 5150 0    50   ~ 0
-COL3
 $Comp
-L Connector:Screw_Terminal_01x02 LED6_3
-U 1 1 5E823FDE
-P 7100 5450
-F 0 "LED6_3" H 7100 5250 50  0000 C CNN
-F 1 "Screw-terminal" H 7018 5216 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7100 5450 50  0001 C CNN
-F 3 "~" H 7100 5450 50  0001 C CNN
-	1    7100 5450
-	-1   0    0    1   
+L Device:R R10k10
+U 1 1 5E813AFA
+P 6600 5200
+F 0 "R10k10" V 6700 5200 50  0000 C CNN
+F 1 "10k" V 6716 5200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6530 5200 50  0001 C CNN
+F 3 "~" H 6600 5200 50  0001 C CNN
+	1    6600 5200
+	0    1    -1   0   
 $EndComp
-Text Label 7300 5350 0    50   ~ 0
-ROW6
-Text Label 7300 5450 0    50   ~ 0
-COL3
-$Comp
-L Connector:Screw_Terminal_01x02 LED7_3
-U 1 1 5E823FE6
-P 7100 5750
-F 0 "LED7_3" H 7100 5550 50  0000 C CNN
-F 1 "Screw-terminal" H 7018 5516 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7100 5750 50  0001 C CNN
-F 3 "~" H 7100 5750 50  0001 C CNN
-	1    7100 5750
-	-1   0    0    1   
-$EndComp
-Text Label 7300 5650 0    50   ~ 0
-ROW7
-Text Label 7300 5750 0    50   ~ 0
-COL3
-$Comp
-L Connector:Screw_Terminal_01x02 LED0_4
-U 1 1 5E84036A
-P 7650 3650
-F 0 "LED0_4" H 7650 3450 50  0000 C CNN
-F 1 "Screw-terminal" H 7568 3416 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7650 3650 50  0001 C CNN
-F 3 "~" H 7650 3650 50  0001 C CNN
-	1    7650 3650
-	-1   0    0    1   
-$EndComp
-Text Label 7850 3550 0    50   ~ 0
-ROW0
-Text Label 7850 3650 0    50   ~ 0
+Wire Wire Line
+	6400 5200 6450 5200
+Wire Wire Line
+	6750 5200 6800 5200
+Wire Wire Line
+	6100 5300 6100 5350
+Wire Wire Line
+	6100 5650 6100 5700
+Wire Wire Line
+	6100 3500 6100 3750
+Wire Wire Line
+	5100 3500 5600 3500
+Wire Wire Line
+	5100 3500 5100 3750
+Wire Wire Line
+	6100 4700 5600 4700
+Wire Wire Line
+	5100 4700 5100 4900
+Wire Wire Line
+	6100 4700 6100 4900
+Wire Wire Line
+	5600 4700 5600 3500
+Connection ~ 5600 4700
+Wire Wire Line
+	5600 4700 5100 4700
+Connection ~ 5600 3500
+Wire Wire Line
+	5600 3500 6100 3500
+Text Label 7100 4050 2    50   ~ 0
+D9
+Text Label 7800 4550 2    50   ~ 0
 COL4
-$Comp
-L Connector:Screw_Terminal_01x02 LED1_4
-U 1 1 5E840372
-P 7650 3950
-F 0 "LED1_4" H 7650 3750 50  0000 C CNN
-F 1 "Screw-terminal" H 7568 3716 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7650 3950 50  0001 C CNN
-F 3 "~" H 7650 3950 50  0001 C CNN
-	1    7650 3950
-	-1   0    0    1   
-$EndComp
-Text Label 7850 3850 0    50   ~ 0
-ROW1
-Text Label 7850 3950 0    50   ~ 0
-COL4
-$Comp
-L Connector:Screw_Terminal_01x02 LED2_4
-U 1 1 5E84037A
-P 7650 4250
-F 0 "LED2_4" H 7650 4050 50  0000 C CNN
-F 1 "Screw-terminal" H 7568 4016 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7650 4250 50  0001 C CNN
-F 3 "~" H 7650 4250 50  0001 C CNN
-	1    7650 4250
-	-1   0    0    1   
-$EndComp
-Text Label 7850 4150 0    50   ~ 0
-ROW2
-Text Label 7850 4250 0    50   ~ 0
-COL4
-$Comp
-L Connector:Screw_Terminal_01x02 LED3_4
-U 1 1 5E840382
-P 7650 4550
-F 0 "LED3_4" H 7650 4350 50  0000 C CNN
-F 1 "Screw-terminal" H 7568 4316 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7650 4550 50  0001 C CNN
-F 3 "~" H 7650 4550 50  0001 C CNN
-	1    7650 4550
-	-1   0    0    1   
-$EndComp
-Text Label 7850 4450 0    50   ~ 0
-ROW3
-Text Label 7850 4550 0    50   ~ 0
-COL4
-$Comp
-L Connector:Screw_Terminal_01x02 LED4_4
-U 1 1 5E84038A
-P 7650 4850
-F 0 "LED4_4" H 7650 4650 50  0000 C CNN
-F 1 "Screw-terminal" H 7568 4616 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7650 4850 50  0001 C CNN
-F 3 "~" H 7650 4850 50  0001 C CNN
-	1    7650 4850
-	-1   0    0    1   
-$EndComp
-Text Label 7850 4750 0    50   ~ 0
-ROW4
-Text Label 7850 4850 0    50   ~ 0
-COL4
-$Comp
-L Connector:Screw_Terminal_01x02 LED5_4
-U 1 1 5E840392
-P 7650 5150
-F 0 "LED5_4" H 7650 4950 50  0000 C CNN
-F 1 "Screw-terminal" H 7568 4916 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7650 5150 50  0001 C CNN
-F 3 "~" H 7650 5150 50  0001 C CNN
-	1    7650 5150
-	-1   0    0    1   
-$EndComp
-Text Label 7850 5050 0    50   ~ 0
-ROW5
-Text Label 7850 5150 0    50   ~ 0
-COL4
-$Comp
-L Connector:Screw_Terminal_01x02 LED6_4
-U 1 1 5E84039A
-P 7650 5450
-F 0 "LED6_4" H 7650 5250 50  0000 C CNN
-F 1 "Screw-terminal" H 7568 5216 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7650 5450 50  0001 C CNN
-F 3 "~" H 7650 5450 50  0001 C CNN
-	1    7650 5450
-	-1   0    0    1   
-$EndComp
-Text Label 7850 5350 0    50   ~ 0
-ROW6
-Text Label 7850 5450 0    50   ~ 0
-COL4
-$Comp
-L Connector:Screw_Terminal_01x02 LED7_4
-U 1 1 5E8403A2
-P 7650 5750
-F 0 "LED7_4" H 7650 5550 50  0000 C CNN
-F 1 "Screw-terminal" H 7568 5516 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7650 5750 50  0001 C CNN
-F 3 "~" H 7650 5750 50  0001 C CNN
-	1    7650 5750
-	-1   0    0    1   
-$EndComp
-Text Label 7850 5650 0    50   ~ 0
-ROW7
-Text Label 7850 5750 0    50   ~ 0
-COL4
-$Comp
-L Connector:Screw_Terminal_01x02 LED0_5
-U 1 1 5E8403B2
-P 8200 3650
-F 0 "LED0_5" H 8200 3450 50  0000 C CNN
-F 1 "Screw-terminal" H 8118 3416 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8200 3650 50  0001 C CNN
-F 3 "~" H 8200 3650 50  0001 C CNN
-	1    8200 3650
-	-1   0    0    1   
-$EndComp
-Text Label 8400 3550 0    50   ~ 0
-ROW0
-Text Label 8400 3650 0    50   ~ 0
+Text Label 7800 5700 2    50   ~ 0
 COL5
 $Comp
-L Connector:Screw_Terminal_01x02 LED1_5
-U 1 1 5E8403BA
-P 8200 3950
-F 0 "LED1_5" H 8200 3750 50  0000 C CNN
-F 1 "Screw-terminal" H 8118 3716 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8200 3950 50  0001 C CNN
-F 3 "~" H 8200 3950 50  0001 C CNN
-	1    8200 3950
-	-1   0    0    1   
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET11
+U 1 1 5E813B1B
+P 7800 3950
+F 0 "FET11" H 7908 4003 60  0000 L CNN
+F 1 "2N7000" H 7908 3897 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 8000 4150 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 4250 60  0001 L CNN
+F 4 "2N7000FS-ND" H 8000 4350 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 8000 4450 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 8000 4550 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 8000 4650 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 4750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 8000 4850 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 8000 4950 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 8000 5050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8000 5150 60  0001 L CNN "Status"
+	1    7800 3950
+	1    0    0    -1  
 $EndComp
-Text Label 8400 3850 0    50   ~ 0
-ROW1
-Text Label 8400 3950 0    50   ~ 0
-COL5
 $Comp
-L Connector:Screw_Terminal_01x02 LED2_5
-U 1 1 5E8403C2
-P 8200 4250
-F 0 "LED2_5" H 8200 4050 50  0000 C CNN
-F 1 "Screw-terminal" H 8118 4016 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8200 4250 50  0001 C CNN
-F 3 "~" H 8200 4250 50  0001 C CNN
-	1    8200 4250
-	-1   0    0    1   
+L Device:R R311
+U 1 1 5E813B21
+P 7800 4350
+F 0 "R311" V 7900 4350 50  0000 C CNN
+F 1 "300" V 7916 4350 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7730 4350 50  0001 C CNN
+F 3 "~" H 7800 4350 50  0001 C CNN
+	1    7800 4350
+	1    0    0    -1  
 $EndComp
-Text Label 8400 4150 0    50   ~ 0
-ROW2
-Text Label 8400 4250 0    50   ~ 0
-COL5
 $Comp
-L Connector:Screw_Terminal_01x02 LED3_5
-U 1 1 5E8403CA
-P 8200 4550
-F 0 "LED3_5" H 8200 4350 50  0000 C CNN
-F 1 "Screw-terminal" H 8118 4316 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8200 4550 50  0001 C CNN
-F 3 "~" H 8200 4550 50  0001 C CNN
-	1    8200 4550
-	-1   0    0    1   
+L Device:R R10k11
+U 1 1 5E813B27
+P 7300 4050
+F 0 "R10k11" V 7400 4050 50  0000 C CNN
+F 1 "10k" V 7416 4050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7230 4050 50  0001 C CNN
+F 3 "~" H 7300 4050 50  0001 C CNN
+	1    7300 4050
+	0    -1   -1   0   
 $EndComp
-Text Label 8400 4450 0    50   ~ 0
-ROW3
-Text Label 8400 4550 0    50   ~ 0
-COL5
+Wire Wire Line
+	7500 4050 7450 4050
+Wire Wire Line
+	7150 4050 7100 4050
+Wire Wire Line
+	7800 4150 7800 4200
+Wire Wire Line
+	7800 4500 7800 4550
+Text Label 7100 5200 2    50   ~ 0
+D6
 $Comp
-L Connector:Screw_Terminal_01x02 LED4_5
-U 1 1 5E8403D2
-P 8200 4850
-F 0 "LED4_5" H 8200 4650 50  0000 C CNN
-F 1 "Screw-terminal" H 8118 4616 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8200 4850 50  0001 C CNN
-F 3 "~" H 8200 4850 50  0001 C CNN
-	1    8200 4850
-	-1   0    0    1   
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET12
+U 1 1 5E813B3B
+P 7800 5100
+F 0 "FET12" H 7908 5153 60  0000 L CNN
+F 1 "2N7000" H 7908 5047 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 8000 5300 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 5400 60  0001 L CNN
+F 4 "2N7000FS-ND" H 8000 5500 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 8000 5600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 8000 5700 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 8000 5800 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 5900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 8000 6000 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 8000 6100 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 8000 6200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8000 6300 60  0001 L CNN "Status"
+	1    7800 5100
+	1    0    0    -1  
 $EndComp
-Text Label 8400 4750 0    50   ~ 0
-ROW4
-Text Label 8400 4850 0    50   ~ 0
-COL5
 $Comp
-L Connector:Screw_Terminal_01x02 LED5_5
-U 1 1 5E8403DA
-P 8200 5150
-F 0 "LED5_5" H 8200 4950 50  0000 C CNN
-F 1 "Screw-terminal" H 8118 4916 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8200 5150 50  0001 C CNN
-F 3 "~" H 8200 5150 50  0001 C CNN
-	1    8200 5150
-	-1   0    0    1   
+L Device:R R312
+U 1 1 5E813B41
+P 7800 5500
+F 0 "R312" V 7900 5500 50  0000 C CNN
+F 1 "300" V 7916 5500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7730 5500 50  0001 C CNN
+F 3 "~" H 7800 5500 50  0001 C CNN
+	1    7800 5500
+	1    0    0    -1  
 $EndComp
-Text Label 8400 5050 0    50   ~ 0
-ROW5
-Text Label 8400 5150 0    50   ~ 0
-COL5
 $Comp
-L Connector:Screw_Terminal_01x02 LED6_5
-U 1 1 5E8403E2
-P 8200 5450
-F 0 "LED6_5" H 8200 5250 50  0000 C CNN
-F 1 "Screw-terminal" H 8118 5216 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8200 5450 50  0001 C CNN
-F 3 "~" H 8200 5450 50  0001 C CNN
-	1    8200 5450
-	-1   0    0    1   
+L Device:R R10k12
+U 1 1 5E813B47
+P 7300 5200
+F 0 "R10k12" V 7400 5200 50  0000 C CNN
+F 1 "10k" V 7416 5200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7230 5200 50  0001 C CNN
+F 3 "~" H 7300 5200 50  0001 C CNN
+	1    7300 5200
+	0    -1   -1   0   
 $EndComp
-Text Label 8400 5350 0    50   ~ 0
-ROW6
-Text Label 8400 5450 0    50   ~ 0
-COL5
+Wire Wire Line
+	7500 5200 7450 5200
+Wire Wire Line
+	7150 5200 7100 5200
 $Comp
-L Connector:Screw_Terminal_01x02 LED7_5
-U 1 1 5E8403EA
-P 8200 5750
-F 0 "LED7_5" H 8200 5550 50  0000 C CNN
-F 1 "Screw-terminal" H 8118 5516 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8200 5750 50  0001 C CNN
-F 3 "~" H 8200 5750 50  0001 C CNN
-	1    8200 5750
-	-1   0    0    1   
+L power:+5V #PWR?
+U 1 1 5E813B4F
+P 8300 3400
+F 0 "#PWR?" H 8300 3250 50  0001 C CNN
+F 1 "+5V" H 8315 3573 50  0000 C CNN
+F 2 "" H 8300 3400 50  0001 C CNN
+F 3 "" H 8300 3400 50  0001 C CNN
+	1    8300 3400
+	1    0    0    -1  
 $EndComp
-Text Label 8400 5650 0    50   ~ 0
-ROW7
-Text Label 8400 5750 0    50   ~ 0
-COL5
-$Comp
-L Connector:Screw_Terminal_01x02 LED0_6
-U 1 1 5E8403FA
-P 8750 3650
-F 0 "LED0_6" H 8750 3450 50  0000 C CNN
-F 1 "Screw-terminal" H 8668 3416 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8750 3650 50  0001 C CNN
-F 3 "~" H 8750 3650 50  0001 C CNN
-	1    8750 3650
-	-1   0    0    1   
-$EndComp
-Text Label 8950 3550 0    50   ~ 0
-ROW0
-Text Label 8950 3650 0    50   ~ 0
+Wire Wire Line
+	8300 3500 8300 3400
+Wire Wire Line
+	7800 5300 7800 5350
+Wire Wire Line
+	7800 5650 7800 5700
+Text Label 9500 4050 0    50   ~ 0
+D5
+Text Label 8800 4550 0    50   ~ 0
 COL6
 $Comp
-L Connector:Screw_Terminal_01x02 LED1_6
-U 1 1 5E840402
-P 8750 3950
-F 0 "LED1_6" H 8750 3750 50  0000 C CNN
-F 1 "Screw-terminal" H 8668 3716 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8750 3950 50  0001 C CNN
-F 3 "~" H 8750 3950 50  0001 C CNN
-	1    8750 3950
-	-1   0    0    1   
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET13
+U 1 1 5E813B63
+P 8800 3950
+F 0 "FET13" H 8907 4003 60  0000 L CNN
+F 1 "2N7000" H 8907 3897 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 9000 4150 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 9000 4250 60  0001 L CNN
+F 4 "2N7000FS-ND" H 9000 4350 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 9000 4450 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 9000 4550 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 9000 4650 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 9000 4750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 9000 4850 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 9000 4950 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 9000 5050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9000 5150 60  0001 L CNN "Status"
+	1    8800 3950
+	-1   0    0    -1  
 $EndComp
-Text Label 8950 3850 0    50   ~ 0
-ROW1
-Text Label 8950 3950 0    50   ~ 0
-COL6
 $Comp
-L Connector:Screw_Terminal_01x02 LED2_6
-U 1 1 5E84040A
-P 8750 4250
-F 0 "LED2_6" H 8750 4050 50  0000 C CNN
-F 1 "Screw-terminal" H 8668 4016 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8750 4250 50  0001 C CNN
-F 3 "~" H 8750 4250 50  0001 C CNN
-	1    8750 4250
-	-1   0    0    1   
+L Device:R R313
+U 1 1 5E813B69
+P 8800 4350
+F 0 "R313" V 8900 4350 50  0000 C CNN
+F 1 "300" V 8916 4350 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 8730 4350 50  0001 C CNN
+F 3 "~" H 8800 4350 50  0001 C CNN
+	1    8800 4350
+	-1   0    0    -1  
 $EndComp
-Text Label 8950 4150 0    50   ~ 0
-ROW2
-Text Label 8950 4250 0    50   ~ 0
-COL6
 $Comp
-L Connector:Screw_Terminal_01x02 LED3_6
-U 1 1 5E840412
-P 8750 4550
-F 0 "LED3_6" H 8750 4350 50  0000 C CNN
-F 1 "Screw-terminal" H 8668 4316 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8750 4550 50  0001 C CNN
-F 3 "~" H 8750 4550 50  0001 C CNN
-	1    8750 4550
-	-1   0    0    1   
+L Device:R R10k13
+U 1 1 5E813B6F
+P 9300 4050
+F 0 "R10k13" V 9400 4050 50  0000 C CNN
+F 1 "10k" V 9416 4050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 9230 4050 50  0001 C CNN
+F 3 "~" H 9300 4050 50  0001 C CNN
+	1    9300 4050
+	0    1    -1   0   
 $EndComp
-Text Label 8950 4450 0    50   ~ 0
-ROW3
-Text Label 8950 4550 0    50   ~ 0
-COL6
+Wire Wire Line
+	9100 4050 9150 4050
+Wire Wire Line
+	9450 4050 9500 4050
+Wire Wire Line
+	8800 4150 8800 4200
+Wire Wire Line
+	8800 4500 8800 4550
+Wire Wire Line
+	8800 3500 8800 3750
+Wire Wire Line
+	7800 3500 8300 3500
+Wire Wire Line
+	7800 3500 7800 3750
+Wire Wire Line
+	7800 4700 7800 4900
+Wire Wire Line
+	8300 4700 8300 3500
+Wire Wire Line
+	8300 4700 7800 4700
+Connection ~ 8300 3500
+Wire Wire Line
+	8300 3500 8800 3500
 $Comp
-L Connector:Screw_Terminal_01x02 LED4_6
-U 1 1 5E84041A
-P 8750 4850
-F 0 "LED4_6" H 8750 4650 50  0000 C CNN
-F 1 "Screw-terminal" H 8668 4616 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8750 4850 50  0001 C CNN
-F 3 "~" H 8750 4850 50  0001 C CNN
-	1    8750 4850
+L Connector_Generic:Conn_01x01 GND
+U 1 1 5E857083
+P 3150 1400
+F 0 "GND" H 3068 1175 50  0000 C CNN
+F 1 "Conn_01x01" H 3068 1266 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3150 1400 50  0001 C CNN
+F 3 "~" H 3150 1400 50  0001 C CNN
+	1    3150 1400
 	-1   0    0    1   
 $EndComp
-Text Label 8950 4750 0    50   ~ 0
-ROW4
-Text Label 8950 4850 0    50   ~ 0
-COL6
 $Comp
-L Connector:Screw_Terminal_01x02 LED5_6
-U 1 1 5E840422
-P 8750 5150
-F 0 "LED5_6" H 8750 4950 50  0000 C CNN
-F 1 "Screw-terminal" H 8668 4916 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8750 5150 50  0001 C CNN
-F 3 "~" H 8750 5150 50  0001 C CNN
-	1    8750 5150
-	-1   0    0    1   
+L power:GND #PWR?
+U 1 1 5E87CA97
+P 3600 1450
+F 0 "#PWR?" H 3600 1200 50  0001 C CNN
+F 1 "GND" H 3605 1277 50  0000 C CNN
+F 2 "" H 3600 1450 50  0001 C CNN
+F 3 "" H 3600 1450 50  0001 C CNN
+	1    3600 1450
+	1    0    0    -1  
 $EndComp
-Text Label 8950 5050 0    50   ~ 0
-ROW5
-Text Label 8950 5150 0    50   ~ 0
-COL6
+Wire Wire Line
+	3600 1450 3600 1400
+Wire Wire Line
+	3600 1400 3350 1400
 $Comp
-L Connector:Screw_Terminal_01x02 LED6_6
-U 1 1 5E84042A
-P 8750 5450
-F 0 "LED6_6" H 8750 5250 50  0000 C CNN
-F 1 "Screw-terminal" H 8668 5216 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8750 5450 50  0001 C CNN
-F 3 "~" H 8750 5450 50  0001 C CNN
-	1    8750 5450
+L Connector_Generic:Conn_01x02 LED0_0
+U 1 1 5E8D7219
+P 800 5700
+F 0 "LED0_0" H 750 5500 50  0000 C CNN
+F 1 "Conn_01x02" H 718 5466 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 800 5700 50  0001 C CNN
+F 3 "~" H 800 5700 50  0001 C CNN
+	1    800  5700
 	-1   0    0    1   
 $EndComp
-Text Label 8950 5350 0    50   ~ 0
-ROW6
-Text Label 8950 5450 0    50   ~ 0
-COL6
 $Comp
-L Connector:Screw_Terminal_01x02 LED7_6
-U 1 1 5E840432
-P 8750 5750
-F 0 "LED7_6" H 8750 5550 50  0000 C CNN
-F 1 "Screw-terminal" H 8668 5516 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8750 5750 50  0001 C CNN
-F 3 "~" H 8750 5750 50  0001 C CNN
-	1    8750 5750
+L Connector_Generic:Conn_01x02 LED1_0
+U 1 1 5E8E8C42
+P 800 6000
+F 0 "LED1_0" H 750 5800 50  0000 C CNN
+F 1 "Conn_01x02" H 718 5766 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 800 6000 50  0001 C CNN
+F 3 "~" H 800 6000 50  0001 C CNN
+	1    800  6000
 	-1   0    0    1   
 $EndComp
-Text Label 8950 5650 0    50   ~ 0
-ROW7
-Text Label 8950 5750 0    50   ~ 0
-COL6
 $Comp
-L Connector:Screw_Terminal_01x02 LED0_7
-U 1 1 5E840442
-P 9300 3650
-F 0 "LED0_7" H 9300 3450 50  0000 C CNN
-F 1 "Screw-terminal" H 9218 3416 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9300 3650 50  0001 C CNN
-F 3 "~" H 9300 3650 50  0001 C CNN
-	1    9300 3650
+L Connector_Generic:Conn_01x02 LED2_0
+U 1 1 5E9051BE
+P 800 6300
+F 0 "LED2_0" H 750 6100 50  0000 C CNN
+F 1 "Conn_01x02" H 718 6066 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 800 6300 50  0001 C CNN
+F 3 "~" H 800 6300 50  0001 C CNN
+	1    800  6300
 	-1   0    0    1   
 $EndComp
-Text Label 9500 3550 0    50   ~ 0
-ROW0
-Text Label 9500 3650 0    50   ~ 0
-COL7
 $Comp
-L Connector:Screw_Terminal_01x02 LED1_7
-U 1 1 5E84044A
-P 9300 3950
-F 0 "LED1_7" H 9300 3750 50  0000 C CNN
-F 1 "Screw-terminal" H 9218 3716 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9300 3950 50  0001 C CNN
-F 3 "~" H 9300 3950 50  0001 C CNN
-	1    9300 3950
+L Connector_Generic:Conn_01x02 LED3_0
+U 1 1 5E9051C4
+P 800 6600
+F 0 "LED3_0" H 750 6400 50  0000 C CNN
+F 1 "Conn_01x02" H 718 6366 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 800 6600 50  0001 C CNN
+F 3 "~" H 800 6600 50  0001 C CNN
+	1    800  6600
 	-1   0    0    1   
 $EndComp
-Text Label 9500 3850 0    50   ~ 0
-ROW1
-Text Label 9500 3950 0    50   ~ 0
-COL7
 $Comp
-L Connector:Screw_Terminal_01x02 LED2_7
-U 1 1 5E840452
-P 9300 4250
-F 0 "LED2_7" H 9300 4050 50  0000 C CNN
-F 1 "Screw-terminal" H 9218 4016 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9300 4250 50  0001 C CNN
-F 3 "~" H 9300 4250 50  0001 C CNN
-	1    9300 4250
+L Connector_Generic:Conn_01x02 LED4_0
+U 1 1 5E90FA9B
+P 800 6900
+F 0 "LED4_0" H 750 6700 50  0000 C CNN
+F 1 "Conn_01x02" H 718 6666 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 800 6900 50  0001 C CNN
+F 3 "~" H 800 6900 50  0001 C CNN
+	1    800  6900
 	-1   0    0    1   
 $EndComp
-Text Label 9500 4150 0    50   ~ 0
-ROW2
-Text Label 9500 4250 0    50   ~ 0
-COL7
 $Comp
-L Connector:Screw_Terminal_01x02 LED3_7
-U 1 1 5E84045A
-P 9300 4550
-F 0 "LED3_7" H 9300 4350 50  0000 C CNN
-F 1 "Screw-terminal" H 9218 4316 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9300 4550 50  0001 C CNN
-F 3 "~" H 9300 4550 50  0001 C CNN
-	1    9300 4550
+L Connector_Generic:Conn_01x02 LED5_0
+U 1 1 5E90FAA1
+P 800 7200
+F 0 "LED5_0" H 750 7000 50  0000 C CNN
+F 1 "Conn_01x02" H 718 6966 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 800 7200 50  0001 C CNN
+F 3 "~" H 800 7200 50  0001 C CNN
+	1    800  7200
 	-1   0    0    1   
 $EndComp
-Text Label 9500 4450 0    50   ~ 0
-ROW3
-Text Label 9500 4550 0    50   ~ 0
-COL7
 $Comp
-L Connector:Screw_Terminal_01x02 LED4_7
-U 1 1 5E840462
-P 9300 4850
-F 0 "LED4_7" H 9300 4650 50  0000 C CNN
-F 1 "Screw-terminal" H 9218 4616 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9300 4850 50  0001 C CNN
-F 3 "~" H 9300 4850 50  0001 C CNN
-	1    9300 4850
+L Connector_Generic:Conn_01x02 LED6_0
+U 1 1 5E90FAA7
+P 800 7500
+F 0 "LED6_0" H 750 7300 50  0000 C CNN
+F 1 "Conn_01x02" H 718 7266 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 800 7500 50  0001 C CNN
+F 3 "~" H 800 7500 50  0001 C CNN
+	1    800  7500
 	-1   0    0    1   
 $EndComp
-Text Label 9500 4750 0    50   ~ 0
-ROW4
-Text Label 9500 4850 0    50   ~ 0
-COL7
 $Comp
-L Connector:Screw_Terminal_01x02 LED5_7
-U 1 1 5E84046A
-P 9300 5150
-F 0 "LED5_7" H 9300 4950 50  0000 C CNN
-F 1 "Screw-terminal" H 9218 4916 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9300 5150 50  0001 C CNN
-F 3 "~" H 9300 5150 50  0001 C CNN
-	1    9300 5150
+L Connector_Generic:Conn_01x02 LED0_1
+U 1 1 5E9410F5
+P 1350 5700
+F 0 "LED0_1" H 1300 5500 50  0000 C CNN
+F 1 "Conn_01x02" H 1268 5466 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1350 5700 50  0001 C CNN
+F 3 "~" H 1350 5700 50  0001 C CNN
+	1    1350 5700
 	-1   0    0    1   
 $EndComp
-Text Label 9500 5050 0    50   ~ 0
-ROW5
-Text Label 9500 5150 0    50   ~ 0
-COL7
 $Comp
-L Connector:Screw_Terminal_01x02 LED6_7
-U 1 1 5E840472
-P 9300 5450
-F 0 "LED6_7" H 9300 5250 50  0000 C CNN
-F 1 "Screw-terminal" H 9218 5216 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9300 5450 50  0001 C CNN
-F 3 "~" H 9300 5450 50  0001 C CNN
-	1    9300 5450
+L Connector_Generic:Conn_01x02 LED1_1
+U 1 1 5E9410FB
+P 1350 6000
+F 0 "LED1_1" H 1300 5800 50  0000 C CNN
+F 1 "Conn_01x02" H 1268 5766 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1350 6000 50  0001 C CNN
+F 3 "~" H 1350 6000 50  0001 C CNN
+	1    1350 6000
 	-1   0    0    1   
 $EndComp
-Text Label 9500 5350 0    50   ~ 0
-ROW6
-Text Label 9500 5450 0    50   ~ 0
-COL7
 $Comp
-L Connector:Screw_Terminal_01x02 LED7_7
-U 1 1 5E84047A
-P 9300 5750
-F 0 "LED7_7" H 9300 5550 50  0000 C CNN
-F 1 "Screw-terminal" H 9218 5516 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9300 5750 50  0001 C CNN
-F 3 "~" H 9300 5750 50  0001 C CNN
-	1    9300 5750
+L Connector_Generic:Conn_01x02 LED2_1
+U 1 1 5E941101
+P 1350 6300
+F 0 "LED2_1" H 1300 6100 50  0000 C CNN
+F 1 "Conn_01x02" H 1268 6066 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1350 6300 50  0001 C CNN
+F 3 "~" H 1350 6300 50  0001 C CNN
+	1    1350 6300
 	-1   0    0    1   
 $EndComp
-Text Label 9500 5650 0    50   ~ 0
-ROW7
-Text Label 9500 5750 0    50   ~ 0
-COL7
 $Comp
-L Connector:Screw_Terminal_01x02 LED0_8
-U 1 1 5E857C20
-P 9850 3650
-F 0 "LED0_8" H 9850 3450 50  0000 C CNN
-F 1 "Screw-terminal" H 9768 3416 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9850 3650 50  0001 C CNN
-F 3 "~" H 9850 3650 50  0001 C CNN
-	1    9850 3650
+L Connector_Generic:Conn_01x02 LED3_1
+U 1 1 5E941107
+P 1350 6600
+F 0 "LED3_1" H 1300 6400 50  0000 C CNN
+F 1 "Conn_01x02" H 1268 6366 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1350 6600 50  0001 C CNN
+F 3 "~" H 1350 6600 50  0001 C CNN
+	1    1350 6600
 	-1   0    0    1   
 $EndComp
-Text Label 10050 3550 0    50   ~ 0
-ROW0
-Text Label 10050 3650 0    50   ~ 0
-COL8
 $Comp
-L Connector:Screw_Terminal_01x02 LED1_8
-U 1 1 5E857C28
-P 9850 3950
-F 0 "LED1_8" H 9850 3750 50  0000 C CNN
-F 1 "Screw-terminal" H 9768 3716 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9850 3950 50  0001 C CNN
-F 3 "~" H 9850 3950 50  0001 C CNN
-	1    9850 3950
+L Connector_Generic:Conn_01x02 LED4_1
+U 1 1 5E94110D
+P 1350 6900
+F 0 "LED4_1" H 1300 6700 50  0000 C CNN
+F 1 "Conn_01x02" H 1268 6666 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1350 6900 50  0001 C CNN
+F 3 "~" H 1350 6900 50  0001 C CNN
+	1    1350 6900
 	-1   0    0    1   
 $EndComp
-Text Label 10050 3850 0    50   ~ 0
-ROW1
-Text Label 10050 3950 0    50   ~ 0
-COL8
 $Comp
-L Connector:Screw_Terminal_01x02 LED2_8
-U 1 1 5E857C30
-P 9850 4250
-F 0 "LED2_8" H 9850 4050 50  0000 C CNN
-F 1 "Screw-terminal" H 9768 4016 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9850 4250 50  0001 C CNN
-F 3 "~" H 9850 4250 50  0001 C CNN
-	1    9850 4250
+L Connector_Generic:Conn_01x02 LED5_1
+U 1 1 5E941113
+P 1350 7200
+F 0 "LED5_1" H 1300 7000 50  0000 C CNN
+F 1 "Conn_01x02" H 1268 6966 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1350 7200 50  0001 C CNN
+F 3 "~" H 1350 7200 50  0001 C CNN
+	1    1350 7200
 	-1   0    0    1   
 $EndComp
-Text Label 10050 4150 0    50   ~ 0
-ROW2
-Text Label 10050 4250 0    50   ~ 0
-COL8
 $Comp
-L Connector:Screw_Terminal_01x02 LED3_8
-U 1 1 5E857C38
-P 9850 4550
-F 0 "LED3_8" H 9850 4350 50  0000 C CNN
-F 1 "Screw-terminal" H 9768 4316 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9850 4550 50  0001 C CNN
-F 3 "~" H 9850 4550 50  0001 C CNN
-	1    9850 4550
+L Connector_Generic:Conn_01x02 LED6_1
+U 1 1 5E941119
+P 1350 7500
+F 0 "LED6_1" H 1300 7300 50  0000 C CNN
+F 1 "Conn_01x02" H 1268 7266 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1350 7500 50  0001 C CNN
+F 3 "~" H 1350 7500 50  0001 C CNN
+	1    1350 7500
 	-1   0    0    1   
 $EndComp
-Text Label 10050 4450 0    50   ~ 0
-ROW3
-Text Label 10050 4550 0    50   ~ 0
-COL8
 $Comp
-L Connector:Screw_Terminal_01x02 LED4_8
-U 1 1 5E857C40
-P 9850 4850
-F 0 "LED4_8" H 9850 4650 50  0000 C CNN
-F 1 "Screw-terminal" H 9768 4616 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9850 4850 50  0001 C CNN
-F 3 "~" H 9850 4850 50  0001 C CNN
-	1    9850 4850
+L Connector_Generic:Conn_01x02 LED0_2
+U 1 1 5E954CEC
+P 1900 5700
+F 0 "LED0_2" H 1850 5500 50  0000 C CNN
+F 1 "Conn_01x02" H 1818 5466 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 5700 50  0001 C CNN
+F 3 "~" H 1900 5700 50  0001 C CNN
+	1    1900 5700
 	-1   0    0    1   
 $EndComp
-Text Label 10050 4750 0    50   ~ 0
-ROW4
-Text Label 10050 4850 0    50   ~ 0
-COL8
 $Comp
-L Connector:Screw_Terminal_01x02 LED5_8
-U 1 1 5E857C48
-P 9850 5150
-F 0 "LED5_8" H 9850 4950 50  0000 C CNN
-F 1 "Screw-terminal" H 9768 4916 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9850 5150 50  0001 C CNN
-F 3 "~" H 9850 5150 50  0001 C CNN
-	1    9850 5150
+L Connector_Generic:Conn_01x02 LED1_2
+U 1 1 5E954CF2
+P 1900 6000
+F 0 "LED1_2" H 1850 5800 50  0000 C CNN
+F 1 "Conn_01x02" H 1818 5766 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 6000 50  0001 C CNN
+F 3 "~" H 1900 6000 50  0001 C CNN
+	1    1900 6000
 	-1   0    0    1   
 $EndComp
-Text Label 10050 5050 0    50   ~ 0
-ROW5
-Text Label 10050 5150 0    50   ~ 0
-COL8
 $Comp
-L Connector:Screw_Terminal_01x02 LED6_8
-U 1 1 5E857C50
-P 9850 5450
-F 0 "LED6_8" H 9850 5250 50  0000 C CNN
-F 1 "Screw-terminal" H 9768 5216 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9850 5450 50  0001 C CNN
-F 3 "~" H 9850 5450 50  0001 C CNN
-	1    9850 5450
+L Connector_Generic:Conn_01x02 LED2_2
+U 1 1 5E954CF8
+P 1900 6300
+F 0 "LED2_2" H 1850 6100 50  0000 C CNN
+F 1 "Conn_01x02" H 1818 6066 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 6300 50  0001 C CNN
+F 3 "~" H 1900 6300 50  0001 C CNN
+	1    1900 6300
 	-1   0    0    1   
 $EndComp
-Text Label 10050 5350 0    50   ~ 0
-ROW6
-Text Label 10050 5450 0    50   ~ 0
-COL8
 $Comp
-L Connector:Screw_Terminal_01x02 LED7_8
-U 1 1 5E857C58
-P 9850 5750
-F 0 "LED7_8" H 9850 5550 50  0000 C CNN
-F 1 "Screw-terminal" H 9768 5516 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9850 5750 50  0001 C CNN
-F 3 "~" H 9850 5750 50  0001 C CNN
-	1    9850 5750
+L Connector_Generic:Conn_01x02 LED3_2
+U 1 1 5E954CFE
+P 1900 6600
+F 0 "LED3_2" H 1850 6400 50  0000 C CNN
+F 1 "Conn_01x02" H 1818 6366 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 6600 50  0001 C CNN
+F 3 "~" H 1900 6600 50  0001 C CNN
+	1    1900 6600
 	-1   0    0    1   
 $EndComp
-Text Label 10050 5650 0    50   ~ 0
-ROW7
-Text Label 10050 5750 0    50   ~ 0
-COL8
+$Comp
+L Connector_Generic:Conn_01x02 LED4_2
+U 1 1 5E954D04
+P 1900 6900
+F 0 "LED4_2" H 1850 6700 50  0000 C CNN
+F 1 "Conn_01x02" H 1818 6666 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 6900 50  0001 C CNN
+F 3 "~" H 1900 6900 50  0001 C CNN
+	1    1900 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED5_2
+U 1 1 5E954D0A
+P 1900 7200
+F 0 "LED5_2" H 1850 7000 50  0000 C CNN
+F 1 "Conn_01x02" H 1818 6966 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 7200 50  0001 C CNN
+F 3 "~" H 1900 7200 50  0001 C CNN
+	1    1900 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED6_2
+U 1 1 5E954D10
+P 1900 7500
+F 0 "LED6_2" H 1850 7300 50  0000 C CNN
+F 1 "Conn_01x02" H 1818 7266 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 7500 50  0001 C CNN
+F 3 "~" H 1900 7500 50  0001 C CNN
+	1    1900 7500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED0_3
+U 1 1 5E99BF8A
+P 2450 5700
+F 0 "LED0_3" H 2400 5500 50  0000 C CNN
+F 1 "Conn_01x02" H 2368 5466 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2450 5700 50  0001 C CNN
+F 3 "~" H 2450 5700 50  0001 C CNN
+	1    2450 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED1_3
+U 1 1 5E99BF90
+P 2450 6000
+F 0 "LED1_3" H 2400 5800 50  0000 C CNN
+F 1 "Conn_01x02" H 2368 5766 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2450 6000 50  0001 C CNN
+F 3 "~" H 2450 6000 50  0001 C CNN
+	1    2450 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED2_3
+U 1 1 5E99BF96
+P 2450 6300
+F 0 "LED2_3" H 2400 6100 50  0000 C CNN
+F 1 "Conn_01x02" H 2368 6066 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2450 6300 50  0001 C CNN
+F 3 "~" H 2450 6300 50  0001 C CNN
+	1    2450 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED3_3
+U 1 1 5E99BF9C
+P 2450 6600
+F 0 "LED3_3" H 2400 6400 50  0000 C CNN
+F 1 "Conn_01x02" H 2368 6366 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2450 6600 50  0001 C CNN
+F 3 "~" H 2450 6600 50  0001 C CNN
+	1    2450 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED4_3
+U 1 1 5E99BFA2
+P 2450 6900
+F 0 "LED4_3" H 2400 6700 50  0000 C CNN
+F 1 "Conn_01x02" H 2368 6666 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2450 6900 50  0001 C CNN
+F 3 "~" H 2450 6900 50  0001 C CNN
+	1    2450 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED5_3
+U 1 1 5E99BFA8
+P 2450 7200
+F 0 "LED5_3" H 2400 7000 50  0000 C CNN
+F 1 "Conn_01x02" H 2368 6966 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2450 7200 50  0001 C CNN
+F 3 "~" H 2450 7200 50  0001 C CNN
+	1    2450 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED6_3
+U 1 1 5E99BFAE
+P 2450 7500
+F 0 "LED6_3" H 2400 7300 50  0000 C CNN
+F 1 "Conn_01x02" H 2368 7266 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2450 7500 50  0001 C CNN
+F 3 "~" H 2450 7500 50  0001 C CNN
+	1    2450 7500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED0_4
+U 1 1 5E9CD590
+P 3000 5700
+F 0 "LED0_4" H 2950 5500 50  0000 C CNN
+F 1 "Conn_01x02" H 2918 5466 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3000 5700 50  0001 C CNN
+F 3 "~" H 3000 5700 50  0001 C CNN
+	1    3000 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED1_4
+U 1 1 5E9CD596
+P 3000 6000
+F 0 "LED1_4" H 2950 5800 50  0000 C CNN
+F 1 "Conn_01x02" H 2918 5766 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3000 6000 50  0001 C CNN
+F 3 "~" H 3000 6000 50  0001 C CNN
+	1    3000 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED2_4
+U 1 1 5E9CD59C
+P 3000 6300
+F 0 "LED2_4" H 2950 6100 50  0000 C CNN
+F 1 "Conn_01x02" H 2918 6066 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3000 6300 50  0001 C CNN
+F 3 "~" H 3000 6300 50  0001 C CNN
+	1    3000 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED3_4
+U 1 1 5E9CD5A2
+P 3000 6600
+F 0 "LED3_4" H 2950 6400 50  0000 C CNN
+F 1 "Conn_01x02" H 2918 6366 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3000 6600 50  0001 C CNN
+F 3 "~" H 3000 6600 50  0001 C CNN
+	1    3000 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED4_4
+U 1 1 5E9CD5A8
+P 3000 6900
+F 0 "LED4_4" H 2950 6700 50  0000 C CNN
+F 1 "Conn_01x02" H 2918 6666 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3000 6900 50  0001 C CNN
+F 3 "~" H 3000 6900 50  0001 C CNN
+	1    3000 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED5_4
+U 1 1 5E9CD5AE
+P 3000 7200
+F 0 "LED5_4" H 2950 7000 50  0000 C CNN
+F 1 "Conn_01x02" H 2918 6966 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3000 7200 50  0001 C CNN
+F 3 "~" H 3000 7200 50  0001 C CNN
+	1    3000 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED6_4
+U 1 1 5E9CD5B4
+P 3000 7500
+F 0 "LED6_4" H 2950 7300 50  0000 C CNN
+F 1 "Conn_01x02" H 2918 7266 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3000 7500 50  0001 C CNN
+F 3 "~" H 3000 7500 50  0001 C CNN
+	1    3000 7500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED0_5
+U 1 1 5E9DEA56
+P 3550 5700
+F 0 "LED0_5" H 3500 5500 50  0000 C CNN
+F 1 "Conn_01x02" H 3468 5466 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3550 5700 50  0001 C CNN
+F 3 "~" H 3550 5700 50  0001 C CNN
+	1    3550 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED1_5
+U 1 1 5E9DEA5C
+P 3550 6000
+F 0 "LED1_5" H 3500 5800 50  0000 C CNN
+F 1 "Conn_01x02" H 3468 5766 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3550 6000 50  0001 C CNN
+F 3 "~" H 3550 6000 50  0001 C CNN
+	1    3550 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED2_5
+U 1 1 5E9DEA62
+P 3550 6300
+F 0 "LED2_5" H 3500 6100 50  0000 C CNN
+F 1 "Conn_01x02" H 3468 6066 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3550 6300 50  0001 C CNN
+F 3 "~" H 3550 6300 50  0001 C CNN
+	1    3550 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED3_5
+U 1 1 5E9DEA68
+P 3550 6600
+F 0 "LED3_5" H 3500 6400 50  0000 C CNN
+F 1 "Conn_01x02" H 3468 6366 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3550 6600 50  0001 C CNN
+F 3 "~" H 3550 6600 50  0001 C CNN
+	1    3550 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED4_5
+U 1 1 5E9DEA6E
+P 3550 6900
+F 0 "LED4_5" H 3500 6700 50  0000 C CNN
+F 1 "Conn_01x02" H 3468 6666 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3550 6900 50  0001 C CNN
+F 3 "~" H 3550 6900 50  0001 C CNN
+	1    3550 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED5_5
+U 1 1 5E9DEA74
+P 3550 7200
+F 0 "LED5_5" H 3500 7000 50  0000 C CNN
+F 1 "Conn_01x02" H 3468 6966 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3550 7200 50  0001 C CNN
+F 3 "~" H 3550 7200 50  0001 C CNN
+	1    3550 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED6_5
+U 1 1 5E9DEA7A
+P 3550 7500
+F 0 "LED6_5" H 3500 7300 50  0000 C CNN
+F 1 "Conn_01x02" H 3468 7266 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3550 7500 50  0001 C CNN
+F 3 "~" H 3550 7500 50  0001 C CNN
+	1    3550 7500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED0_6
+U 1 1 5E9F3BCB
+P 4100 5700
+F 0 "LED0_6" H 4050 5500 50  0000 C CNN
+F 1 "Conn_01x02" H 4018 5466 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4100 5700 50  0001 C CNN
+F 3 "~" H 4100 5700 50  0001 C CNN
+	1    4100 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED1_6
+U 1 1 5E9F3BD1
+P 4100 6000
+F 0 "LED1_6" H 4050 5800 50  0000 C CNN
+F 1 "Conn_01x02" H 4018 5766 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4100 6000 50  0001 C CNN
+F 3 "~" H 4100 6000 50  0001 C CNN
+	1    4100 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED2_6
+U 1 1 5E9F3BD7
+P 4100 6300
+F 0 "LED2_6" H 4050 6100 50  0000 C CNN
+F 1 "Conn_01x02" H 4018 6066 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4100 6300 50  0001 C CNN
+F 3 "~" H 4100 6300 50  0001 C CNN
+	1    4100 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED3_6
+U 1 1 5E9F3BDD
+P 4100 6600
+F 0 "LED3_6" H 4050 6400 50  0000 C CNN
+F 1 "Conn_01x02" H 4018 6366 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4100 6600 50  0001 C CNN
+F 3 "~" H 4100 6600 50  0001 C CNN
+	1    4100 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED4_6
+U 1 1 5E9F3BE3
+P 4100 6900
+F 0 "LED4_6" H 4050 6700 50  0000 C CNN
+F 1 "Conn_01x02" H 4018 6666 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4100 6900 50  0001 C CNN
+F 3 "~" H 4100 6900 50  0001 C CNN
+	1    4100 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED5_6
+U 1 1 5E9F3BE9
+P 4100 7200
+F 0 "LED5_6" H 4050 7000 50  0000 C CNN
+F 1 "Conn_01x02" H 4018 6966 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4100 7200 50  0001 C CNN
+F 3 "~" H 4100 7200 50  0001 C CNN
+	1    4100 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 LED6_6
+U 1 1 5E9F3BEF
+P 4100 7500
+F 0 "LED6_6" H 4050 7300 50  0000 C CNN
+F 1 "Conn_01x02" H 4018 7266 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4100 7500 50  0001 C CNN
+F 3 "~" H 4100 7500 50  0001 C CNN
+	1    4100 7500
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
