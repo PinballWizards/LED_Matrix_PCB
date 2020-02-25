@@ -1000,9 +1000,9 @@ Wire Wire Line
 	8300 850  8800 850 
 Text Label 4400 4050 2    50   ~ 0
 D13
-Text Label 5100 4550 2    50   ~ 0
+Text Label 5100 3500 2    50   ~ 0
 COL0
-Text Label 5100 5700 2    50   ~ 0
+Text Label 5100 4700 2    50   ~ 0
 COL1
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET7
@@ -1102,28 +1102,15 @@ Wire Wire Line
 	4800 5200 4750 5200
 Wire Wire Line
 	4450 5200 4400 5200
-$Comp
-L power:+5V #PWR0106
-U 1 1 5E813AB9
-P 5600 3400
-F 0 "#PWR0106" H 5600 3250 50  0001 C CNN
-F 1 "+5V" H 5615 3573 50  0000 C CNN
-F 2 "" H 5600 3400 50  0001 C CNN
-F 3 "" H 5600 3400 50  0001 C CNN
-	1    5600 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 3500 5600 3400
 Wire Wire Line
 	5100 5300 5100 5350
 Wire Wire Line
 	5100 5650 5100 5700
 Text Label 6800 4050 0    50   ~ 0
 D11
-Text Label 6100 4550 0    50   ~ 0
+Text Label 6100 3500 0    50   ~ 0
 COL2
-Text Label 6100 5700 0    50   ~ 0
+Text Label 6100 4700 0    50   ~ 0
 COL3
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET9
@@ -1230,28 +1217,16 @@ Wire Wire Line
 Wire Wire Line
 	6100 3500 6100 3750
 Wire Wire Line
-	5100 3500 5600 3500
-Wire Wire Line
 	5100 3500 5100 3750
-Wire Wire Line
-	6100 4700 5600 4700
 Wire Wire Line
 	5100 4700 5100 4900
 Wire Wire Line
 	6100 4700 6100 4900
-Wire Wire Line
-	5600 4700 5600 3500
-Connection ~ 5600 4700
-Wire Wire Line
-	5600 4700 5100 4700
-Connection ~ 5600 3500
-Wire Wire Line
-	5600 3500 6100 3500
 Text Label 7100 4050 2    50   ~ 0
 D9
-Text Label 7800 4550 2    50   ~ 0
+Text Label 7800 3500 2    50   ~ 0
 COL4
-Text Label 7800 5700 2    50   ~ 0
+Text Label 7800 4750 2    50   ~ 0
 COL5
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET11
@@ -1351,26 +1326,13 @@ Wire Wire Line
 	7500 5200 7450 5200
 Wire Wire Line
 	7150 5200 7100 5200
-$Comp
-L power:+5V #PWR0108
-U 1 1 5E813B4F
-P 8300 3400
-F 0 "#PWR0108" H 8300 3250 50  0001 C CNN
-F 1 "+5V" H 8315 3573 50  0000 C CNN
-F 2 "" H 8300 3400 50  0001 C CNN
-F 3 "" H 8300 3400 50  0001 C CNN
-	1    8300 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 3500 8300 3400
 Wire Wire Line
 	7800 5300 7800 5350
 Wire Wire Line
 	7800 5650 7800 5700
 Text Label 9500 4050 0    50   ~ 0
 D5
-Text Label 8800 4550 0    50   ~ 0
+Text Label 8800 3500 0    50   ~ 0
 COL6
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET13
@@ -1425,18 +1387,7 @@ Wire Wire Line
 Wire Wire Line
 	8800 3500 8800 3750
 Wire Wire Line
-	7800 3500 8300 3500
-Wire Wire Line
 	7800 3500 7800 3750
-Wire Wire Line
-	7800 4700 7800 4900
-Wire Wire Line
-	8300 4700 8300 3500
-Wire Wire Line
-	8300 4700 7800 4700
-Connection ~ 8300 3500
-Wire Wire Line
-	8300 3500 8800 3500
 $Comp
 L Connector_Generic:Conn_01x01 GND1
 U 1 1 5E857083
@@ -2002,4 +1953,54 @@ F 3 "~" H 4100 7500 50  0001 C CNN
 	1    4100 7500
 	-1   0    0    1   
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E5E78DF
+P 5600 5750
+F 0 "#PWR?" H 5600 5500 50  0001 C CNN
+F 1 "GND" H 5605 5577 50  0000 C CNN
+F 2 "" H 5600 5750 50  0001 C CNN
+F 3 "" H 5600 5750 50  0001 C CNN
+	1    5600 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 5700 5600 5700
+Wire Wire Line
+	5100 4550 5600 4550
+Wire Wire Line
+	5600 4550 5600 5700
+Connection ~ 5600 4550
+Wire Wire Line
+	5600 4550 6100 4550
+Connection ~ 5600 5700
+Wire Wire Line
+	5600 5700 5100 5700
+Wire Wire Line
+	5600 5750 5600 5700
+Wire Wire Line
+	7800 4900 7800 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5E657BD0
+P 8300 5850
+F 0 "#PWR?" H 8300 5600 50  0001 C CNN
+F 1 "GND" H 8305 5677 50  0000 C CNN
+F 2 "" H 8300 5850 50  0001 C CNN
+F 3 "" H 8300 5850 50  0001 C CNN
+	1    8300 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4550 8300 4550
+Wire Wire Line
+	7800 5700 8300 5700
+Wire Wire Line
+	8300 5700 8300 5850
+Wire Wire Line
+	8300 5700 8300 4550
+Connection ~ 8300 5700
+Connection ~ 8300 4550
+Wire Wire Line
+	8300 4550 8800 4550
 $EndSCHEMATC

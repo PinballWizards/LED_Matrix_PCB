@@ -326,11 +326,11 @@ Wire Wire Line
 	1700 1050 1700 900 
 Text Label 2550 1400 2    50   ~ 0
 D13
-Text Label 4400 1400 2    50   ~ 0
+Text Label 4400 1500 2    50   ~ 0
 A0
-Text Label 5100 1900 2    50   ~ 0
+Text Label 5100 1750 2    50   ~ 0
 ROW0
-Text Label 5100 3050 2    50   ~ 0
+Text Label 5100 2950 2    50   ~ 0
 ROW1
 Text Label 1000 5600 0    50   ~ 0
 ROW0
@@ -568,101 +568,99 @@ $EndComp
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET0
 U 1 1 5E5CAC7E
-P 5100 1300
-F 0 "FET0" H 5208 1353 60  0000 L CNN
-F 1 "2N7000" H 5208 1247 60  0000 L CNN
-F 2 "digikey-footprints:TO-92-3" H 5300 1500 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 1600 60  0001 L CNN
-F 4 "2N7000FS-ND" H 5300 1700 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N7000" H 5300 1800 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5300 1900 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5300 2000 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 2100 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 5300 2200 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 60V 200MA TO-92" H 5300 2300 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 5300 2400 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5300 2500 60  0001 L CNN "Status"
-	1    5100 1300
+P 5100 1400
+F 0 "FET0" H 5208 1453 60  0000 L CNN
+F 1 "2N7000" H 5208 1347 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 5300 1600 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 1700 60  0001 L CNN
+F 4 "2N7000FS-ND" H 5300 1800 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 5300 1900 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5300 2000 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5300 2100 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 2200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 5300 2300 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 5300 2400 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 5300 2500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5300 2600 60  0001 L CNN "Status"
+	1    5100 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R300
 U 1 1 5E5D3529
-P 5100 1700
-F 0 "R300" V 5200 1700 50  0000 C CNN
-F 1 "300" V 5216 1700 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 5030 1700 50  0001 C CNN
-F 3 "~" H 5100 1700 50  0001 C CNN
-	1    5100 1700
+P 5100 1000
+F 0 "R300" V 5200 1000 50  0000 C CNN
+F 1 "300" V 5216 1000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 5030 1000 50  0001 C CNN
+F 3 "~" H 5100 1000 50  0001 C CNN
+	1    5100 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R10k0
 U 1 1 5E5D604B
-P 4600 1400
-F 0 "R10k0" V 4700 1400 50  0000 C CNN
-F 1 "10k" V 4716 1400 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 4530 1400 50  0001 C CNN
-F 3 "~" H 4600 1400 50  0001 C CNN
-	1    4600 1400
+P 4600 1500
+F 0 "R10k0" V 4700 1500 50  0000 C CNN
+F 1 "10k" V 4716 1500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 4530 1500 50  0001 C CNN
+F 3 "~" H 4600 1500 50  0001 C CNN
+	1    4600 1500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4800 1400 4750 1400
+	4800 1500 4750 1500
 Wire Wire Line
-	4450 1400 4400 1400
+	4450 1500 4400 1500
 Wire Wire Line
-	5100 1500 5100 1550
-Wire Wire Line
-	5100 1850 5100 1900
-Text Label 4400 2550 2    50   ~ 0
+	5100 1150 5100 1200
+Text Label 4400 2650 2    50   ~ 0
 A1
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET1
 U 1 1 5E604177
-P 5100 2450
-F 0 "FET1" H 5208 2503 60  0000 L CNN
-F 1 "2N7000" H 5208 2397 60  0000 L CNN
-F 2 "digikey-footprints:TO-92-3" H 5300 2650 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 2750 60  0001 L CNN
-F 4 "2N7000FS-ND" H 5300 2850 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N7000" H 5300 2950 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5300 3050 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5300 3150 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 3250 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 5300 3350 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 60V 200MA TO-92" H 5300 3450 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 5300 3550 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5300 3650 60  0001 L CNN "Status"
-	1    5100 2450
+P 5100 2550
+F 0 "FET1" H 5208 2603 60  0000 L CNN
+F 1 "2N7000" H 5208 2497 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 5300 2750 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 2850 60  0001 L CNN
+F 4 "2N7000FS-ND" H 5300 2950 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 5300 3050 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5300 3150 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5300 3250 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5300 3350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 5300 3450 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 5300 3550 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 5300 3650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5300 3750 60  0001 L CNN "Status"
+	1    5100 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R301
 U 1 1 5E60417D
-P 5100 2850
-F 0 "R301" V 5200 2850 50  0000 C CNN
-F 1 "300" V 5216 2850 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 5030 2850 50  0001 C CNN
-F 3 "~" H 5100 2850 50  0001 C CNN
-	1    5100 2850
+P 5100 2200
+F 0 "R301" V 5200 2200 50  0000 C CNN
+F 1 "300" V 5216 2200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 5030 2200 50  0001 C CNN
+F 3 "~" H 5100 2200 50  0001 C CNN
+	1    5100 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R10k1
 U 1 1 5E604183
-P 4600 2550
-F 0 "R10k1" V 4700 2550 50  0000 C CNN
-F 1 "10k" V 4716 2550 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 4530 2550 50  0001 C CNN
-F 3 "~" H 4600 2550 50  0001 C CNN
-	1    4600 2550
+P 4600 2650
+F 0 "R10k1" V 4700 2650 50  0000 C CNN
+F 1 "10k" V 4716 2650 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 4530 2650 50  0001 C CNN
+F 3 "~" H 4600 2650 50  0001 C CNN
+	1    4600 2650
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4800 2550 4750 2550
+	4800 2650 4750 2650
 Wire Wire Line
-	4450 2550 4400 2550
+	4450 2650 4400 2650
 $Comp
 L power:+5V #PWR0102
 U 1 1 5E60418B
@@ -676,130 +674,110 @@ F 3 "" H 5600 750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5600 850  5600 750 
-Wire Wire Line
-	5100 2650 5100 2700
-Wire Wire Line
-	5100 3000 5100 3050
 Text Label 6800 1400 0    50   ~ 0
 A2
-Text Label 6100 1900 0    50   ~ 0
+Text Label 6100 1750 2    50   ~ 0
 ROW2
-Text Label 6100 3050 0    50   ~ 0
+Text Label 6100 3000 0    50   ~ 0
 ROW3
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET2
 U 1 1 5E69E69A
-P 6100 1300
-F 0 "FET2" H 6207 1353 60  0000 L CNN
-F 1 "2N7000" H 6207 1247 60  0000 L CNN
-F 2 "digikey-footprints:TO-92-3" H 6300 1500 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 1600 60  0001 L CNN
-F 4 "2N7000FS-ND" H 6300 1700 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N7000" H 6300 1800 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6300 1900 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 6300 2000 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 2100 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 6300 2200 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 60V 200MA TO-92" H 6300 2300 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 6300 2400 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6300 2500 60  0001 L CNN "Status"
-	1    6100 1300
+P 6100 1400
+F 0 "FET2" H 6207 1453 60  0000 L CNN
+F 1 "2N7000" H 6207 1347 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 6300 1600 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 1700 60  0001 L CNN
+F 4 "2N7000FS-ND" H 6300 1800 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 6300 1900 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6300 2000 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 6300 2100 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 2200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 6300 2300 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 6300 2400 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 6300 2500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6300 2600 60  0001 L CNN "Status"
+	1    6100 1400
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R302
 U 1 1 5E69E6A0
-P 6100 1700
-F 0 "R302" V 6200 1700 50  0000 C CNN
-F 1 "300" V 6216 1700 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6030 1700 50  0001 C CNN
-F 3 "~" H 6100 1700 50  0001 C CNN
-	1    6100 1700
+P 6100 1000
+F 0 "R302" V 6200 1000 50  0000 C CNN
+F 1 "300" V 6216 1000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6030 1000 50  0001 C CNN
+F 3 "~" H 6100 1000 50  0001 C CNN
+	1    6100 1000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R10k2
 U 1 1 5E69E6A6
-P 6600 1400
-F 0 "R10k2" V 6700 1400 50  0000 C CNN
-F 1 "10k" V 6716 1400 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6530 1400 50  0001 C CNN
-F 3 "~" H 6600 1400 50  0001 C CNN
-	1    6600 1400
+P 6600 1500
+F 0 "R10k2" V 6700 1500 50  0000 C CNN
+F 1 "10k" V 6716 1500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6530 1500 50  0001 C CNN
+F 3 "~" H 6600 1500 50  0001 C CNN
+	1    6600 1500
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	6400 1400 6450 1400
+	6400 1500 6450 1500
 Wire Wire Line
 	6750 1400 6800 1400
-Wire Wire Line
-	6100 1500 6100 1550
-Wire Wire Line
-	6100 1850 6100 1900
-Text Label 6800 2550 0    50   ~ 0
+Text Label 6800 2650 0    50   ~ 0
 A3
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET3
 U 1 1 5E69E6C3
-P 6100 2450
-F 0 "FET3" H 6207 2503 60  0000 L CNN
-F 1 "2N7000" H 6207 2397 60  0000 L CNN
-F 2 "digikey-footprints:TO-92-3" H 6300 2650 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 2750 60  0001 L CNN
-F 4 "2N7000FS-ND" H 6300 2850 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N7000" H 6300 2950 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6300 3050 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 6300 3150 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 3250 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 6300 3350 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 60V 200MA TO-92" H 6300 3450 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 6300 3550 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6300 3650 60  0001 L CNN "Status"
-	1    6100 2450
+P 6100 2550
+F 0 "FET3" H 6207 2603 60  0000 L CNN
+F 1 "2N7000" H 6207 2497 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 6300 2750 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 2850 60  0001 L CNN
+F 4 "2N7000FS-ND" H 6300 2950 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 6300 3050 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6300 3150 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 6300 3250 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6300 3350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 6300 3450 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 6300 3550 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 6300 3650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6300 3750 60  0001 L CNN "Status"
+	1    6100 2550
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R303
 U 1 1 5E69E6C9
-P 6100 2850
-F 0 "R303" V 6200 2850 50  0000 C CNN
-F 1 "300" V 6216 2850 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6030 2850 50  0001 C CNN
-F 3 "~" H 6100 2850 50  0001 C CNN
-	1    6100 2850
+P 6100 2200
+F 0 "R303" V 6200 2200 50  0000 C CNN
+F 1 "300" V 6216 2200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6030 2200 50  0001 C CNN
+F 3 "~" H 6100 2200 50  0001 C CNN
+	1    6100 2200
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R10k3
 U 1 1 5E69E6CF
-P 6600 2550
-F 0 "R10k3" V 6700 2550 50  0000 C CNN
-F 1 "10k" V 6716 2550 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6530 2550 50  0001 C CNN
-F 3 "~" H 6600 2550 50  0001 C CNN
-	1    6600 2550
+P 6600 2650
+F 0 "R10k3" V 6700 2650 50  0000 C CNN
+F 1 "10k" V 6716 2650 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6530 2650 50  0001 C CNN
+F 3 "~" H 6600 2650 50  0001 C CNN
+	1    6600 2650
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	6400 2550 6450 2550
+	6400 2650 6450 2650
 Wire Wire Line
-	6750 2550 6800 2550
-Wire Wire Line
-	6100 2650 6100 2700
-Wire Wire Line
-	6100 3000 6100 3050
-Wire Wire Line
-	6100 850  6100 1100
+	6750 2650 6800 2650
 Wire Wire Line
 	5100 850  5600 850 
 Wire Wire Line
-	5100 850  5100 1100
-Wire Wire Line
 	6100 2050 5600 2050
-Wire Wire Line
-	5100 2050 5100 2250
-Wire Wire Line
-	6100 2050 6100 2250
 Wire Wire Line
 	5600 2050 5600 850 
 Connection ~ 5600 2050
@@ -808,110 +786,106 @@ Wire Wire Line
 Connection ~ 5600 850 
 Wire Wire Line
 	5600 850  6100 850 
-Text Label 7100 1400 2    50   ~ 0
+Text Label 7100 1450 2    50   ~ 0
 A4
-Text Label 7800 1900 2    50   ~ 0
+Text Label 7800 1700 2    50   ~ 0
 ROW4
-Text Label 7800 3050 2    50   ~ 0
+Text Label 7800 2950 2    50   ~ 0
 ROW5
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET4
 U 1 1 5E744831
-P 7800 1300
-F 0 "FET4" H 7908 1353 60  0000 L CNN
-F 1 "2N7000" H 7908 1247 60  0000 L CNN
-F 2 "digikey-footprints:TO-92-3" H 8000 1500 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 1600 60  0001 L CNN
-F 4 "2N7000FS-ND" H 8000 1700 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N7000" H 8000 1800 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 8000 1900 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 8000 2000 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 2100 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 8000 2200 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 60V 200MA TO-92" H 8000 2300 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 8000 2400 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 8000 2500 60  0001 L CNN "Status"
-	1    7800 1300
+P 7800 1350
+F 0 "FET4" H 7908 1403 60  0000 L CNN
+F 1 "2N7000" H 7908 1297 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 8000 1550 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 1650 60  0001 L CNN
+F 4 "2N7000FS-ND" H 8000 1750 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 8000 1850 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 8000 1950 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 8000 2050 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 2150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 8000 2250 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 8000 2350 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 8000 2450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8000 2550 60  0001 L CNN "Status"
+	1    7800 1350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R304
 U 1 1 5E744837
-P 7800 1700
-F 0 "R304" V 7900 1700 50  0000 C CNN
-F 1 "300" V 7916 1700 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7730 1700 50  0001 C CNN
-F 3 "~" H 7800 1700 50  0001 C CNN
-	1    7800 1700
+P 7800 1000
+F 0 "R304" V 7900 1000 50  0000 C CNN
+F 1 "300" V 7916 1000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7730 1000 50  0001 C CNN
+F 3 "~" H 7800 1000 50  0001 C CNN
+	1    7800 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R10k4
 U 1 1 5E74483D
-P 7300 1400
-F 0 "R10k4" V 7400 1400 50  0000 C CNN
-F 1 "10k" V 7416 1400 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7230 1400 50  0001 C CNN
-F 3 "~" H 7300 1400 50  0001 C CNN
-	1    7300 1400
+P 7300 1450
+F 0 "R10k4" V 7400 1450 50  0000 C CNN
+F 1 "10k" V 7416 1450 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7230 1450 50  0001 C CNN
+F 3 "~" H 7300 1450 50  0001 C CNN
+	1    7300 1450
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7500 1400 7450 1400
+	7500 1450 7450 1450
 Wire Wire Line
-	7150 1400 7100 1400
-Wire Wire Line
-	7800 1500 7800 1550
-Wire Wire Line
-	7800 1850 7800 1900
-Text Label 7100 2550 2    50   ~ 0
+	7150 1450 7100 1450
+Text Label 7100 2650 2    50   ~ 0
 A5
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET5
 U 1 1 5E744851
-P 7800 2450
-F 0 "FET5" H 7908 2503 60  0000 L CNN
-F 1 "2N7000" H 7908 2397 60  0000 L CNN
-F 2 "digikey-footprints:TO-92-3" H 8000 2650 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 2750 60  0001 L CNN
-F 4 "2N7000FS-ND" H 8000 2850 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N7000" H 8000 2950 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 8000 3050 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 8000 3150 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 3250 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 8000 3350 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 60V 200MA TO-92" H 8000 3450 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 8000 3550 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 8000 3650 60  0001 L CNN "Status"
-	1    7800 2450
+P 7800 2550
+F 0 "FET5" H 7908 2603 60  0000 L CNN
+F 1 "2N7000" H 7908 2497 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 8000 2750 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 2850 60  0001 L CNN
+F 4 "2N7000FS-ND" H 8000 2950 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 8000 3050 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 8000 3150 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 8000 3250 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8000 3350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 8000 3450 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 8000 3550 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 8000 3650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8000 3750 60  0001 L CNN "Status"
+	1    7800 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R305
 U 1 1 5E744857
-P 7800 2850
-F 0 "R305" V 7900 2850 50  0000 C CNN
-F 1 "300" V 7916 2850 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7730 2850 50  0001 C CNN
-F 3 "~" H 7800 2850 50  0001 C CNN
-	1    7800 2850
+P 7800 2200
+F 0 "R305" V 7900 2200 50  0000 C CNN
+F 1 "300" V 7916 2200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7730 2200 50  0001 C CNN
+F 3 "~" H 7800 2200 50  0001 C CNN
+	1    7800 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R10k5
 U 1 1 5E74485D
-P 7300 2550
-F 0 "R10k5" V 7400 2550 50  0000 C CNN
-F 1 "10k" V 7416 2550 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7230 2550 50  0001 C CNN
-F 3 "~" H 7300 2550 50  0001 C CNN
-	1    7300 2550
+P 7300 2650
+F 0 "R10k5" V 7400 2650 50  0000 C CNN
+F 1 "10k" V 7416 2650 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7230 2650 50  0001 C CNN
+F 3 "~" H 7300 2650 50  0001 C CNN
+	1    7300 2650
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7500 2550 7450 2550
+	7500 2650 7450 2650
 Wire Wire Line
-	7150 2550 7100 2550
+	7150 2650 7100 2650
 $Comp
 L power:+5V #PWR0105
 U 1 1 5E744865
@@ -925,72 +899,58 @@ F 3 "" H 8300 750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8300 850  8300 750 
-Wire Wire Line
-	7800 2650 7800 2700
-Wire Wire Line
-	7800 3000 7800 3050
-Text Label 9500 1400 0    50   ~ 0
+Text Label 9500 1450 0    50   ~ 0
 A6
-Text Label 8800 1900 0    50   ~ 0
+Text Label 8800 1700 0    50   ~ 0
 ROW6
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7000 FET6
 U 1 1 5E74487A
-P 8800 1300
-F 0 "FET6" H 8907 1353 60  0000 L CNN
-F 1 "2N7000" H 8907 1247 60  0000 L CNN
-F 2 "digikey-footprints:TO-92-3" H 9000 1500 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 9000 1600 60  0001 L CNN
-F 4 "2N7000FS-ND" H 9000 1700 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N7000" H 9000 1800 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 9000 1900 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 9000 2000 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 9000 2100 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 9000 2200 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 60V 200MA TO-92" H 9000 2300 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 9000 2400 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9000 2500 60  0001 L CNN "Status"
-	1    8800 1300
+P 8800 1350
+F 0 "FET6" H 8907 1403 60  0000 L CNN
+F 1 "2N7000" H 8907 1297 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 9000 1550 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 9000 1650 60  0001 L CNN
+F 4 "2N7000FS-ND" H 9000 1750 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 9000 1850 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 9000 1950 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 9000 2050 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 9000 2150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 9000 2250 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 9000 2350 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 9000 2450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9000 2550 60  0001 L CNN "Status"
+	1    8800 1350
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R306
 U 1 1 5E744880
-P 8800 1700
-F 0 "R306" V 8900 1700 50  0000 C CNN
-F 1 "300" V 8916 1700 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 8730 1700 50  0001 C CNN
-F 3 "~" H 8800 1700 50  0001 C CNN
-	1    8800 1700
+P 8800 1000
+F 0 "R306" V 8900 1000 50  0000 C CNN
+F 1 "300" V 8916 1000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 8730 1000 50  0001 C CNN
+F 3 "~" H 8800 1000 50  0001 C CNN
+	1    8800 1000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R10k6
 U 1 1 5E744886
-P 9300 1400
-F 0 "R10k6" V 9400 1400 50  0000 C CNN
-F 1 "10k" V 9416 1400 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 9230 1400 50  0001 C CNN
-F 3 "~" H 9300 1400 50  0001 C CNN
-	1    9300 1400
+P 9300 1450
+F 0 "R10k6" V 9400 1450 50  0000 C CNN
+F 1 "10k" V 9416 1450 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 9230 1450 50  0001 C CNN
+F 3 "~" H 9300 1450 50  0001 C CNN
+	1    9300 1450
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	9100 1400 9150 1400
+	9100 1450 9150 1450
 Wire Wire Line
-	9450 1400 9500 1400
-Wire Wire Line
-	8800 1500 8800 1550
-Wire Wire Line
-	8800 1850 8800 1900
-Wire Wire Line
-	8800 850  8800 1100
+	9450 1450 9500 1450
 Wire Wire Line
 	7800 850  8300 850 
-Wire Wire Line
-	7800 850  7800 1100
-Wire Wire Line
-	7800 2050 7800 2250
 Wire Wire Line
 	8300 2050 8300 850 
 Wire Wire Line
@@ -1025,17 +985,6 @@ F 12 "Active" H 5300 5150 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R307
-U 1 1 5E813A8B
-P 5100 4350
-F 0 "R307" V 5200 4350 50  0000 C CNN
-F 1 "300" V 5216 4350 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 5030 4350 50  0001 C CNN
-F 3 "~" H 5100 4350 50  0001 C CNN
-	1    5100 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R10k7
 U 1 1 5E813A91
 P 4600 4050
@@ -1050,10 +999,6 @@ Wire Wire Line
 	4800 4050 4750 4050
 Wire Wire Line
 	4450 4050 4400 4050
-Wire Wire Line
-	5100 4150 5100 4200
-Wire Wire Line
-	5100 4500 5100 4550
 Text Label 4400 5200 2    50   ~ 0
 D12
 $Comp
@@ -1077,17 +1022,6 @@ F 12 "Active" H 5300 6300 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R308
-U 1 1 5E813AAB
-P 5100 5500
-F 0 "R308" V 5200 5500 50  0000 C CNN
-F 1 "300" V 5216 5500 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 5030 5500 50  0001 C CNN
-F 3 "~" H 5100 5500 50  0001 C CNN
-	1    5100 5500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R10k8
 U 1 1 5E813AB1
 P 4600 5200
@@ -1102,10 +1036,6 @@ Wire Wire Line
 	4800 5200 4750 5200
 Wire Wire Line
 	4450 5200 4400 5200
-Wire Wire Line
-	5100 5300 5100 5350
-Wire Wire Line
-	5100 5650 5100 5700
 Text Label 6800 4050 0    50   ~ 0
 D11
 Text Label 6100 3500 0    50   ~ 0
@@ -1133,17 +1063,6 @@ F 12 "Active" H 6300 5150 60  0001 L CNN "Status"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R R309
-U 1 1 5E813AD4
-P 6100 4350
-F 0 "R309" V 6200 4350 50  0000 C CNN
-F 1 "300" V 6216 4350 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6030 4350 50  0001 C CNN
-F 3 "~" H 6100 4350 50  0001 C CNN
-	1    6100 4350
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:R R10k9
 U 1 1 5E813ADA
 P 6600 4050
@@ -1158,10 +1077,6 @@ Wire Wire Line
 	6400 4050 6450 4050
 Wire Wire Line
 	6750 4050 6800 4050
-Wire Wire Line
-	6100 4150 6100 4200
-Wire Wire Line
-	6100 4500 6100 4550
 Text Label 6800 5200 0    50   ~ 0
 D10
 $Comp
@@ -1185,17 +1100,6 @@ F 12 "Active" H 6300 6300 60  0001 L CNN "Status"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R R310
-U 1 1 5E813AF4
-P 6100 5500
-F 0 "R310" V 6200 5500 50  0000 C CNN
-F 1 "300" V 6216 5500 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6030 5500 50  0001 C CNN
-F 3 "~" H 6100 5500 50  0001 C CNN
-	1    6100 5500
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:R R10k10
 U 1 1 5E813AFA
 P 6600 5200
@@ -1210,10 +1114,6 @@ Wire Wire Line
 	6400 5200 6450 5200
 Wire Wire Line
 	6750 5200 6800 5200
-Wire Wire Line
-	6100 5300 6100 5350
-Wire Wire Line
-	6100 5650 6100 5700
 Wire Wire Line
 	6100 3500 6100 3750
 Wire Wire Line
@@ -1249,17 +1149,6 @@ F 12 "Active" H 8000 5150 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R311
-U 1 1 5E813B21
-P 7800 4350
-F 0 "R311" V 7900 4350 50  0000 C CNN
-F 1 "300" V 7916 4350 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7730 4350 50  0001 C CNN
-F 3 "~" H 7800 4350 50  0001 C CNN
-	1    7800 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R10k11
 U 1 1 5E813B27
 P 7300 4050
@@ -1274,10 +1163,6 @@ Wire Wire Line
 	7500 4050 7450 4050
 Wire Wire Line
 	7150 4050 7100 4050
-Wire Wire Line
-	7800 4150 7800 4200
-Wire Wire Line
-	7800 4500 7800 4550
 Text Label 7100 5200 2    50   ~ 0
 D6
 $Comp
@@ -1301,17 +1186,6 @@ F 12 "Active" H 8000 6300 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R312
-U 1 1 5E813B41
-P 7800 5500
-F 0 "R312" V 7900 5500 50  0000 C CNN
-F 1 "300" V 7916 5500 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 7730 5500 50  0001 C CNN
-F 3 "~" H 7800 5500 50  0001 C CNN
-	1    7800 5500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R10k12
 U 1 1 5E813B47
 P 7300 5200
@@ -1326,10 +1200,6 @@ Wire Wire Line
 	7500 5200 7450 5200
 Wire Wire Line
 	7150 5200 7100 5200
-Wire Wire Line
-	7800 5300 7800 5350
-Wire Wire Line
-	7800 5650 7800 5700
 Text Label 9500 4050 0    50   ~ 0
 D5
 Text Label 8800 3500 0    50   ~ 0
@@ -1355,17 +1225,6 @@ F 12 "Active" H 9000 5150 60  0001 L CNN "Status"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R R313
-U 1 1 5E813B69
-P 8800 4350
-F 0 "R313" V 8900 4350 50  0000 C CNN
-F 1 "300" V 8916 4350 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 8730 4350 50  0001 C CNN
-F 3 "~" H 8800 4350 50  0001 C CNN
-	1    8800 4350
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:R R10k13
 U 1 1 5E813B6F
 P 9300 4050
@@ -1380,10 +1239,6 @@ Wire Wire Line
 	9100 4050 9150 4050
 Wire Wire Line
 	9450 4050 9500 4050
-Wire Wire Line
-	8800 4150 8800 4200
-Wire Wire Line
-	8800 4500 8800 4550
 Wire Wire Line
 	8800 3500 8800 3750
 Wire Wire Line
@@ -2003,4 +1858,34 @@ Connection ~ 8300 5700
 Connection ~ 8300 4550
 Wire Wire Line
 	8300 4550 8800 4550
+Wire Wire Line
+	5100 4150 5100 4550
+Wire Wire Line
+	6100 4150 6100 4550
+Wire Wire Line
+	5100 5300 5100 5700
+Wire Wire Line
+	6100 5300 6100 5700
+Wire Wire Line
+	7800 5300 7800 5700
+Wire Wire Line
+	7800 4150 7800 4550
+Wire Wire Line
+	8800 4150 8800 4550
+Wire Wire Line
+	5100 1600 5100 1750
+Wire Wire Line
+	6100 1600 6100 1750
+Wire Wire Line
+	6100 1200 6100 1150
+Wire Wire Line
+	6100 2750 6100 3000
+Wire Wire Line
+	5100 2750 5100 2950
+Wire Wire Line
+	7800 1550 7800 1700
+Wire Wire Line
+	8800 1550 8800 1700
+Wire Wire Line
+	7800 2750 7800 2950
 $EndSCHEMATC
